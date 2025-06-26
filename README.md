@@ -37,7 +37,24 @@ python simulate.py --steps 1000 --seed 42 --output results.h5
 ├── README.md          # Project overview (this file)
 ├── requirements.txt   # Python dependencies
 ├── simulate.py        # Entry point for the simulator
+├── scripts/           # Helper scripts and visualizations
 └── docs/              # Additional documentation
+```
+
+## Spherical Lattice
+
+The `src.spherical_lattice` module provides utilities for generating
+Fibonacci shells used in simple spherical lattices.  The accompanying
+`scripts/visualize_lattice.py` script demonstrates how to create and plot a
+lattice using `matplotlib`.
+
+Example:
+
+```python
+from src.spherical_lattice import build_spherical_lattice
+
+lattice = build_spherical_lattice(max_radius=1.0, n_shells=3, points_per_shell=50)
+print(lattice.shape)  # (150, 3)
 ```
 
 ## License

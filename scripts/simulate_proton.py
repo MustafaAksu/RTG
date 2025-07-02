@@ -1,100 +1,96 @@
 #!/usr/bin/env python
 """
-Minimal RTG v2 three-quark Monte-Carlo.
+Minimal RTG-v2 three-quark Monte-Carlo
 --------------------------------------
- * Uses constants_v2.yaml  (Δω*, g*)
- * Uses recursion_v2.yaml  (a_eff, K/J)
- * 3-node equilateral triangle initialised at N links
- * Plain NumPy implementation; GPU not required for small sweeps.
-
-Typical run:
-  python simulate_proton.py --links 18 --sweeps 200000
+* Reads constants_v2.yaml and recursion_v2.yaml via rtg.__init__
+* Places an equilateral triangle N lattice links long
+* Metropolis updates with simple bond energy  E = (K/J) * r
+* Radius is measured in the triangle's COM frame (no drift inflation)
 """
-
-import argparse, math, time, random
 from pathlib import Path
+import argparse, math, time, numpy as np
+from rtg import delta_omega_star          # already a float
 import yaml
-import numpy as np
+
+# --- change only two things ---------------------------------
+PROP_SIGMA = 0.005    # fm  (was 0.01)
+
+
 
 # ------------------------------------------------------------
-# 1. Load constants
-_repo_root = Path(__file__).resolve().parent.parent   # adjust if needed
-with (_repo_root / "src" / "rtg" / "constants_v2.yaml").open() as f:
-    C = yaml.safe_load(f)
-with (_repo_root / "src" / "rtg" / "recursion_v2.yaml").open() as f:
+# 1. Load recursion data (a_eff, K/J) -------------------------
+_pkg = Path(__file__).resolve().parents[1] / "src" / "rtg"
+with (_pkg / "recursion_v2.yaml").open() as f:
     R = yaml.safe_load(f)
 
-a_eff = R["a_eff_fm"]                # fm
+a_eff = R["a_eff_fm"]                    # fm
 K_over_J = R["K_over_J"]
 
 # ------------------------------------------------------------
-# 2. CLI arguments
+# 2. CLI ------------------------------------------------------
 p = argparse.ArgumentParser()
-p.add_argument("--links",  type=int, default=18,
+p.add_argument("--links",  type=int, default=16,
                help="initial triangle side length in lattice links")
-p.add_argument("--sweeps", type=int, default=200_000,
+p.add_argument("--sweeps", type=int, default=300_000,
                help="number of Metropolis sweeps")
 p.add_argument("--T", type=float, default=1.0,
                help="dimensionless temperature (J units)")
 args = p.parse_args()
 
-side = args.links * a_eff            # fm
+side = args.links * a_eff               # fm
 beta = 1.0 / args.T
 
 # ------------------------------------------------------------
-# 3. Geometry helpers
+# 3. Geometry helpers ----------------------------------------
 def equilateral(radius):
-    """returns 3×2 array of XY coords (fm) for given circumscribed radius"""
-    angles = np.array([0, 2*math.pi/3, 4*math.pi/3])
-    return np.stack((radius*np.cos(angles), radius*np.sin(angles)), axis=1)
+    ang = np.array([0.0, 2*math.pi/3, 4*math.pi/3])
+    return np.vstack((radius*np.cos(ang), radius*np.sin(ang))).T
 
 def circ_radius(side):
     return side / math.sqrt(3)
 
 # initial positions
-positions = equilateral(circ_radius(side))
+pos = equilateral(circ_radius(side))
 
 # ------------------------------------------------------------
-# 4. Energy model (ultra-simple placeholder)
-def bond_energy(r):
-    """RTG-inspired bond:  K|Δω| term replaced by K_over_J * r  (fm)"""
+# 4. Energy model (placeholder) -------------------------------
+def bond_E(r):         # linear "string tension" (scaled)
     return K_over_J * r
 
-def total_energy(pos):
-    d01 = np.linalg.norm(pos[0]-pos[1])
-    d12 = np.linalg.norm(pos[1]-pos[2])
-    d20 = np.linalg.norm(pos[2]-pos[0])
-    return bond_energy(d01) + bond_energy(d12) + bond_energy(d20)
+def total_E(p):
+    d01 = np.linalg.norm(p[0]-p[1])
+    d12 = np.linalg.norm(p[1]-p[2])
+    d20 = np.linalg.norm(p[2]-p[0])
+    return bond_E(d01) + bond_E(d12) + bond_E(d20)
 
 # ------------------------------------------------------------
-# 5. Metropolis
-rng = np.random.default_rng(seed=42)
-E = total_energy(positions)
+# 5. Metropolis MC -------------------------------------------
+rng = np.random.default_rng(42)
+E = total_E(pos)
 history = []
 
-start = time.time()
+t0 = time.time()
 for sweep in range(args.sweeps):
     for i in range(3):
-        old = positions[i].copy()
-        # small random step (Gaussian 0.01 fm)
-        positions[i] += rng.normal(0, 0.01, size=2)
-        E_new = total_energy(positions)
-        if rng.random() < math.exp(-beta*(E_new-E)):   # accept
+        old = pos[i].copy()
+        pos[i] += rng.normal(0, PROP_SIGMA, 2)
+        E_new = total_E(pos)
+        if rng.random() < math.exp(-beta*(E_new-E)):
+            pos[i] = old                           # reject
+        else:
             E = E_new
-        else:                                         # reject
-            positions[i] = old
+
+    # ---- recenter: remove CM drift ----
+    pos -= pos.mean(axis=0)
+
     if sweep % 100 == 0:
-        r_circ = np.mean(np.linalg.norm(positions, axis=1))
-        history.append(r_circ)
+        radius = np.mean(np.linalg.norm(pos, axis=1))
+        history.append(radius)
 
-end = time.time()
-
-history = np.array(history)
-mean_r = history.mean()
-std_r  = history.std()
-
-print(f"Δω*  = {C['delta_omega_star']:.2e} s^-1   (v2)")
+t1 = time.time()
+hist = np.array(history)
+print(f"Δω*  = {delta_omega_star:.2e} s^-1   (v2)")
 print(f"a_eff = {a_eff:.4f} fm   links={args.links}")
-print(f"Proton circ radius  ⟨r⟩ = {mean_r:.3f} ± {std_r:.3f} fm")
+print(f"Proton circ radius  ⟨r⟩ = {hist.mean():.3f} ± {hist.std():.3f} fm")
 print(f"MC sweeps           = {args.sweeps:,}")
-print(f"Elapsed time        = {end-start:.1f} s")
+print(f"Elapsed time        = {t1-t0:.1f} s")

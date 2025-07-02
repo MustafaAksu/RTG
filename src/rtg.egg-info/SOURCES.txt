@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/rtg/__init__.py
+src/rtg.egg-info/PKG-INFO
+src/rtg.egg-info/SOURCES.txt
+src/rtg.egg-info/dependency_links.txt
+src/rtg.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+# --- RTG universal constants – version 2 --------------------
+# Generated after spin-weight fix (C = 1) and two-loop β-function re-solve
+# Date: 2025-07-02  (Europe/Berlin)
+
+delta_omega_star: 5.8e22        # [s^-1]  critical bandwidth  Δω*
+g_star:           1.68          # non-trivial fixed-point coupling
+beta_coeffs:      [0.72, -0.42, -0.005]   # β(g) = Σ c_n g^(n+1)

@@ -1,0 +1,10 @@
+# --- Block-spin / lattice recursion parameters – version 2 ----
+# Uses recursion_depth = 6 (2×2×2 blocking applied six times)
+
+recursion_depth: 6              # number of binary doublings
+a0_fm:          5.17            # raw spacing  a0 = c / Δω*   [fm]
+a_eff_fm:       0.0808          # effective spacing  a_eff = a0 / 2^depth  [fm]
+
+# Continuum–lattice matching:  g = (3/2) J / (K a)
+# Keeping J fixed & using g* = 1.68 gives the required kinetic scale:
+K_over_J:       0.027           # new  (≈ 1/37 of old value)

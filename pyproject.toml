@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rtg"
+version = "0.2.0"
+description = "Relational Time Geometry – research code"
+authors = [{ name = "Mustafa Aksu", email = "mustafa_aksu@yahoo.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.urls]
+homepage = "https://github.com/MustafaAksu/RTG"
+
+[tool.setuptools]
+package-dir = {"" = "src"}        # <-- tells setuptools that packages live under src/
+packages = ["rtg"]

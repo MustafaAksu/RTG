@@ -7,7 +7,4 @@
 recursion_depth : 6         # number of doublings
 K_over_J        : 0.27      # K / J ratio AFTER recursion
 J_ex_over_J     : 0.25      # (optional) exchange / main coupling
-sigma_scale     : 0.5       # width shrink per step, σ' = σ / 2
-comment         : |
-  Values tuned to keep the two-loop fixed point at g* ≈ 1.68
-  with Δω* = 5.8e22 s⁻¹ (v2 constants).
+sigma_scale     : 0.5       # width shrink per step, sigma' = sigma / 2

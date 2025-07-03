@@ -116,7 +116,7 @@ def F_φ():
     xp.add.at(f, i_idx,  J*coeff*sin)
     xp.add.at(f, j_idx, -J*coeff*sin)
     # ---- stiff pin: keep Δφ(1,0) = π -----------------
-    kappa = 5.0e4
+    kappa = 50.0
     diff  = (φ[1]-φ[0]) - math.pi
     f[0] += kappa*diff
     f[1] -= kappa*diff
@@ -139,8 +139,12 @@ for tr in range(1, args.traj+1):
     # leap-frog
     pω -= 0.5*dt*F_ω();  pφ -= 0.5*dt*F_φ()
     for _ in range(args.nlf):
-        ω += dt*pω;       φ += dt*pφ
-        pω -= dt*F_ω();   pφ -= dt*F_φ()
+		
+        ω += dt*pω
+        φ += dt*pφ
+        φ %= 2.0 * math.pi       # wrap BEFORE forces+        
+        pω -= dt*F_ω()        
+        pφ -= dt*F_φ()
     pω -= 0.5*dt*F_ω();  pφ -= 0.5*dt*F_φ()
     pω *= -1;  pφ *= -1   # reversibility
 

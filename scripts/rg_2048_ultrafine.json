@@ -1,0 +1,93 @@
+{
+  "attrs": "attrs_2048.npz",
+  "initial": {
+    "a0": 1.0,
+    "a1": 1.0,
+    "a2": 0.5,
+    "beta": 1.5,
+    "rho": null,
+    "spin_mode": "same"
+  },
+  "flow": [
+    {
+      "step": 1,
+      "R": 0.5815725884488188,
+      "n_clusters": 45,
+      "rho_before": 0.16275839911635331,
+      "beta_before": 1.5,
+      "rho_after": 1.4645176238792905,
+      "beta_after": 1.3,
+      "rho_scale_best": 1.4,
+      "beta_grid_choice": 1.3,
+      "lsq": 0.000171322133015404,
+      "spectral_dim": -0.042935139685812335,
+      "mds_stress": 0.4696614080094367,
+      "rank_cm": 0.7333333333333333,
+      "n_after": 45
+    },
+    {
+      "step": 2,
+      "R": 1.126144690740804,
+      "n_clusters": 6,
+      "rho_before": 1.0460840170566361,
+      "beta_before": 1.3,
+      "rho_after": 2.3942337026457503,
+      "beta_after": 1.6,
+      "rho_scale_best": 1.4,
+      "beta_grid_choice": 1.6,
+      "lsq": 6.068953216440427e-07,
+      "spectral_dim": -0.009142395882925926,
+      "mds_stress": 0.10014221005991006,
+      "rank_cm": 0.6666666666666666,
+      "n_after": 6
+    },
+    {
+      "step": 3,
+      "R": 1.2595243971366528,
+      "n_clusters": 2,
+      "rho_before": 1.7101669304612503,
+      "beta_before": 1.6,
+      "rho_after": 2.9586022869425452,
+      "beta_after": 1.4,
+      "rho_scale_best": 1.15,
+      "beta_grid_choice": 1.4,
+      "lsq": 1.9609158339877584e-10,
+      "spectral_dim": -0.002994865254753667,
+      "mds_stress": 8.388198397552648e-16,
+      "rank_cm": 0.5,
+      "n_after": 2
+    },
+    {
+      "step": 4,
+      "R": 0.0,
+      "n_clusters": 2,
+      "rho_before": 2.5726976408196047,
+      "beta_before": 1.4,
+      "rho_after": 2.9586022869425452,
+      "beta_after": 1.3,
+      "rho_scale_best": 1.15,
+      "beta_grid_choice": 1.3,
+      "lsq": 3.9849032698104053e-07,
+      "spectral_dim": -0.00292644632771457,
+      "mds_stress": 6.262967146959323e-16,
+      "rank_cm": 0.5,
+      "n_after": 2
+    },
+    {
+      "step": 5,
+      "R": 0.0,
+      "n_clusters": 2,
+      "rho_before": 2.5726976408196047,
+      "beta_before": 1.3,
+      "rho_after": 2.9586022869425452,
+      "beta_after": 1.3,
+      "rho_scale_best": 1.15,
+      "beta_grid_choice": 1.3,
+      "lsq": 3.9849032698104053e-07,
+      "spectral_dim": -0.00292644632771457,
+      "mds_stress": 6.262967146959323e-16,
+      "rank_cm": 0.5,
+      "n_after": 2
+    }
+  ]
+}

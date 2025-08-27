@@ -1,0 +1,62 @@
+{
+  "kernel_file": "K_2048_same_rho1p16_a2p55_b1p50.npy",
+  "n": 2048,
+  "subsample_applied": false,
+  "levels": [
+    {
+      "threshold": 0.4,
+      "n": 2048,
+      "m_edges": 749,
+      "beta0": 1408,
+      "beta1_graph": 109,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 0.5,
+      "n": 2048,
+      "m_edges": 366,
+      "beta0": 1705,
+      "beta1_graph": 23,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 0.6,
+      "n": 2048,
+      "m_edges": 172,
+      "beta0": 1884,
+      "beta1_graph": 8,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 0.7,
+      "n": 2048,
+      "m_edges": 83,
+      "beta0": 1969,
+      "beta1_graph": 4,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 0.8,
+      "n": 2048,
+      "m_edges": 36,
+      "beta0": 2013,
+      "beta1_graph": 1,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 0.9,
+      "n": 2048,
+      "m_edges": 8,
+      "beta0": 2040,
+      "beta1_graph": 0,
+      "triangles": null,
+      "beta1_clique_approx": null
+    }
+  ],
+  "created_utc": "2025-08-26 13:19:00"
+}

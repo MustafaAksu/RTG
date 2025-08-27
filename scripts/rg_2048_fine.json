@@ -1,0 +1,61 @@
+{
+  "attrs": "attrs_2048.npz",
+  "initial": {
+    "a0": 1.0,
+    "a1": 1.0,
+    "a2": 0.5,
+    "beta": 1.5,
+    "rho": null,
+    "spin_mode": "same"
+  },
+  "flow": [
+    {
+      "step": 1,
+      "R": 0.5815725884488188,
+      "n_clusters": 45,
+      "rho_before": 0.16275839911635331,
+      "beta_before": 1.5,
+      "rho_after": 1.5168218247321223,
+      "beta_after": 1.0,
+      "rho_scale_best": 1.45,
+      "beta_grid_choice": 1.0,
+      "lsq": 0.00011226711120649456,
+      "spectral_dim": -0.03963583851025454,
+      "mds_stress": 0.48395729412912775,
+      "rank_cm": 0.7777777777777778,
+      "n_after": 45
+    },
+    {
+      "step": 2,
+      "R": 1.126144690740804,
+      "n_clusters": 6,
+      "rho_before": 1.0460840170566361,
+      "beta_before": 1.0,
+      "rho_after": 2.479742049168813,
+      "beta_after": 1.6,
+      "rho_scale_best": 1.45,
+      "beta_grid_choice": 1.6,
+      "lsq": 6.029503076843609e-09,
+      "spectral_dim": -0.007388815577187562,
+      "mds_stress": 0.0982910750025979,
+      "rank_cm": 0.6666666666666666,
+      "n_after": 6
+    },
+    {
+      "step": 3,
+      "R": 1.2595243971366528,
+      "n_clusters": 2,
+      "rho_before": 1.7101669304612503,
+      "beta_before": 1.6,
+      "rho_after": 2.9586022869425452,
+      "beta_after": 1.4,
+      "rho_scale_best": 1.15,
+      "beta_grid_choice": 1.4,
+      "lsq": 1.5624494901232913e-10,
+      "spectral_dim": -0.0022171437761013065,
+      "mds_stress": 8.388198397552648e-16,
+      "rank_cm": 0.5,
+      "n_after": 2
+    }
+  ]
+}

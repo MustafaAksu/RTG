@@ -1,0 +1,143 @@
+{
+  "kernel_file": "K_4096_same_rho1p16_a2p55_b1p50.npy",
+  "n": 3072,
+  "subsample_applied": true,
+  "levels": [
+    {
+      "threshold": 0.00515394625719638,
+      "n": 3072,
+      "m_edges": 40454,
+      "beta0": 111,
+      "beta1_graph": 37493,
+      "triangles": 254229,
+      "beta1_clique_approx": -216736
+    },
+    {
+      "threshold": 9.615187644840284e-07,
+      "n": 3072,
+      "m_edges": 268728,
+      "beta0": 14,
+      "beta1_graph": 265670,
+      "triangles": 11575045,
+      "beta1_clique_approx": -11309375
+    },
+    {
+      "threshold": 3.68999013440024e-09,
+      "n": 3072,
+      "m_edges": 497002,
+      "beta0": 7,
+      "beta1_graph": 493937,
+      "triangles": 40316964,
+      "beta1_clique_approx": -39823027
+    },
+    {
+      "threshold": 3.290771225953188e-11,
+      "n": 3072,
+      "m_edges": 725276,
+      "beta0": 1,
+      "beta1_graph": 722205,
+      "triangles": 87247553,
+      "beta1_clique_approx": -86525348
+    },
+    {
+      "threshold": 4.223028368824176e-13,
+      "n": 3072,
+      "m_edges": 953549,
+      "beta0": 1,
+      "beta1_graph": 950478,
+      "triangles": 152952873,
+      "beta1_clique_approx": -152002395
+    },
+    {
+      "threshold": 6.5940256252787144e-15,
+      "n": 3072,
+      "m_edges": 1181823,
+      "beta0": 1,
+      "beta1_graph": 1178752,
+      "triangles": 238052820,
+      "beta1_clique_approx": -236874068
+    },
+    {
+      "threshold": 1.1122372031774135e-16,
+      "n": 3072,
+      "m_edges": 1410097,
+      "beta0": 1,
+      "beta1_graph": 1407026,
+      "triangles": 343149484,
+      "beta1_clique_approx": -341742458
+    },
+    {
+      "threshold": 1.8946238917952204e-18,
+      "n": 3072,
+      "m_edges": 1638371,
+      "beta0": 1,
+      "beta1_graph": 1635300,
+      "triangles": 469172986,
+      "beta1_clique_approx": -467537686
+    },
+    {
+      "threshold": 3.072695884985863e-20,
+      "n": 3072,
+      "m_edges": 1866645,
+      "beta0": 1,
+      "beta1_graph": 1863574,
+      "triangles": 616362724,
+      "beta1_clique_approx": -614499150
+    },
+    {
+      "threshold": 4.414214632615601e-22,
+      "n": 3072,
+      "m_edges": 2094919,
+      "beta0": 1,
+      "beta1_graph": 2091848,
+      "triangles": 785976542,
+      "beta1_clique_approx": -783884694
+    },
+    {
+      "threshold": 5.382738860309258e-24,
+      "n": 3072,
+      "m_edges": 2323192,
+      "beta0": 1,
+      "beta1_graph": 2320121,
+      "triangles": 978646479,
+      "beta1_clique_approx": -976326358
+    },
+    {
+      "threshold": 5.304078512248752e-26,
+      "n": 3072,
+      "m_edges": 2551466,
+      "beta0": 1,
+      "beta1_graph": 2548395,
+      "triangles": 1195309386,
+      "beta1_clique_approx": -1192760991
+    },
+    {
+      "threshold": 3.725841101788075e-28,
+      "n": 3072,
+      "m_edges": 2779740,
+      "beta0": 1,
+      "beta1_graph": 2776669,
+      "triangles": 1437152126,
+      "beta1_clique_approx": -1434375457
+    },
+    {
+      "threshold": 1.79305912923626e-30,
+      "n": 3072,
+      "m_edges": 3008014,
+      "beta0": 1,
+      "beta1_graph": 3004943,
+      "triangles": 1705413335,
+      "beta1_clique_approx": -1702408392
+    },
+    {
+      "threshold": 5.045795174567269e-33,
+      "n": 3072,
+      "m_edges": 3236288,
+      "beta0": 1,
+      "beta1_graph": 3233217,
+      "triangles": 2001846495,
+      "beta1_clique_approx": -1998613278
+    }
+  ],
+  "created_utc": "2025-08-26 13:18:58"
+}

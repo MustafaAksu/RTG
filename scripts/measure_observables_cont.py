@@ -52,6 +52,29 @@ for fn in cfgs:
 
 radii, chshs = np.asarray(radii), np.asarray(chshs)
 
+# --- quick Γ–method estimate of τ_int (Wolff 2004) -----------------------------
+def tau_int(series, max_lag=None):
+    """Return τ_int in units of configs using Γ-method truncation."""
+    x = np.asarray(series) - np.mean(series)
+    N = len(x)
+    if max_lag is None:
+        max_lag = min(N // 2, 1000)
+    acf = [1.0]
+    for t in range(1, max_lag):
+        acf.append(np.dot(x[:-t], x[t:]) / np.dot(x, x))
+        if acf[-1] + acf[-2] < 0:  # automatic window criterion
+            break
+    tau = 0.5 + np.sum(acf[1:])
+    return max(tau, 0.5)
+
+tau_cfg = tau_int(chshs)
+N_eff = len(chshs) / (2 * tau_cfg)
+err_chsh = chshs.std(ddof=1) / np.sqrt(N_eff)
+err_radius = radii.std(ddof=1) / np.sqrt(len(radii))
+
+# ---------- print summary (corrected errors) ------------------------------------
 print(f"Loaded {len(cfgs)} configs, lattice {args.L}³")
-print(f"Proton circ-radius ⟨r⟩ = {radii.mean():6.3f} ± {radii.std(ddof=1):6.3f} fm")
-print(f"CHSH (σ={args.noise})      = {chshs.mean():6.3f} ± {chshs.std(ddof=1):6.3f}")
+print(f"Proton circ-radius ⟨r⟩ = {radii.mean():6.3f} ± {err_radius:.3e} fm "
+      f"(scatter {radii.std(ddof=1):.3e})")
+print(f"CHSH (σ={args.noise}) = {chshs.mean():6.3f} ± {err_chsh:.3e}   "
+      f"[τ_int ≈ {tau_cfg:.1f} cfg,  N_eff ≈ {N_eff:.0f}]")

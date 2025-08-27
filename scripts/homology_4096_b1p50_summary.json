@@ -1,0 +1,19 @@
+{
+  "kernel_file": "K_4096_same_rho1p16_a2p55_b1p50.npy",
+  "n": 4096,
+  "backend": "numpy",
+  "levels": 32,
+  "edge_frac": 0.02,
+  "head": {
+    "edge_index": 1,
+    "edges_used": 1,
+    "betti0": 4095,
+    "betti1": 0
+  },
+  "tail": {
+    "edge_index": 167731,
+    "edges_used": 167731,
+    "betti0": 52,
+    "betti1": 163687
+  }
+}

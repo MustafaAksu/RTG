@@ -1,0 +1,37 @@
+{
+  "kernel_file": "K_8192_same_rho1p16_a2p55_b1p50.npy",
+  "n": 8192,
+  "edge_frac": 0.02,
+  "subsample": 512,
+  "mds_results": [
+    {
+      "k": 2,
+      "stress": NaN
+    },
+    {
+      "k": 3,
+      "stress": NaN
+    },
+    {
+      "k": 4,
+      "stress": NaN
+    },
+    {
+      "k": 5,
+      "stress": NaN
+    },
+    {
+      "k": 6,
+      "stress": NaN
+    },
+    {
+      "k": 7,
+      "stress": NaN
+    },
+    {
+      "k": 8,
+      "stress": NaN
+    }
+  ],
+  "backend": "numpy"
+}

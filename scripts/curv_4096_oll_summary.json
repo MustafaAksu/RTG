@@ -1,0 +1,21 @@
+{
+  "kernel_file": "K_4096_same_rho1p16_a2p55_b1p50.npy",
+  "n": 4096,
+  "edge_threshold": 0.5,
+  "forman": {
+    "node_mean": -0.15439323853934184,
+    "node_std": 5.197356715663972,
+    "edge_mean": -0.40382803643495796,
+    "edge_std": 4.606152648473671,
+    "edges": 783
+  },
+  "ollivier": {
+    "enabled": true,
+    "edges_evaluated": 783,
+    "kappa_mean": 0.08962932616891194,
+    "kappa_std": 0.2075173134975163,
+    "alpha_self_mass": 0.0,
+    "fast_heuristic": false
+  },
+  "created_utc": "2025-08-26 13:04:05"
+}

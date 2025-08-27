@@ -1,0 +1,197 @@
+{
+  "kernel_file": "K_4096_same_rho1p16_a2p55_b1p50.npy",
+  "n": 4096,
+  "subsample_applied": false,
+  "levels": [
+    {
+      "threshold": 0.004918152573518403,
+      "n": 4096,
+      "m_edges": 71906,
+      "beta0": 124,
+      "beta1_graph": 67934,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 3.3900759483458515e-06,
+      "n": 4096,
+      "m_edges": 391888,
+      "beta0": 11,
+      "beta1_graph": 387803,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 2.8496585528614506e-08,
+      "n": 4096,
+      "m_edges": 711869,
+      "beta0": 4,
+      "beta1_graph": 707777,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 5.176360876602006e-10,
+      "n": 4096,
+      "m_edges": 1031850,
+      "beta0": 1,
+      "beta1_graph": 1027755,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 1.3453702381316379e-11,
+      "n": 4096,
+      "m_edges": 1351832,
+      "beta0": 1,
+      "beta1_graph": 1347737,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 4.3135310393829656e-13,
+      "n": 4096,
+      "m_edges": 1671813,
+      "beta0": 1,
+      "beta1_graph": 1667718,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 1.574789232258168e-14,
+      "n": 4096,
+      "m_edges": 1991794,
+      "beta0": 1,
+      "beta1_graph": 1987699,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 6.124448761529619e-16,
+      "n": 4096,
+      "m_edges": 2311776,
+      "beta0": 1,
+      "beta1_graph": 2307681,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 2.4740904822046593e-17,
+      "n": 4096,
+      "m_edges": 2631757,
+      "beta0": 1,
+      "beta1_graph": 2627662,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 9.877676192474364e-19,
+      "n": 4096,
+      "m_edges": 2951738,
+      "beta0": 1,
+      "beta1_graph": 2947643,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 3.83169565364266e-20,
+      "n": 4096,
+      "m_edges": 3271719,
+      "beta0": 1,
+      "beta1_graph": 3267624,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 1.3780655087683242e-21,
+      "n": 4096,
+      "m_edges": 3591701,
+      "beta0": 1,
+      "beta1_graph": 3587606,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 4.5346397038466744e-23,
+      "n": 4096,
+      "m_edges": 3911682,
+      "beta0": 1,
+      "beta1_graph": 3907587,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 1.3438995686731632e-24,
+      "n": 4096,
+      "m_edges": 4231663,
+      "beta0": 1,
+      "beta1_graph": 4227568,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 3.431081368222676e-26,
+      "n": 4096,
+      "m_edges": 4551645,
+      "beta0": 1,
+      "beta1_graph": 4547550,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 7.207522894176417e-28,
+      "n": 4096,
+      "m_edges": 4871626,
+      "beta0": 1,
+      "beta1_graph": 4867531,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 1.2038282662374202e-29,
+      "n": 4096,
+      "m_edges": 5191607,
+      "beta0": 1,
+      "beta1_graph": 5187512,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 1.4805218419003511e-31,
+      "n": 4096,
+      "m_edges": 5511589,
+      "beta0": 1,
+      "beta1_graph": 5507494,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 1.2568571745869126e-33,
+      "n": 4096,
+      "m_edges": 5831570,
+      "beta0": 1,
+      "beta1_graph": 5827475,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 6.58905231999521e-36,
+      "n": 4096,
+      "m_edges": 6151551,
+      "beta0": 1,
+      "beta1_graph": 6147456,
+      "triangles": null,
+      "beta1_clique_approx": null
+    },
+    {
+      "threshold": 1.8372839931017064e-38,
+      "n": 4096,
+      "m_edges": 6471532,
+      "beta0": 1,
+      "beta1_graph": 6467437,
+      "triangles": null,
+      "beta1_clique_approx": null
+    }
+  ],
+  "created_utc": "2025-08-26 13:06:03"
+}

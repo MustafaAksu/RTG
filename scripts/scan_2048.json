@@ -1,0 +1,2030 @@
+{
+  "attrs": "attrs_2048.npz",
+  "scan": [
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.3,
+      "spectral_dim": -17.94103201672965,
+      "mds_stress": 0.780871194396357
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.7,
+      "spectral_dim": -0.033466350781447975,
+      "mds_stress": 0.902979048740506
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 1.1,
+      "spectral_dim": -0.023624192361148558,
+      "mds_stress": 0.9672129928337494
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 1.5,
+      "spectral_dim": -0.019801907094084185,
+      "mds_stress": 0.9890109217023751
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 2.0,
+      "spectral_dim": -0.017299247586495932,
+      "mds_stress": 0.9916968439551261
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.3,
+      "spectral_dim": -15.579418964068866,
+      "mds_stress": 0.7914003338164055
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.7,
+      "spectral_dim": -0.0298619830155843,
+      "mds_stress": 0.9071318442265452
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 1.1,
+      "spectral_dim": -0.02124662764928819,
+      "mds_stress": 0.9702961118766085
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 1.5,
+      "spectral_dim": -0.01777475253404156,
+      "mds_stress": 0.9904122998732302
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 2.0,
+      "spectral_dim": -0.015497829131854471,
+      "mds_stress": 0.992123777013765
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.3,
+      "spectral_dim": -14.007098159171676,
+      "mds_stress": 0.7846661358038922
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.7,
+      "spectral_dim": -0.028049021778573734,
+      "mds_stress": 0.9100182241406154
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 1.1,
+      "spectral_dim": -0.01982471110665549,
+      "mds_stress": 0.9719248250154106
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 1.5,
+      "spectral_dim": -0.016500787106118932,
+      "mds_stress": 0.9908754418984594
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 2.0,
+      "spectral_dim": -0.014349789818629726,
+      "mds_stress": 0.9926937170693405
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.3,
+      "spectral_dim": -22.980124391518054,
+      "mds_stress": 0.7675763068318177
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.7,
+      "spectral_dim": -0.06133397421046595,
+      "mds_stress": 0.8703341606606421
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 1.1,
+      "spectral_dim": -0.03608690228486105,
+      "mds_stress": 0.9441088353343869
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 1.5,
+      "spectral_dim": -0.03323147604023086,
+      "mds_stress": 0.9717457815590655
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 2.0,
+      "spectral_dim": -0.03140898937030943,
+      "mds_stress": 0.9825225055368656
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.3,
+      "spectral_dim": -20.113326070068215,
+      "mds_stress": 0.7766001747889917
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.7,
+      "spectral_dim": -0.05139241414619694,
+      "mds_stress": 0.8762736731959455
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 1.1,
+      "spectral_dim": -0.03239871780555662,
+      "mds_stress": 0.9459209263044169
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 1.5,
+      "spectral_dim": -0.029829280671287636,
+      "mds_stress": 0.974255658022818
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 2.0,
+      "spectral_dim": -0.028170748449594683,
+      "mds_stress": 0.9845943135885669
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.3,
+      "spectral_dim": -18.201751868987518,
+      "mds_stress": 0.7686168660840867
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.7,
+      "spectral_dim": -0.04646637550705779,
+      "mds_stress": 0.8804084118220942
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 1.1,
+      "spectral_dim": -0.030368443864432108,
+      "mds_stress": 0.9471654666760178
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 1.5,
+      "spectral_dim": -0.02776795682317337,
+      "mds_stress": 0.9755583308741942
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 2.0,
+      "spectral_dim": -0.026151203231634588,
+      "mds_stress": 0.9861176186277811
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.3,
+      "spectral_dim": -27.270635010224932,
+      "mds_stress": 0.757636847704773
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.7,
+      "spectral_dim": -0.18152098249369353,
+      "mds_stress": 0.8409256684917703
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 1.1,
+      "spectral_dim": -0.0496805118188429,
+      "mds_stress": 0.9220469740574002
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 1.5,
+      "spectral_dim": -0.047213303144386695,
+      "mds_stress": 0.9557381985422256
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 2.0,
+      "spectral_dim": -0.0470003632885939,
+      "mds_stress": 0.9696381186648602
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.3,
+      "spectral_dim": -23.97933864961711,
+      "mds_stress": 0.7652257931895785
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.7,
+      "spectral_dim": -0.1267793315474641,
+      "mds_stress": 0.8484616746582971
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 1.1,
+      "spectral_dim": -0.04433135811802303,
+      "mds_stress": 0.9251946080120692
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 1.5,
+      "spectral_dim": -0.04227197050332641,
+      "mds_stress": 0.9570954226536621
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 2.0,
+      "spectral_dim": -0.042095994989384426,
+      "mds_stress": 0.9702709068862628
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.3,
+      "spectral_dim": -21.782337534162874,
+      "mds_stress": 0.7562219421827249
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.7,
+      "spectral_dim": -0.10173033578410053,
+      "mds_stress": 0.8537104277379931
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 1.1,
+      "spectral_dim": -0.04157667936139594,
+      "mds_stress": 0.9273959040221754
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 1.5,
+      "spectral_dim": -0.03945692923429074,
+      "mds_stress": 0.958038894751381
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 2.0,
+      "spectral_dim": -0.039136273745296137,
+      "mds_stress": 0.9735004623966618
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.3,
+      "spectral_dim": -31.007358180681184,
+      "mds_stress": 0.7497757506833589
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.7,
+      "spectral_dim": -0.7922814239728668,
+      "mds_stress": 0.8147968678191644
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 1.1,
+      "spectral_dim": -0.06727250874096206,
+      "mds_stress": 0.8992621424126057
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 1.5,
+      "spectral_dim": -0.06204613313952173,
+      "mds_stress": 0.9360151431411716
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 2.0,
+      "spectral_dim": -0.06320190579608681,
+      "mds_stress": 0.9564633313157634
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.3,
+      "spectral_dim": -27.350856190800062,
+      "mds_stress": 0.7560225195191196
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.7,
+      "spectral_dim": -0.508530664589968,
+      "mds_stress": 0.8237583612247423
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 1.1,
+      "spectral_dim": -0.05907645562230629,
+      "mds_stress": 0.9036411609652576
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 1.5,
+      "spectral_dim": -0.055261189344264446,
+      "mds_stress": 0.9378931956877282
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 2.0,
+      "spectral_dim": -0.05639296998671017,
+      "mds_stress": 0.9579094434855318
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.3,
+      "spectral_dim": -24.90743227317621,
+      "mds_stress": 0.7461514643512719
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.7,
+      "spectral_dim": -0.36441099531608434,
+      "mds_stress": 0.829998864935468
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 1.1,
+      "spectral_dim": -0.05495960437538786,
+      "mds_stress": 0.9067035130759582
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 1.5,
+      "spectral_dim": -0.05165830513824176,
+      "mds_stress": 0.9392441882419758
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 2.0,
+      "spectral_dim": -0.052504488960878386,
+      "mds_stress": 0.9589328930810277
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.3,
+      "spectral_dim": -35.83751764516413,
+      "mds_stress": 0.7404872215635331
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.7,
+      "spectral_dim": -2.9266897208255376,
+      "mds_stress": 0.7810447482081707
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 1.1,
+      "spectral_dim": -0.12045943731354047,
+      "mds_stress": 0.8648464674140993
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 1.5,
+      "spectral_dim": -0.09058695334121214,
+      "mds_stress": 0.906326780296426
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 2.0,
+      "spectral_dim": -0.09032217358114596,
+      "mds_stress": 0.932530558703053
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.3,
+      "spectral_dim": -31.717326537202972,
+      "mds_stress": 0.7448860528785518
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.7,
+      "spectral_dim": -2.2485200743167733,
+      "mds_stress": 0.7918813157783888
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 1.1,
+      "spectral_dim": -0.09883945582197835,
+      "mds_stress": 0.8710087619982877
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 1.5,
+      "spectral_dim": -0.07919015520402965,
+      "mds_stress": 0.9102998507749203
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 2.0,
+      "spectral_dim": -0.07972637094323203,
+      "mds_stress": 0.9344719771869698
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.3,
+      "spectral_dim": -28.95888341505293,
+      "mds_stress": 0.7339156395258228
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.7,
+      "spectral_dim": -1.8133212525645626,
+      "mds_stress": 0.799420172017694
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 1.1,
+      "spectral_dim": -0.08810263981740811,
+      "mds_stress": 0.8753174720726996
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 1.5,
+      "spectral_dim": -0.07346996519223097,
+      "mds_stress": 0.9130899678541254
+    },
+    {
+      "spin_mode": "same",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 2.0,
+      "spectral_dim": -0.07422791732559297,
+      "mds_stress": 0.9355837912049625
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -17.94103201672965,
+      "mds_stress": 0.780871194396357
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.033466350781447975,
+      "mds_stress": 0.902979048740506
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.023624192361148558,
+      "mds_stress": 0.9672129928337494
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.019801907094084185,
+      "mds_stress": 0.9890109217023751
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.017299247586495932,
+      "mds_stress": 0.9916968439551261
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -17.94103201672965,
+      "mds_stress": 0.780871194396357
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.033466350781447975,
+      "mds_stress": 0.902979048740506
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.023624192361148558,
+      "mds_stress": 0.9672129928337494
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.019801907094084185,
+      "mds_stress": 0.9890109217023751
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.017299247586495932,
+      "mds_stress": 0.9916968439551261
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -17.94103201672965,
+      "mds_stress": 0.780871194396357
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.033466350781447975,
+      "mds_stress": 0.902979048740506
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.023624192361148558,
+      "mds_stress": 0.9672129928337494
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.019801907094084185,
+      "mds_stress": 0.9890109217023751
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.017299247586495932,
+      "mds_stress": 0.9916968439551261
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -22.980124391518054,
+      "mds_stress": 0.7675763068318177
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.06133397421046595,
+      "mds_stress": 0.8703341606606421
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.03608690228486105,
+      "mds_stress": 0.9441088353343869
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.03323147604023086,
+      "mds_stress": 0.9717457815590655
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.03140898937030943,
+      "mds_stress": 0.9825225055368656
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -22.980124391518054,
+      "mds_stress": 0.7675763068318177
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.06133397421046595,
+      "mds_stress": 0.8703341606606421
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.03608690228486105,
+      "mds_stress": 0.9441088353343869
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.03323147604023086,
+      "mds_stress": 0.9717457815590655
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.03140898937030943,
+      "mds_stress": 0.9825225055368656
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -22.980124391518054,
+      "mds_stress": 0.7675763068318177
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.06133397421046595,
+      "mds_stress": 0.8703341606606421
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.03608690228486105,
+      "mds_stress": 0.9441088353343869
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.03323147604023086,
+      "mds_stress": 0.9717457815590655
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.03140898937030943,
+      "mds_stress": 0.9825225055368656
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -27.270635010224932,
+      "mds_stress": 0.757636847704773
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.18152098249369353,
+      "mds_stress": 0.8409256684917703
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.0496805118188429,
+      "mds_stress": 0.9220469740574002
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.047213303144386695,
+      "mds_stress": 0.9557381985422256
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.0470003632885939,
+      "mds_stress": 0.9696381186648602
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -27.270635010224932,
+      "mds_stress": 0.757636847704773
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.18152098249369353,
+      "mds_stress": 0.8409256684917703
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.0496805118188429,
+      "mds_stress": 0.9220469740574002
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.047213303144386695,
+      "mds_stress": 0.9557381985422256
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.0470003632885939,
+      "mds_stress": 0.9696381186648602
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -27.270635010224932,
+      "mds_stress": 0.757636847704773
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.18152098249369353,
+      "mds_stress": 0.8409256684917703
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.0496805118188429,
+      "mds_stress": 0.9220469740574002
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.047213303144386695,
+      "mds_stress": 0.9557381985422256
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.0470003632885939,
+      "mds_stress": 0.9696381186648602
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -31.007358180681184,
+      "mds_stress": 0.7497757506833589
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.7922814239728668,
+      "mds_stress": 0.8147968678191644
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.06727250874096206,
+      "mds_stress": 0.8992621424126057
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.06204613313952173,
+      "mds_stress": 0.9360151431411716
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.06320190579608681,
+      "mds_stress": 0.9564633313157634
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -31.007358180681184,
+      "mds_stress": 0.7497757506833589
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.7922814239728668,
+      "mds_stress": 0.8147968678191644
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.06727250874096206,
+      "mds_stress": 0.8992621424126057
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.06204613313952173,
+      "mds_stress": 0.9360151431411716
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.06320190579608681,
+      "mds_stress": 0.9564633313157634
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -31.007358180681184,
+      "mds_stress": 0.7497757506833589
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.7922814239728668,
+      "mds_stress": 0.8147968678191644
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.06727250874096206,
+      "mds_stress": 0.8992621424126057
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.06204613313952173,
+      "mds_stress": 0.9360151431411716
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.06320190579608681,
+      "mds_stress": 0.9564633313157634
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -35.83751764516413,
+      "mds_stress": 0.7404872215635331
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -2.9266897208255376,
+      "mds_stress": 0.7810447482081707
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.12045943731354047,
+      "mds_stress": 0.8648464674140993
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.09058695334121214,
+      "mds_stress": 0.906326780296426
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.09032217358114596,
+      "mds_stress": 0.932530558703053
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -35.83751764516413,
+      "mds_stress": 0.7404872215635331
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -2.9266897208255376,
+      "mds_stress": 0.7810447482081707
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.12045943731354047,
+      "mds_stress": 0.8648464674140993
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.09058695334121214,
+      "mds_stress": 0.906326780296426
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.09032217358114596,
+      "mds_stress": 0.932530558703053
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -35.83751764516413,
+      "mds_stress": 0.7404872215635331
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -2.9266897208255376,
+      "mds_stress": 0.7810447482081707
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.12045943731354047,
+      "mds_stress": 0.8648464674140993
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.09058695334121214,
+      "mds_stress": 0.906326780296426
+    },
+    {
+      "spin_mode": "none",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.09032217358114596,
+      "mds_stress": 0.932530558703053
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -17.94103201672965,
+      "mds_stress": 0.780871194396357
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.033466350781447975,
+      "mds_stress": 0.902979048740506
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.023624192361148558,
+      "mds_stress": 0.9672129928337494
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.019801907094084185,
+      "mds_stress": 0.9890109217023751
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.017299247586495932,
+      "mds_stress": 0.9916968439551261
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -13.224762228178793,
+      "mds_stress": 0.8046310693124851
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.026196311556476757,
+      "mds_stress": 0.9115284153770287
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.018874398686815452,
+      "mds_stress": 0.9706251152533466
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.015761238550975713,
+      "mds_stress": 0.9905080381294598
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.013719561337947482,
+      "mds_stress": 0.9920430869265545
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -10.09328915645398,
+      "mds_stress": 0.8216761420291354
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.022656118499067797,
+      "mds_stress": 0.9177690584960597
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.016075420580216774,
+      "mds_stress": 0.972320696338786
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.013263027080182491,
+      "mds_stress": 0.9909828726012073
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.09765503946981198,
+      "rho_scale": 0.6,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.01147065419420063,
+      "mds_stress": 0.9930310343946163
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -22.980124391518054,
+      "mds_stress": 0.7675763068318177
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.06133397421046595,
+      "mds_stress": 0.8703341606606421
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.03608690228486105,
+      "mds_stress": 0.9441088353343869
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.03323147604023086,
+      "mds_stress": 0.9717457815590655
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.03140898937030943,
+      "mds_stress": 0.9825225055368656
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -17.249843045120894,
+      "mds_stress": 0.7933367482186074
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.04271948535550243,
+      "mds_stress": 0.8825462565425195
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.02870812219876508,
+      "mds_stress": 0.9488796485853025
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.02646940206235753,
+      "mds_stress": 0.9735185135668929
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.024980826325487426,
+      "mds_stress": 0.9880966555946612
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -13.435511459008513,
+      "mds_stress": 0.8117217140102632
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.03480657451890738,
+      "mds_stress": 0.8914955843598834
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.024627569547023286,
+      "mds_stress": 0.9523932484245673
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.022449849194264494,
+      "mds_stress": 0.9748638529446688
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.13020671929308267,
+      "rho_scale": 0.8,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.02104902454243998,
+      "mds_stress": 0.9882000989079087
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -27.270635010224932,
+      "mds_stress": 0.757636847704773
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.18152098249369353,
+      "mds_stress": 0.8409256684917703
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.0496805118188429,
+      "mds_stress": 0.9220469740574002
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.047213303144386695,
+      "mds_stress": 0.9557381985422256
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.0470003632885939,
+      "mds_stress": 0.9696381186648602
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -20.68760087770394,
+      "mds_stress": 0.7849894331497769
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.08962125908225803,
+      "mds_stress": 0.8564164019680648
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.03894377554796214,
+      "mds_stress": 0.9288046057545187
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.037419480777440964,
+      "mds_stress": 0.9590550036299549
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.037308420616635515,
+      "mds_stress": 0.9709084767804763
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -16.29509089319874,
+      "mds_stress": 0.8044199403469563
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.060153917155188176,
+      "mds_stress": 0.8677866611144206
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.03338599806070854,
+      "mds_stress": 0.9338311090286233
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.031871847606620575,
+      "mds_stress": 0.9614939166602572
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.16275839911635331,
+      "rho_scale": 1.0,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.03158022742671789,
+      "mds_stress": 0.9739979445809306
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -31.007358180681184,
+      "mds_stress": 0.7497757506833589
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.7922814239728668,
+      "mds_stress": 0.8147968678191644
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.06727250874096206,
+      "mds_stress": 0.8992621424126057
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.06204613313952173,
+      "mds_stress": 0.9360151431411716
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.06320190579608681,
+      "mds_stress": 0.9564633313157634
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -23.689282021187466,
+      "mds_stress": 0.7784587058925042
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.3043933237024565,
+      "mds_stress": 0.8332141809487458
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.050998777050442,
+      "mds_stress": 0.9084037914042645
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.048572996497585175,
+      "mds_stress": 0.9418767676582793
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.04980966865680516,
+      "mds_stress": 0.9596702880235987
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -18.79667508275228,
+      "mds_stress": 0.7987480943068396
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.14795106287963553,
+      "mds_stress": 0.8467355833650021
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.04311358320052772,
+      "mds_stress": 0.9151624819289709
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.04135819704234331,
+      "mds_stress": 0.945996332354074
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.19531007893962396,
+      "rho_scale": 1.2,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.04222871412816414,
+      "mds_stress": 0.9620357835902341
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -35.83751764516413,
+      "mds_stress": 0.7404872215635331
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -2.9266897208255376,
+      "mds_stress": 0.7810447482081707
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.12045943731354047,
+      "mds_stress": 0.8648464674140993
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.09058695334121214,
+      "mds_stress": 0.906326780296426
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.0,
+      "beta": 0.0,
+      "spectral_dim": -0.09032217358114596,
+      "mds_stress": 0.932530558703053
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -27.582488667627416,
+      "mds_stress": 0.7708385678771703
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -1.6029731942590726,
+      "mds_stress": 0.8033060366522777
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.08034620813020947,
+      "mds_stress": 0.8776035436391281
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.06803121003297362,
+      "mds_stress": 0.914865502812193
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.25,
+      "beta": 0.0,
+      "spectral_dim": -0.06942180070430216,
+      "mds_stress": 0.938302172431167
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -22.047049699239714,
+      "mds_stress": 0.792185538344848
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.8363266689762445,
+      "mds_stress": 0.81963135666719
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.06344129473420278,
+      "mds_stress": 0.8870393710929346
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.057004711336594883,
+      "mds_stress": 0.9212459310205721
+    },
+    {
+      "spin_mode": "phase-encode-opp",
+      "rho": 0.24413759867452997,
+      "rho_scale": 1.5,
+      "a2": 0.5,
+      "beta": 0.0,
+      "spectral_dim": -0.058510128859652705,
+      "mds_stress": 0.9425817733695164
+    }
+  ]
+}

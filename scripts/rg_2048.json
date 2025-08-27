@@ -1,0 +1,45 @@
+{
+  "attrs": "attrs_2048.npz",
+  "initial": {
+    "a0": 1.0,
+    "a1": 1.0,
+    "a2": 0.5,
+    "beta": 1.5,
+    "rho": null,
+    "spin_mode": "same"
+  },
+  "flow": [
+    {
+      "step": 1,
+      "R": 0.5815725884488188,
+      "n_clusters": 45,
+      "rho_before": 0.16275839911635331,
+      "beta_before": 1.5,
+      "rho_after": 1.4645176238792905,
+      "beta_after": 1.1,
+      "rho_scale_best": 1.4,
+      "beta_grid_choice": 1.1,
+      "lsq": 0.0001352920533118556,
+      "spectral_dim": -0.03323463125596621,
+      "mds_stress": 0.48195667265479225,
+      "rank_cm": 0.7555555555555555,
+      "n_after": 45
+    },
+    {
+      "step": 2,
+      "R": 1.126144690740804,
+      "n_clusters": 6,
+      "rho_before": 1.0460840170566361,
+      "beta_before": 1.1,
+      "rho_after": 2.3942337026457503,
+      "beta_after": 2.0,
+      "rho_scale_best": 1.4,
+      "beta_grid_choice": 2.0,
+      "lsq": 6.415355197969127e-08,
+      "spectral_dim": -0.007022952691303512,
+      "mds_stress": 0.08718471844424942,
+      "rank_cm": 0.6666666666666666,
+      "n_after": 6
+    }
+  ]
+}

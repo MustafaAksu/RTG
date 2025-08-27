@@ -1,0 +1,41 @@
+{
+  "attrs": "attrs_torus.npz",
+  "initial": {
+    "a0": 1.0,
+    "a1": 1.0,
+    "a2": 0.5,
+    "beta": 1.5,
+    "rho": null,
+    "spin_mode": "same"
+  },
+  "flow": [
+    {
+      "R": 1.3825998481505817,
+      "n_clusters": 4,
+      "rho_before": 0.5286421735287455,
+      "beta_before": 1.5,
+      "rho_after": 1.5859265205862365,
+      "beta_after": 1.521431635590948,
+      "lsq": 0.04007961634648952,
+      "spectral_dim": 0.03621686468581336,
+      "mds_stress": 3.768855670488864e-25,
+      "rank_cm": 1.0,
+      "step": 1,
+      "n_after": 4
+    },
+    {
+      "R": 1.3967923408608485,
+      "n_clusters": 2,
+      "rho_before": 1.5859265205862365,
+      "beta_before": 1.521431635590948,
+      "rho_after": 1.607374027396673,
+      "beta_after": 0.8416896807926131,
+      "lsq": 0.011066628858890848,
+      "spectral_dim": 0.0016101293737491086,
+      "mds_stress": 2.6078274733588884e-25,
+      "rank_cm": 0.0,
+      "step": 2,
+      "n_after": 2
+    }
+  ]
+}

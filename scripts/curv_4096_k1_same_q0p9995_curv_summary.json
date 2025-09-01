@@ -1,0 +1,8 @@
+{
+  "n": 4096,
+  "edges": 4194,
+  "mode": "both",
+  "quantile": 0.9995,
+  "tau": null,
+  "kmax": null
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "kernel": "K_8192_CURRENT.npy",
+    "q": 0.99,
+    "tau": 0.00030965321929073304,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.015205473438012203,
+    "edge_kappa_std": 0.24584563110489496,
+    "approx_used": 0,
+    "edge_csv": "curv_8192_oll_edges_q0.9900.csv",
+    "node_csv": "curv_8192_oll_nodes_q0.9900.csv"
+  },
+  {
+    "kernel": "K_8192_CURRENT.npy",
+    "q": 0.97,
+    "tau": 7.306210909142901e-07,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.007205891697540669,
+    "edge_kappa_std": 0.16624348707712072,
+    "approx_used": 0,
+    "edge_csv": "curv_8192_oll_edges_q0.9700.csv",
+    "node_csv": "curv_8192_oll_nodes_q0.9700.csv"
+  },
+  {
+    "kernel": "K_8192_CURRENT.npy",
+    "q": 0.95,
+    "tau": 9.373729449567901e-09,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": -0.0034071447142865765,
+    "edge_kappa_std": 0.14205214894175008,
+    "approx_used": 0,
+    "edge_csv": "curv_8192_oll_edges_q0.9500.csv",
+    "node_csv": "curv_8192_oll_nodes_q0.9500.csv"
+  }
+]

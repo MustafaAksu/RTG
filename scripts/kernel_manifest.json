@@ -1,3 +1,13 @@
-{"kernel":"RTG-K1","rho_scale":1.16,"a2":0.55,"beta":1.50,
- "spin_mode":"same","fit_window":"smallt",
- "files":{"2048":"K_2048_CURRENT.npy","4096":"K_4096_CURRENT.npy","8192":"K_8192_CURRENT.npy"}}
+{
+  "kernel": "RTG-K1",
+  "spin_mode": "same",
+  "rho_scale": 1.16,
+  "a2": 0.55,
+  "beta": 1.50,
+  "fit_window": "smallt",
+  "files": {
+    "2048": "K_2048_same_rho1p16_a2p55_b1p50.npy",
+    "4096": "K_4096_same_rho1p16_a2p55_b1p50.npy",
+    "8192": "K_8192_same_rho1p16_a2p55_b1p50.npy"
+  }
+}

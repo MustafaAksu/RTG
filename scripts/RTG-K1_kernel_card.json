@@ -1,0 +1,59 @@
+{
+  "name": "RTG-K1",
+  "rows": [
+    {
+      "kernel": "RTG-K1",
+      "spin_mode": "same",
+      "rho_scale": 1.16,
+      "a2": 0.55,
+      "beta": 1.5,
+      "fit_window": "smallt",
+      "n": 2048,
+      "kernel_file": "K_2048_CURRENT.npy",
+      "smallt_sdim": -0.011742075633488459,
+      "smallt_se": 9.766945444923865e-06,
+      "smallt_intercept": 0.018453247822447717,
+      "smallt_slope": 0.00352430170412937,
+      "mds_stress_smallt": 0.9433317132219565,
+      "tfine_sdim": -0.05266370485830537,
+      "tfine_se": 0.0001406943011551073,
+      "mds_stress_tfine": 0.9433317132219565
+    },
+    {
+      "kernel": "RTG-K1",
+      "spin_mode": "same",
+      "rho_scale": 1.16,
+      "a2": 0.55,
+      "beta": 1.5,
+      "fit_window": "smallt",
+      "n": 4096,
+      "kernel_file": "K_4096_CURRENT.npy",
+      "smallt_sdim": -0.04355970028418384,
+      "smallt_se": 0.0001456463839842607,
+      "smallt_intercept": 0.0580767609974866,
+      "smallt_slope": 0.011060002893634572,
+      "mds_stress_smallt": 0.9662998333841258,
+      "tfine_sdim": -0.14891293959165172,
+      "tfine_se": 0.0008342480801961683,
+      "mds_stress_tfine": 0.9662998333841258
+    },
+    {
+      "kernel": "RTG-K1",
+      "spin_mode": "same",
+      "rho_scale": 1.16,
+      "a2": 0.55,
+      "beta": 1.5,
+      "fit_window": "smallt",
+      "n": 8192,
+      "kernel_file": "K_8192_CURRENT.npy",
+      "smallt_sdim": -0.07477039155646943,
+      "smallt_se": 0.00014039756670875442,
+      "smallt_intercept": 0.1046568514482464,
+      "smallt_slope": 0.019916095529668637,
+      "mds_stress_smallt": 0.9791606876635998,
+      "tfine_sdim": -0.24261253458594398,
+      "tfine_se": 0.0007730618374032224,
+      "mds_stress_tfine": 0.9791606876635998
+    }
+  ]
+}

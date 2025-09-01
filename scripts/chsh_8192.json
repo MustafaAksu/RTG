@@ -1,0 +1,13 @@
+{
+  "kernel": "K_8192_CURRENT.npy",
+  "attrs": "attrs_8192.npz",
+  "samples": 100000,
+  "best": {
+    "S": 0.6489541466282243,
+    "a": 1.5707963267948966,
+    "ap": 2.2580197197676637,
+    "b": 1.9634954084936207,
+    "bp": 3.043417883165112
+  },
+  "note": "phase-based toy CHSH; not a physical experiment"
+}

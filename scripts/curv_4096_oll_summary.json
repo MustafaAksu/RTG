@@ -1,21 +1,60 @@
-{
-  "kernel_file": "K_4096_same_rho1p16_a2p55_b1p50.npy",
-  "n": 4096,
-  "edge_threshold": 0.5,
-  "forman": {
-    "node_mean": -0.15439323853934184,
-    "node_std": 5.197356715663972,
-    "edge_mean": -0.40382803643495796,
-    "edge_std": 4.606152648473671,
-    "edges": 783
+[
+  {
+    "backend": "numpy",
+    "kernel": "K_4096_CURRENT.npy",
+    "tau": 0.01834619616305857,
+    "method": "ollivier",
+    "n_edges": 39896,
+    "n_nodes": 4096,
+    "edge_mean": 58.148385803088026,
+    "edge_median": 60.0,
+    "edge_pos_frac": 0.9992480449167837,
+    "node_mean": 1132.7578125,
+    "node_median": 569.0,
+    "node_pos_frac": 0.943359375
   },
-  "ollivier": {
-    "enabled": true,
-    "edges_evaluated": 783,
-    "kappa_mean": 0.08962932616891194,
-    "kappa_std": 0.2075173134975163,
-    "alpha_self_mass": 0.0,
-    "fast_heuristic": false
+  {
+    "kernel": "K_4096_CURRENT.npy",
+    "q": 0.99,
+    "tau": 0.003243957928867198,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.9964583912267684,
+    "edge_kappa_std": 0.013478149208772045,
+    "approx_used": 1,
+    "edge_csv": "curv_4096_oll_edges_q0.9900.csv",
+    "node_csv": "curv_4096_oll_nodes_q0.9900.csv"
   },
-  "created_utc": "2025-08-26 13:04:05"
-}
+  {
+    "kernel": "K_4096_CURRENT.npy",
+    "q": 0.97,
+    "tau": 4.542794973392157e-05,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.9985470785564172,
+    "edge_kappa_std": 0.005765748277786598,
+    "approx_used": 1,
+    "edge_csv": "curv_4096_oll_edges_q0.9700.csv",
+    "node_csv": "curv_4096_oll_nodes_q0.9700.csv"
+  },
+  {
+    "kernel": "K_4096_CURRENT.npy",
+    "q": 0.95,
+    "tau": 2.1505243120537422e-06,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.9990370013888361,
+    "edge_kappa_std": 0.003311901196278902,
+    "approx_used": 1,
+    "edge_csv": "curv_4096_oll_edges_q0.9500.csv",
+    "node_csv": "curv_4096_oll_nodes_q0.9500.csv"
+  },
+  {
+    "kernel": "K_4096_CURRENT.npy",
+    "q": 0.9,
+    "tau": 5.488610644971832e-09,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.9994004754708063,
+    "edge_kappa_std": 0.0038392099054403027,
+    "approx_used": 1,
+    "edge_csv": "curv_4096_oll_edges_q0.9000.csv",
+    "node_csv": "curv_4096_oll_nodes_q0.9000.csv"
+  }
+]

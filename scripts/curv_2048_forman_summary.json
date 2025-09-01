@@ -1,0 +1,82 @@
+[
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.99,
+    "tau": 0.015929398526432062,
+    "edges": 20962,
+    "edge_kappa_mean": -4891.582982967935,
+    "edge_kappa_std": 4449.4304397753185,
+    "edge_csv": "curv_2048_forman_edges_q0.9900.csv",
+    "node_csv": "curv_2048_forman_nodes_q0.9900.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.97,
+    "tau": 0.0007560010514279492,
+    "edges": 62884,
+    "edge_kappa_mean": -143512.8098803251,
+    "edge_kappa_std": 149791.68940752436,
+    "edge_csv": "curv_2048_forman_edges_q0.9700.csv",
+    "node_csv": "curv_2048_forman_nodes_q0.9700.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.95,
+    "tau": 8.543676263836168e-05,
+    "edges": 104807,
+    "edge_kappa_mean": -1346673.5827283508,
+    "edge_kappa_std": 1582144.4239010818,
+    "edge_csv": "curv_2048_forman_edges_q0.9500.csv",
+    "node_csv": "curv_2048_forman_nodes_q0.9500.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.9,
+    "tau": 1.1970781564470465e-06,
+    "edges": 209613,
+    "edge_kappa_mean": -89264161.73489527,
+    "edge_kappa_std": 127246746.61382958,
+    "edge_csv": "curv_2048_forman_edges_q0.9000.csv",
+    "node_csv": "curv_2048_forman_nodes_q0.9000.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.99,
+    "tau": 0.015929398526432062,
+    "edges": 20962,
+    "edge_kappa_mean": -4891.582982967935,
+    "edge_kappa_std": 4449.4304397753185,
+    "edge_csv": "curv_2048_forman_edges_q0.9900.csv",
+    "node_csv": "curv_2048_forman_nodes_q0.9900.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.97,
+    "tau": 0.0007560010514279492,
+    "edges": 62884,
+    "edge_kappa_mean": -143512.8098803251,
+    "edge_kappa_std": 149791.68940752436,
+    "edge_csv": "curv_2048_forman_edges_q0.9700.csv",
+    "node_csv": "curv_2048_forman_nodes_q0.9700.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.95,
+    "tau": 8.543676263836168e-05,
+    "edges": 104807,
+    "edge_kappa_mean": -1346673.5827283508,
+    "edge_kappa_std": 1582144.4239010818,
+    "edge_csv": "curv_2048_forman_edges_q0.9500.csv",
+    "node_csv": "curv_2048_forman_nodes_q0.9500.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.9,
+    "tau": 1.1970781564470465e-06,
+    "edges": 209613,
+    "edge_kappa_mean": -89264161.73489527,
+    "edge_kappa_std": 127246746.61382958,
+    "edge_csv": "curv_2048_forman_edges_q0.9000.csv",
+    "node_csv": "curv_2048_forman_nodes_q0.9000.csv"
+  }
+]

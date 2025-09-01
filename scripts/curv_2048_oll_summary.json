@@ -1,0 +1,90 @@
+[
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.99,
+    "tau": 0.015929398526432062,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.9926787047307216,
+    "edge_kappa_std": 0.01943473408238504,
+    "approx_used": 1,
+    "edge_csv": "curv_2048_oll_edges_q0.9900.csv",
+    "node_csv": "curv_2048_oll_nodes_q0.9900.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.97,
+    "tau": 0.0007560010514279492,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.9969675218170759,
+    "edge_kappa_std": 0.010794394608652764,
+    "approx_used": 1,
+    "edge_csv": "curv_2048_oll_edges_q0.9700.csv",
+    "node_csv": "curv_2048_oll_nodes_q0.9700.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.95,
+    "tau": 8.543676263836168e-05,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.9980092132555163,
+    "edge_kappa_std": 0.006243102863772093,
+    "approx_used": 1,
+    "edge_csv": "curv_2048_oll_edges_q0.9500.csv",
+    "node_csv": "curv_2048_oll_nodes_q0.9500.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.9,
+    "tau": 1.1970781564470465e-06,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.9988728349884514,
+    "edge_kappa_std": 0.004163529650164893,
+    "approx_used": 1,
+    "edge_csv": "curv_2048_oll_edges_q0.9000.csv",
+    "node_csv": "curv_2048_oll_nodes_q0.9000.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.99,
+    "tau": 0.015929398526432062,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": -0.01749961753986543,
+    "edge_kappa_std": 0.34173617306679255,
+    "approx_used": 0,
+    "edge_csv": "curv_2048_oll_edges_q0.9900.csv",
+    "node_csv": "curv_2048_oll_nodes_q0.9900.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.97,
+    "tau": 0.0007560010514279492,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.03259746815012856,
+    "edge_kappa_std": 0.2564759289419528,
+    "approx_used": 0,
+    "edge_csv": "curv_2048_oll_edges_q0.9700.csv",
+    "node_csv": "curv_2048_oll_nodes_q0.9700.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.95,
+    "tau": 8.543676263836168e-05,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.0358295530049008,
+    "edge_kappa_std": 0.21631472486303305,
+    "approx_used": 0,
+    "edge_csv": "curv_2048_oll_edges_q0.9500.csv",
+    "node_csv": "curv_2048_oll_nodes_q0.9500.csv"
+  },
+  {
+    "kernel": "K_2048_CURRENT.npy",
+    "q": 0.9,
+    "tau": 1.1970781564470465e-06,
+    "edges_sampled": 20000,
+    "edge_kappa_mean": 0.02188397887661584,
+    "edge_kappa_std": 0.16774475886183046,
+    "approx_used": 0,
+    "edge_csv": "curv_2048_oll_edges_q0.9000.csv",
+    "node_csv": "curv_2048_oll_nodes_q0.9000.csv"
+  }
+]

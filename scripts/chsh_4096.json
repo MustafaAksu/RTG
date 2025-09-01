@@ -1,0 +1,13 @@
+{
+  "kernel": "K_4096_CURRENT.npy",
+  "attrs": "attrs_4096.npz",
+  "samples": 100000,
+  "best": {
+    "S": 0.42415943848587967,
+    "a": 1.8653206380689396,
+    "ap": 0.19634954084936207,
+    "b": 1.3744467859455345,
+    "bp": 0.7853981633974483
+  },
+  "note": "phase-based toy CHSH; not a physical experiment"
+}

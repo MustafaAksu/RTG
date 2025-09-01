@@ -1,0 +1,56 @@
+[
+  {
+    "backend": "numpy",
+    "kernel": "K_4096_CURRENT.npy",
+    "tau": 0.01834619616305857,
+    "method": "forman",
+    "n_edges": 39896,
+    "n_nodes": 4096,
+    "edge_mean": 58.148385803088026,
+    "edge_median": 60.0,
+    "edge_pos_frac": 0.9992480449167837,
+    "node_mean": 1132.7578125,
+    "node_median": 569.0,
+    "node_pos_frac": 0.943359375
+  },
+  {
+    "kernel": "K_4096_CURRENT.npy",
+    "q": 0.99,
+    "tau": 0.003243957928867198,
+    "edges": 83866,
+    "edge_kappa_mean": -32230.62495096538,
+    "edge_kappa_std": 30181.141721340937,
+    "edge_csv": "curv_4096_forman_edges_q0.9900.csv",
+    "node_csv": "curv_4096_forman_nodes_q0.9900.csv"
+  },
+  {
+    "kernel": "K_4096_CURRENT.npy",
+    "q": 0.97,
+    "tau": 4.542794973392157e-05,
+    "edges": 251597,
+    "edge_kappa_mean": -2911846.4816604126,
+    "edge_kappa_std": 3547694.2742211604,
+    "edge_csv": "curv_4096_forman_edges_q0.9700.csv",
+    "node_csv": "curv_4096_forman_nodes_q0.9700.csv"
+  },
+  {
+    "kernel": "K_4096_CURRENT.npy",
+    "q": 0.95,
+    "tau": 2.1505243120537422e-06,
+    "edges": 419328,
+    "edge_kappa_mean": -62673324.568213336,
+    "edge_kappa_std": 87858428.57671939,
+    "edge_csv": "curv_4096_forman_edges_q0.9500.csv",
+    "node_csv": "curv_4096_forman_nodes_q0.9500.csv"
+  },
+  {
+    "kernel": "K_4096_CURRENT.npy",
+    "q": 0.9,
+    "tau": 5.488610644971832e-09,
+    "edges": 838656,
+    "edge_kappa_mean": -21577024690.15961,
+    "edge_kappa_std": 37380338326.80076,
+    "edge_csv": "curv_4096_forman_edges_q0.9000.csv",
+    "node_csv": "curv_4096_forman_nodes_q0.9000.csv"
+  }
+]

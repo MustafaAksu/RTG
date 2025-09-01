@@ -1,8 +1,8 @@
 {
   "kernel_file": "K_4096_same_rho1p16_a2p55_b1p55.npy",
   "n": 4096,
-  "spectral_dimension_mean": -0.04356556503037296,
-  "spectral_dimension_se": 0.00014595482504762414,
+  "spectral_dimension_mean": -0.04350354939497301,
+  "spectral_dimension_se": 0.00020770546840741746,
   "heat_meta": {
     "t_grid": [
       0.05,

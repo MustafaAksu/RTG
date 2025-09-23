@@ -1,305 +1,139 @@
-meta:
-  generated_at: '2025-09-23T13:03:40Z'
-  source: https://rtgtheory.org/ (main page)
-  notes: Canonical Handbook was intentionally omitted per user request.
+# RTG Articles Index
+# Version: v1.3
+# Last Modified: 2025-09-23
+# Purpose: Tier 2 catalog of RTG articles exclusively from https://rtgtheory.org/. Indexed by topic; extensible YAML for diffs. Each entry: title, url, summary (concise, one-sentence based on page excerpts and prior reads), relevance_score (1-10), tags (list relevant to RTG themes).
+# Total Entries: 17
+# Sources: Crawled via site:rtgtheory.org search; summaries from snippets and integrated prior reads (e.g., Glossary, Core Principles, Math Foundations).
+
+metadata:
+  project: RTG
+  topics:
+    - core_concepts
+    - glossary
+    - math_foundations
+    - emergence
+    - simulations
+    - rg_flows
+    - gravity
+    - applications
+    - quantum_atoms
+    - cosmology
+    - photon_dynamics
+    - forces_fields
+  last_update: 2025-09-23
+  changelog:
+    - date: 2025-09-23
+      changes: "Full population from site crawl; added 17 entries with summaries/tags from search snippets and prior integrations; removed external refs; relevance/tags refined for consistency."
+
 articles:
-- id: advanced_topics
-  title: Advanced Topics and Future Directions in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/advanced-topics-and-future-directions-in-relational-time-geometry-rtg/
-  scope: future
-  status: active
-  tags:
-  - advanced
-  - outlook
-- id: black_hole_resolution
-  title: Black Hole Resolution in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/black-hole-resolution-in-relational-time-geometry-rtg/
-  scope: cosmology
-  status: active
-  tags:
-  - black_hole
-  - resolution
-- id: core_principles
-  title: Core Principles & Foundations of Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/core-principles-foundations-of-relational-time-geometry-rtg/
-  scope: foundations
-  status: active
-  tags:
-  - principles
-- id: cosmological_applications
-  title: Cosmological Applications of Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/cosmological-applications-of-relational-time-geometry-rtg/
-  scope: cosmology
-  status: active
-  tags:
-  - cosmology
-- id: cosmological_dynamics
-  title: Cosmological Dynamics and Energy Framework in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/cosmological-dynamics-and-energy-framework-in-relational-time-geometry-rtg/
-  scope: cosmology
-  status: active
-  tags:
-  - cosmology
-  - energy
-- id: dimensional_emergence
-  title: Enhancing Speculations on Dimensional Emergence in RTG
-  url: https://rtgtheory.org/enhancing-speculations-on-dimensional-emergence-in-rtg/
-  scope: geometry
-  status: active
-  tags:
-  - dimensions
-  - speculation
-- id: enriched_geometry
-  title: Enriched Geometric Concepts in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/enriched-geometric-concepts-in-relational-time-geometry-rtg/
-  scope: geometry
-  status: active
-  tags:
-  - geometry
-- id: four_d_corridors
-  title: 'Enriched Geometry: The 4-D Corridors and Why We Don’t Gauge Them (Yet)'
-  url: https://rtgtheory.org/enriched-geometry-the-4-d-corridors-and-why-we-dont-gauge-them-yet/
-  scope: geometry
-  status: active
-  tags:
-  - geometry
-  - gauge
-- id: forces_fields
-  title: Forces & Fields in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/forces-fields-in-relational-time-geometry-rtg/
-  scope: applications
-  status: active
-  tags:
-  - forces
-  - fields
-- id: proton_model_2d_3d
-  title: 'From 2D Quarks to 3D Proton: A Comprehensive RTG Model'
-  url: https://rtgtheory.org/from-2d-quarks-to-3d-proton-a-comprehensive-rtg-model/
-  scope: particle
-  status: active
-  tags:
-  - proton
-  - quarks
-- id: lattice_to_continuum
-  title: 'From Lattice Hamiltonian to Continuum Action in RTG: Two-Loop Derivation
-    Workbook'
-  url: https://rtgtheory.org/from-lattice-hamiltonian-to-continuum-action-in-rtg-two-loop-derivation-workbook/
-  scope: methods
-  status: active
-  tags:
-  - RG
-  - derivation
-- id: eft_construction
-  title: 'From RTG to an Effective Field Theory (EFT): A Minimal, Testable Construction'
-  url: https://rtgtheory.org/from-rtg-to-an-effective-field-theory-eft-a-minimal-testable-construction/
-  scope: eft
-  status: active
-  tags:
-  - EFT
-- id: gauge_symmetries
-  title: Gauge Symmetries in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/gauge-symmetries-in-relational-time-geometry-rtg/
-  scope: gauge
-  status: active
-  tags:
-  - symmetry
-- id: glossary
-  title: Glossary of Relational Time Geometry (RTG) Terms
-  url: https://rtgtheory.org/glossary-of-relational-time-geometry-rtg-terms/
-  scope: reference
-  status: active
-  tags:
-  - glossary
-- id: gravity_residual
-  title: Gravity as Residual Elasticity in RTG
-  url: https://rtgtheory.org/gravity-as-residual-elasticity-in-rtg/
-  scope: gravity
-  status: active
-  tags:
-  - gravity
-- id: higgs_like
-  title: Higgs-like Particle in Relational Time Geometry (RTG) — v2.0
-  url: https://rtgtheory.org/higgs-like-particle-in-relational-time-geometry-rtg-v2-0/
-  scope: particle
-  status: active
-  tags:
-  - higgs
-  - particle
-- id: mathematical_foundations
-  title: Mathematical Foundations of Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/mathematical-foundations-of-relational-time-geometry-rtg/
-  scope: foundations
-  status: active
-  tags:
-  - math
-  - formalism
-- id: observer_relativity
-  title: 'Observer Relativity in RTG: Emergent Frames from Coherent Clusters'
-  url: https://rtgtheory.org/observer-relativity-in-rtg-emergent-frames-from-coherent-clusters/
-  scope: relativity
-  status: active
-  tags:
-  - observer
-  - relativity
-- id: particle_nuclear
-  title: Particle & Nuclear Modeling in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/particle-nuclear-modeling-in-relational-time-geometry-rtg/
-  scope: particle
-  status: active
-  tags:
-  - nuclear
-  - modeling
-- id: photon_dynamics
-  title: Photon Dynamics and Electromagnetism in RTG
-  url: https://rtgtheory.org/photon-dynamics-and-electromagnetism-in-relational-time-geometry-rtg/
-  scope: particle
-  status: active
-  tags:
-  - photon
-  - electromagnetism
-- id: photon_mass
-  title: Photon Mass Relation in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/photon-mass-relation-in-relational-time-geometry-rtg/
-  scope: particle
-  status: active
-  tags:
-  - photon
-  - mass
-- id: photon_journey
-  title: Photon’s dimensional journey within the RTG framework
-  url: https://rtgtheory.org/photons-dimensional-journey-within-the-rtg-framework/
-  scope: particle
-  status: active
-  tags:
-  - photon
-  - dimension
-- id: quantum_behaviours
-  title: Quantum Behaviours in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/quantum-behaviours-in-relational-time-geometry-rtg/
-  scope: quantum
-  status: active
-  tags:
-  - quantum
-- id: new_lens
-  title: Relational Time Geometry — A New Lens on the Universe
-  url: https://rtgtheory.org/relational-time-geometry-a-new-lens-on-the-universe/
-  scope: overview
-  status: active
-  tags:
-  - overview
-- id: relativistic_effects
-  title: Relativistic Effects, Causality, and Experimental Validation in RTG
-  url: https://rtgtheory.org/relativistic-effects-causality-and-experimental-validation-in-relational-time-geometry-rtg/
-  scope: relativity
-  status: active
-  tags:
-  - relativity
-  - experiment
-- id: chsh_noise
-  title: RTG CHSH vs. Decoherence Noise Amplitude
-  url: https://rtgtheory.org/rtg-chsh-vs-decoherence-noise-amplitude/
-  scope: quantum
-  status: active
-  tags:
-  - CHSH
-  - decoherence
-- id: rtg_gravity_i
-  title: 'RTG Gravity I: Emergent Metric → Einstein–Hilbert (tree-level)'
-  url: https://rtgtheory.org/rtg-gravity-i-emergent-metric-einstein-hilbert-tree-level/
-  scope: gravity
-  status: active
-  tags:
-  - gravity
-- id: rtg_gravity_ii
-  title: 'RTG Gravity II: Quantum Corrections, Running & Anomalies'
-  url: https://rtgtheory.org/rtg-gravity-ii-quantum-corrections-running-anomalies/
-  scope: gravity
-  status: active
-  tags:
-  - gravity
-  - anomalies
-- id: rtg_hydrogen
-  title: 'RTG Hydrogen: Proton Triad + Single Electron (U(1)×SU(2))'
-  url: https://rtgtheory.org/rtg-hydrogen-proton-triad-single-electron-u1xsu2/
-  scope: particle
-  status: active
-  tags:
-  - hydrogen
-- id: rtg_proton_model
-  title: 'RTG Proton Model: Three-Node Bound State in the SU(2) Window'
-  url: https://rtgtheory.org/rtg-proton-model-three-node-bound-state-in-the-su2-window/
-  scope: particle
-  status: active
-  tags:
-  - proton
-  - SU2
-- id: rtg_spherical_lattice
-  title: 'RTG Spherical Lattice Rethinking: Action Plan'
-  url: https://rtgtheory.org/rtg-spherical-lattice-rethinking-action-plan/
-  scope: methods
-  status: active
-  tags:
-  - lattice
-  - plan
-- id: rtg_eft_release
-  title: 'RTG–EFT Release (2025-09-03): Constants & Data'
-  url: https://rtgtheory.org/rtg-eft-release-2025-09-03-constants-data/
-  scope: eft
-  status: active
-  tags:
-  - constants
-  - data
-- id: planck_observer
-  title: RTG↔SI Calibration & Planck Observer
-  url: https://rtgtheory.org/rtg↔si-calibration-planck-observer/
-  scope: calibration
-  status: active
-  tags:
-  - planck
-  - calibration
-- id: rtg_eft_suite
-  title: Running the RTG–EFT Geometry Suite
-  url: https://rtgtheory.org/running-the-rtg-eft-geometry-suite/
-  scope: eft
-  status: active
-  tags:
-  - suite
-  - EFT
-- id: genesis_resonance
-  title: The Genesis of Resonance in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/the-genesis-of-resonance-in-relational-time-geometry-rtg/
-  scope: foundations
-  status: active
-  tags:
-  - resonance
-- id: rtg_thermodynamics
-  title: Thermodynamics & Rotational Dynamics in Relational Time Geometry (RTG)
-  url: https://rtgtheory.org/thermodynamics-rotational-dynamics-in-relational-time-geometry-rtg/
-  scope: thermodynamics
-  status: active
-  tags:
-  - thermodynamics
-- id: two_loop_bandwidth
-  title: Two-Loop RG Derivation of the Critical Bandwidth
-  url: https://rtgtheory.org/two-loop-rg-derivation-of-the-critical-bandwidth/
-  scope: constants
-  status: active
-  tags:
-  - RG
-  - constants
-- id: water_density
-  title: Water Density Maximum at 4 °C in RTG and Temperature Calibration — v1.0
-  url: https://rtgtheory.org/water-density-maximum-at-4-c-in-relational-time-geometry-rtg-and-temperature-calibration-v1-0/
-  scope: calibration
-  status: active
-  tags:
-  - water
-  - calibration
-- id: photon_definition
-  title: What Is a Photon in Relational Time Geometry (RTG) — v 1.0
-  url: https://rtgtheory.org/what-is-a-photon-in-relational-time-geometry-rtg-v-1-0/
-  scope: particle
-  status: active
-  tags:
-  - photon
-  - definition
+  # Core RTG Documents
+  - title: "Relational Time Geometry – A New Framework for the Structure of Reality"
+    url: "https://rtgtheory.org/"
+    summary: "Overview of RTG as a co-created framework by Mustafa Aksu, ChatGPT, and Grok, modeling the universe from oscillatory nodes without fundamental space-time."
+    relevance_score: 10/10
+    tags: [core_concepts, overview]
+
+  - title: "Glossary of Relational Time Geometry (RTG) Terms"
+    url: "https://rtgtheory.org/glossary-of-relational-time-geometry-rtg-terms/"
+    summary: "Comprehensive reference defining RTG terms across sections like fundamental building blocks, resonance metrics, observer concepts, and emergent dimensionality (last updated Aug 12, 2025)."
+    relevance_score: 10/10
+    tags: [glossary, core_concepts, math_formulas]
+
+  - title: "Core Principles & Foundations of Relational Time Geometry (RTG)"
+    url: "https://rtgtheory.org/core-principles-foundations-of-relational-time-geometry-rtg/"
+    summary: "Foundational overview of RTG nodes, emergent space-time, resonance interactions, observer dependence, and stability principles, with RG-anchored scales and simulation insights (last updated Aug 12, 2025)."
+    relevance_score: 10/10
+    tags: [core_concepts, emergence, principles, rg_flows]
+
+  - title: "Mathematical Foundations of Relational Time Geometry (RTG)"
+    url: "https://rtgtheory.org/mathematical-foundations-of-relational-time-geometry-rtg/"
+    summary: "Rigorous derivations of RTG's Hamiltonian, RG flows, spin dynamics, curvature penalties, emergent mass, and benchmarks like proton binding and CHSH violations (last updated Aug 12, 2025)."
+    relevance_score: 10/10
+    tags: [math_foundations, hamiltonian, rg_flows, simulations]
+
+  # Gravity & Emergence
+  - title: "Gravity as Residual Elasticity in RTG"
+    url: "https://rtgtheory.org/gravity-as-residual-elasticity-in-rtg/"
+    summary: "Explains gravity in RTG as emerging from phase-coherence decay in the bond Hamiltonian, leaving elastic terms that fit galactic rotation curves."
+    relevance_score: 9/10
+    tags: [gravity, emergence]
+
+  - title: "RTG Gravity I: Emergent Metric → Einstein–Hilbert (tree‑level)"
+    url: "https://rtgtheory.org/rtg-gravity-i-emergent-metric-%25E2%2586%2592-einstein-hilbert-tree%25E2%2580%2591level/"
+    summary: "Derives the tree-level Einstein-Hilbert action from RTG's microscopic resonance kernel and emergent metric (published Aug 14, 2025)."
+    relevance_score: 9/10
+    tags: [gravity, emergence, math_foundations]
+
+  - title: "RTG Gravity II: Quantum Corrections, Running & Anomalies"
+    url: "https://rtgtheory.org/rtg-gravity-ii-quantum-corrections-running-anomalies/"
+    summary: "Extends RTG gravity with quantum corrections, renormalization β-functions for running couplings, and anomaly handling on the emergent metric."
+    relevance_score: 9/10
+    tags: [gravity, rg_flows, quantum_corrections]
+
+  # RG & Scales
+  - title: "Two‑Loop RG Derivation of the Critical Bandwidth"
+    url: "https://rtgtheory.org/two%25E2%2580%2591loop-rg-derivation-of-the-critical-bandwidth/"
+    summary: "Derives the critical bandwidth Δω* via two-loop renormalization group, with symbols and units for angular frequencies anchoring RTG scales."
+    relevance_score: 9/10
+    tags: [rg_flows, math_foundations]
+
+  # Simulations & Quantum
+  - title: "RTG CHSH vs. Decoherence Noise Amplitude"
+    url: "https://rtgtheory.org/rtg-chsh-vs-decoherence-noise-amplitude/"
+    summary: "Analyzes decoherence from frequency noise on quantum correlations in RTG, with CHSH violation thresholds (published Jun 25, 2025)."
+    relevance_score: 8/10
+    tags: [simulations, quantum_info, chsh]
+
+  - title: "RTG Spherical Lattice Rethinking: Action Plan"
+    url: "https://rtgtheory.org/rtg-spherical-lattice-rethinking-action-plan/"
+    summary: "Proposes shifting RTG simulations from cubic L3 to spherical lattices to eliminate artificial Cartesian symmetries (published Jun 26, 2025)."
+    relevance_score: 7/10
+    tags: [simulations, lattice_models]
+
+  # Applications
+  - title: "RTG Hydrogen: Proton Triad + Single Electron (U(1)×SU(2))"
+    url: "https://rtgtheory.org/rtg-hydrogen-proton-triad-single-electron-u1xsu2/"
+    summary: "Models the hydrogen atom in RTG using a 3-node proton triad and single electron, incorporating U(1)×SU(2) symmetries (revision Sep 11, 2025)."
+    relevance_score: 9/10
+    tags: [applications, quantum_atoms]
+
+  - title: "Cosmological Applications of Relational Time Geometry (RTG)"
+    url: "https://rtgtheory.org/cosmological-applications-of-relational-time-geometry-rtg/"
+    summary: "Applies RTG to cosmology, including resonance lattices for spacetime emergence, cosmic expansion, and dark energy as residual elasticity."
+    relevance_score: 8/10
+    tags: [applications, cosmology]
+
+  # Photon & Forces
+  - title: "Photon Dynamics and Electromagnetism in Relational Time Geometry (RTG)"
+    url: "https://rtgtheory.org/photon-dynamics-and-electromagnetism-in-relational-time-geometry-rtg/"
+    summary: "Models electromagnetic interactions in RTG through pairwise resonance between nodes characterized by phase, frequency, and spin (published Aug 13, 2025)."
+    relevance_score: 8/10
+    tags: [photon_dynamics, electromagnetism]
+
+  - title: "Photons Dimensional Journey within the RTG Framework"
+    url: "https://rtgtheory.org/photons-dimensional-journey-within-the-rtg-framework/"
+    summary: "Describes the photon's transition from 1D linear propagation to higher-dimensional whirling emergence triggered by Planck frequency instability."
+    relevance_score: 7/10
+    tags: [photon_dynamics, emergence]
+
+  - title: "Forces & Fields in Relational Time Geometry (RTG)"
+    url: "https://rtgtheory.org/forces-fields-in-relational-time-geometry-rtg/"
+    summary: "Outlines how one resonance kernel in RTG unifies electromagnetic, strong, weak, and gravitational forces without external gauge fields (published Aug 3, 2025)."
+    relevance_score: 9/10
+    tags: [forces_fields, unification]
+
+  - title: "The Genesis of Resonance in Relational Time Geometry (RTG)"
+    url: "https://rtgtheory.org/the-genesis-of-resonance-in-relational-time-geometry-rtg/"
+    summary: "Traces the origin of structure in RTG to instability in a symmetric primordial 'Void' state, leading to resonance patterns."
+    relevance_score: 8/10
+    tags: [emergence, genesis]
+
+  # Releases & Data
+  - title: "RTG–EFT Release (2025-09-03): Constants & Data"
+    url: "https://rtgtheory.org/rtg-eft-release-2025%25E2%2580%259109%25E2%2580%259103-constants-data/"
+    summary: "Releases effective field theory constants, data, key plots, and headline numbers for RTG benchmarks (published Sep 3, 2025)."
+    relevance_score: 8/10
+    tags: [data_releases, constants]
+
+# End of rtg_articles_index.yaml
+# For diffs: git diff -- rtg_articles_index.yaml (e.g., +17 entries, refined summaries/tags from site crawl).

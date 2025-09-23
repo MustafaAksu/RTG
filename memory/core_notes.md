@@ -1,305 +1,186 @@
-# Relational Time Geometry (RTG) – Core Notes
+# Relational Time Geometry (RTG) Core Notes
 
-**Version:** v0.5  
-**Revision date:** 24 Sep 2025  
-**Authors:** Mustafa Aksu, ChatGPT (OpenAI), Grok (xAI)  
-**Scope:** Tier 1 (Core Notes, ~2–3k tokens) for active session use
+**Version**: v1.3  
+**Last Revised**: 2025-09-23  
+**Author**: Mustafa Aksu (with Grok & ChatGPT contributions)  
+**Purpose**: Authoritative anchor for RTG principles, workflows, and key concepts. Overrides chat history; use as Tier 1 static core. For evolutions, consult Tier 2 (findings.yaml, rtg_articles_index.yaml).
 
----
+## 1. Introduction to RTG
+Relational Time Geometry (RTG) models the universe as a graph of oscillatory nodes, where space-time, mass, and interactions emerge from relational frequencies, phases, and spins. Core idea: Time is not absolute but geometric, defined by beat-frequencies and phase-locking between primitives.
 
-## 1. Methodology & Organization
+- **Key Constants** (calibrated via RG/MD):  
+  | Symbol | Value | Units | Notes |
+  |--------|--------|--------|-------|
+  | \(\Delta \omega^*\) | \(1.45 \pm 0.08 \times 10^{23}\) | rad·s⁻¹ | Critical bandwidth; RG-fixed. |
+  | \(c\) | 299792458 | m/s | Speed of light (fixed). |
+  | \(\hbar\) | \(1.0545718 \times 10^{-34}\) | J·s | Reduced Planck constant. |
+  | Proton radius | \(0.84 \pm 0.01\) | fm | Calibration target. |
+  | \(g^*\) | \(\approx 1.14 \pm 0.02\) | - | RG fixed point. |
+  | \(\sigma_{\rm crit}\) | \(\approx 0.589\) | - | CHSH decoherence threshold. |
+  | \(K'\) | \(12.0\) ( ±0.5%) | MeV | Frequency penalty scale. |
+  | \(J\) | \(3.24 \pm 0.12\) | MeV | Resonance coupling. |
+  | \(J_{\rm ex}\) | \(2.20 \pm 0.08\) | MeV | Exchange coupling. |
+  | \(\alpha\) | \(\approx 938\) | MeV·fm² | Mass form factor. |
+  | \(\kappa_c\) | \(1\) | MeV·fm | Curvature scale. |
+  | Proton binding | \(\approx 48 \pm 3\) | MeV | 3-node equilibrium. |
 
-- **Publishing site:** [https://rtgtheory.org](https://rtgtheory.org)  
-  Contains full-length articles (Tier 3). Any document published must be in **simple HTML**:  
-  - No `style`, `div`, `figure` tags.  
-  - No manual table of contents (auto-generated).  
+- **Guiding Principles**: Minimal decoherence; phase-locking for stability; RG-anchored scales (two-loop \(\beta_g \approx 0.72 g - 0.63 g^2 - 0.011 g^3\)); emergent phenomena from relations only.
 
-- **GitHub repository:** [https://github.com/MustafaAksu/RTG](https://github.com/MustafaAksu/RTG)  
-  Holds scripts, raw outputs, structured memory files (Tier 2).  
-  Recommended path: `/memory/core_notes.md` and `/memory/findings.yaml`.  
+## 2. Memory Architecture
+Hierarchical storage for evolvability:
+- **Tier 1 (Static Core)**: This document—principles, formulas, constants. Overrides transients.
+- **Tier 2 (Dynamic Logs)**: findings.yaml (insights/challenges); rtg_articles_index.yaml (resources).
+- **Tier 3 (Active Memory)**: Session-only (e.g., query states); resets on load.
 
-- **Tiering system:**  
-  - **Tier 1:** This Core Notes document (short, ~2–3k tokens). Inject at start of sessions.  
-  - **Tier 2:** Structured archive (YAML/JSON), updated as new findings stabilize. Used via retrieval.  
-  - **Tier 3:** Full articles (WordPress). Long derivations, history, public-facing.  
+**Retrieval Mechanics**: Chunked (512-token blocks) with relational edges; RAG-hybrid for tools (e.g., web_search filtered via geometry nodes).
 
-- **Collaboration principle:**  
-  AI (ChatGPT, Grok) and Mustafa Aksu co-develop iteratively.  
-  Findings are first captured in chat, then distilled into Tier 2 → Tier 1.  
-  Only stable, reusable knowledge is promoted upward.  
-  Speculative ideas stay in Tier 2/3 until validated.  
+## 3. Core Mechanics
+- **Geometry Nodes**: Primitives with \(\omega_i\) (frequency/tick-rate, \(E_i = \hbar \omega_i\)), \(\phi_i\) (phase for interference), \(s_i = \pm i\) (analytic spin) or \(\sigma_i = \pm 1\) (code spin, \(s_i \equiv i \sigma_i\)); \(t_i = \tilde{\phi}_i / \omega_i\) (intrinsic time, unwrapped under phase-locking).
+- **Relational Edges**: Weighted by resonance; enable non-linear time traversal.
+- **Tooling Integration**: Augment with external fetches (e.g., browse_page), anchored to Tier 1.
 
----
-
-## 2. Core Definitions & Notation
-
-```yaml
-- id: node
-  type: definition
-  value: "Fundamental entity defined by (ω, φ, s) where ω = frequency, φ = phase, s = spin. Properties only meaningful relationally."
-  tags: [core, definition]
-
-- id: resonance_kernel
-  type: definition
-  value: "R_ij encodes coupling between nodes i and j; bounded, spin-gated function of Δω, Δφ."
-  tags: [core, kernel]
-
-- id: observer_distance
-  type: definition
-  value: "Relational distance r_ij = (2πc)/|ω_i − ω_j|; observer-relative, not absolute."
-  tags: [geometry]
-
-- id: intrinsic_time
-  type: definition
-  value: "Time is defined relationally via phase-locking; single node has no measurable time."
-  tags: [time]
-
-- id: core_principles
-  type: definition
-  value: "RTG principles: no absolute observables, distance/time emerge via resonance, gauge invariance is emergent, stability from bounded kernels."
-  tags: [principles, foundation]
-
-- id: enriched_geometry
-  type: definition
-  value: "Curvature elasticity and torsional corrections are part of emergent geometry; anisotropy in resonance networks biases curvature."
-  tags: [geometry, enrichment]
-
-- id: forces_fields
-  type: definition
-  value: "Forces = resonance gradients; electromagnetism from photon nodes; nuclear forces from higher-order resonance; gravity as residual elasticity."
-  tags: [forces, fields]
-
-- id: gauge_symmetries
-  type: definition
-  value: "Gauge symmetries (U(1), SU(2), etc.) emerge as resonance bands; anomalies correspond to unstable resonance states."
-  tags: [gauge, symmetry]
-
-- id: observer_relativity
-  type: definition
-  value: "Observers emerge as coherent clusters of nodes; reference frames are relational, not absolute."
-  tags: [observer, relativity]
-
-- id: photon_dynamics
-  type: definition
-  value: "Photon modeled as paired nodes; EM field emerges from large-scale resonance of photon pairs."
-  tags: [photon, EM]
-
-- id: photon_definition
-  type: definition
-  value: "Photon in RTG is a paired-node object with locked frequency and phase; fundamental quantum of EM resonance."
-  tags: [photon, definition]
-```
+## 4. Maintenance
+- **Live Diff Tracker**: Git diffs on YAMLs; inline flags in responses (e.g., "Added: new_term").
+- **Updates**: Version on changes; no re-summaries—append only.
+- **Self-Documenting**: Headers, tables for scanability.
 
 ---
 
-## 3. Core Equations & Kernels
+## Glossary
+Concise reference aligned with published RTG terms (glossary + principles + math foundations). Structured by category; formulas for precision.
 
-```yaml
-- id: mass_estimator
-  type: equation
-  value: "m_i = [ħ ω_i − Σ_j E_res(ij)] / c^2"
-  tags: [mass, estimation]
+### Fundamental Building Blocks
+- **Node**: Primitive: frequency \(\omega_i\), phase \(\phi_i\), binary spin \(s_i = \pm i\) (analytic) or \(\sigma_i = \pm 1\) (code).
+- **Frequency \(\omega_i\)**: Intrinsic tick-rate; local energy \(E_i = \hbar \omega_i\).
+- **Phase \(\phi_i\)**: Interference between nodes (constructive/destructive).
+- **Spin \(s_i\) or \(\sigma_i\)**: Conventions (analytic vs. code); determines gate (open/closed) on alignment. Truth table (analytic):  
+  | \(s_i, s_j\) | Gate \(1 + s_i s_j\) | State |
+  |--------------|----------------------|-------|
+  | \(+i, +i\)   | 0                    | Closed |
+  | \(+i, -i\)   | 2                    | Open  |
+  Code equivalent: \(1 - \sigma_i \sigma_j\) (open for opposite).
+- **Intrinsic time \(t_i\)**: \(t_i = \tilde{\phi}_i / \omega_i\); valid under local phase-locking (minimal decoherence).
 
-- id: kernel_energy
-  type: equation
-  value: "E_res(ij) = A_ij (1 + s_i s_j) f(Δω_ij, Δφ_ij)"
-  tags: [resonance, energy]
+### Resonance & Interaction Metrics
+- **Resonance kernel \(\mathcal{R}_{ij}\)**: \(\mathcal{R}_{ij} = A_{ij} (1 + s_i s_j)\), \(A_{ij} = \frac{3}{4} [1 + \cos(\phi_i - \phi_j)] \exp[-(\omega_i - \omega_j)^2 / (\Delta \omega^*)^2]\) (range \(0 \leq \mathcal{R}_{ij} \leq 3\)).
+- **Beat-frequency distance \(r_{ij}\)**: \(r_{ij} = \frac{2\pi c}{|\omega_i - \omega_j|}\); coarse-grain as \(\Delta \omega \to 0\) (avoids divergence).
+- **Bond energy \(E_{ij}\)**: \(E_{ij} = K' \frac{|\omega_i - \omega_j|}{\Delta \omega^*} + J \mathcal{R}_{ij} - J_{\rm ex} \cos(\Delta \phi_{ij} - 2\pi a A_{ij}) \exp[-(\omega_i - \omega_j)^2 / \sigma_{\rm exch}^2]\) (\(\sigma_{\rm exch} \simeq \Delta \omega^*\); \(a\) gauge param; regulators \(K', J, J_{\rm ex}\)).
 
-- id: curvature_penalty
-  type: equation
-  value: "E_curv ∝ κ (H − H0)^2"
-  tags: [geometry, curvature]
-```
+### Observer Concepts
+- **Observer node/frame**: Relational; dependence via \(r_{ij}\) to observer.
+- **\(\Delta \omega^*\)-observer**: Reference with \(\omega_{\rm ref} = \Delta \omega^* \approx 1.45 \times 10^{23}\) s⁻¹ (uncertainty ~5%).
 
----
+### Emergent Dimensionality & Critical Bandwidth
+- **Spatial degree of freedom**: Emerges from resonance patterns (planar 2D vs. volumetric 3D) above \(\Delta \omega^*\) threshold.  
+  | \(\delta \omega / \Delta \omega^*\) | Dimensionality | Regime |
+  |-----------------------------------|----------------|--------|
+  | < 0.28 (±0.02)                    | 2D             | Planar |
+  | 0.28–0.70                         | 3D             | Shells |
+  | 0.70–1.55                         | 4D             | Hyper  |
+  | 1.55–1.70                         | 5D             | Anomalies |
+  | >1.70                             | >5D            | Unstable |
 
-## 4. Constants & Parameters
+### Stability & Guiding Principles
+- **Stability criteria**: Phase-locking for \(t_i\); \(\partial H / \partial q = 0\) (\(q \in \{\omega, \phi\}\)); \(|\Delta \omega| \ll \Delta \omega^*\) for bonds; modest spin flips (acceptance ~0.02–0.03 per tick).
+- **Guiding**: Anti-aligned spins for open gates; drift < \(4.3 \times 10^{-4}\) over 3000 ticks; thermostat ≤0.30.
 
-```yaml
-- id: delta_omega_star
-  type: constant
-  value: "1.45e23 rad/s (±0.08e23)"
-  tags: [critical, bandwidth]
-
-- id: rg_fixed_point
-  type: constant
-  value: "g* ≈ 1.14 ± 0.02"
-  tags: [renormalization, fixed_point]
-
-- id: proton_radius
-  type: constant
-  value: "≈ 0.84 fm (empirical reference)"
-  tags: [proton, reference]
-```
-
----
-
-## 5. Operational Rules
-
-```yaml
-- id: relational_only
-  type: rule
-  value: "No single-node observables; all properties emerge from interactions."
-
-- id: kernel_bounded
-  type: rule
-  value: "Always use bounded, spin-gated kernels; avoid ad-hoc rescalings."
-
-- id: log_diagnostics
-  type: rule
-  value: "Track Δφ, Δω/Δω*, correlation energies, flip rate in all simulations."
-
-- id: curvature_monitoring
-  type: rule
-  value: "Include curvature penalties; monitor drift over cycles."
-
-- id: cosmology_expansion
-  type: rule
-  value: "Cosmological expansion in RTG is explained as frequency drift, not metric stretch."
-
-- id: eft_mapping
-  type: rule
-  value: "RTG can map to minimal EFT by coarse-graining resonance kernels."
-
-- id: quantum_behaviours
-  type: rule
-  value: "Quantum behaviour = resonance superposition; decoherence = phase noise."
-
-- id: relativistic_effects
-  type: rule
-  value: "Relativity emerges from resonance clusters; causality preserved by phase coherence."
-
-- id: chsh_noise
-  type: rule
-  value: "CHSH violations scale with resonance noise amplitude."
-
-- id: rtg_gravity_i
-  type: rule
-  value: "Emergent metric reproduces Einstein–Hilbert action at tree level."
-
-- id: rtg_gravity_ii
-  type: rule
-  value: "Gravity corrections arise from running couplings and anomalies in resonance bands."
-
-- id: rtg_hydrogen
-  type: rule
-  value: "Hydrogen = proton triad + electron U(1) node bound via U(1)×SU(2)."
-
-- id: rtg_proton_model
-  type: rule
-  value: "Proton stability is tied to SU(2) resonance window."
-
-- id: planck_observer
-  type: rule
-  value: "Planck observer defines calibration between RTG and SI units."
-
-- id: genesis_resonance
-  type: rule
-  value: "Resonance is the fundamental interaction; stability emerges from resonance cycles."
-
-- id: rtg_thermodynamics
-  type: rule
-  value: "Entropy arises from diversity of resonance states; rotation from spin distributions."
-
-- id: water_density_calibration
-  type: rule
-  value: "Water density anomaly at 4 °C calibrates RTG thermodynamics."
-```
+### Special Node Types & Dynamic Factors
+- **Photon object**: High-frequency (\(\omega_i \gg \Delta \omega^*\)) spin-anti-pair (\(+i, -i\)); \(\Delta \omega = 0\), massless \(E = \hbar \omega_\gamma\), weak phase coupling.
+- **Dynamic factors**: Evolving params (e.g., \(\sigma_{\rm exch}(t)\) under noise).
 
 ---
 
-## 6. Stable Findings
+## Core Principles & Foundations
+Foundational derivations for emergence; calibrated to observables (e.g., proton radius, CHSH≈2.827).
 
-```yaml
-- id: proton_stability
-  type: finding
-  date: 2025-05-06
-  value: "Proton stable at ~3.0581e23 Hz with phase cycling; radius preserved, charge +1e."
-  tags: [proton, stability]
+### 1. Introduction
+Universe as node graph; RG-fixed \(\Delta \omega^*\); two-loop anchors ratios (g*=1.14).
 
-- id: kaon_kplus
-  type: finding
-  date: 2025-05-05
-  value: "K+ meson modeled at 3.089e23 Hz, radius 5.6e-16 m; matched experimental mass."
-  tags: [kaon, meson, validation]
+### 2. Node Primitives
+As in Glossary; energy/momentum via \(\hbar \omega_i\).
 
-- id: proton_model
-  type: finding
-  date: 2025-05-06
-  value: "Proton modeled as 3-node SU(2) bound state; stability via oscillatory resonance and phase cycling."
-  tags: [proton, SU2, stability]
+### 3. Emergent Space-Time
+- Proper time: \(\Delta \tau \approx \Delta \phi / \Delta \omega\).
+- Photon: Open-gate pair, propagates massless.
 
-- id: two_loop_derivation
-  type: finding
-  date: 2025-05-06
-  value: "Two-loop RG derivation supports Δω* ≈ 1.45e23 rad/s critical bandwidth."
-  tags: [RG, constants, derivation]
+### 4. Resonance & Interactions
+As in Glossary; lattice mapping for d=3 (K'/J≈3.70).
 
-- id: rtg_hydrogen
-  type: finding
-  date: 2025-05-10
-  value: "Hydrogen modeled as proton triad + single electron; stability via U(1)×SU(2) coupling."
-  tags: [hydrogen, SU2, U1, atom]
+### 5. Observer Concepts
+As in Glossary; relational distances \(r_{io}\).
 
-- id: two_loop_bandwidth
-  type: finding
-  date: 2025-05-12
-  value: "Two-loop RG derivation confirms Δω* ≈ 1.45e23 rad/s (±0.08e23)."
-  tags: [RG, constants]
+### 6. Emergent Dimensionality
+As in table above; Cayley-Menger volumes for embedding.
 
-- id: water_density_calibration
-  type: finding
-  date: 2025-05-14
-  value: "Water density maximum at 4 °C used as calibration point for RTG thermodynamics."
-  tags: [calibration, water, thermodynamics]
-```
+### 7. Spin Flips & Curvature
+- Flip energy: \(\Delta E_J = 2J \sigma_i \sum_j A_{ij} \sigma_j\); conserve via \(\pi_{\phi_i} \leftarrow \pi_{\phi_i} - \sign(\Delta E) \sqrt{2 M_\phi |\Delta E|}\).
+- Curvature penalty: \(U_{\rm curv} = \kappa_c a_{\rm lat}^2 \sum (1 - \frac{\mathcal{R}_{ij} + \mathcal{R}_{jk} + \mathcal{R}_{ki}}{9})^2\) (Helfrich); alt: \(\kappa_c (1 - \mathcal{R}/3)^2 / a^2\).
+
+### 8. Emergent Energy & Mass
+- Resonance energy: \(E^{\rm res}_{ij} = \hbar |\Delta \omega_{ij}| \mathcal{R}_{ij}\).
+- Rest mass: \(m_i = \frac{\hbar \omega_i - \sum_j E^{\rm res}_{ij}}{c^2}\) (clamp \(m_i \geq 0\)); proton via \(\alpha \sum \mathcal{R}_{ij} / r_{ij}^2\).
+
+### 9. Stability & Guiding Principles
+As in Glossary; equilibrium: \(\partial H / \partial q = 0\).
+
+### 10. Mathematical Consistency
+- Dimensionless: \(\tilde{J} = J / (\hbar \Delta \omega^*)\), \(g = \tilde{J}/\tilde{K}'\); flows as above.
+- Proton binding ~48 MeV (3-node).
+
+### 11. Simulation Insights
+- CHSH: \(S = 2\sqrt{2} e^{-\sigma^2}\) (\(\sigma < 0.589\) for violation; σ_noise=0: 2.827±0.002; 0.5: 2.20±0.02).
+- Drift: <4.3×10^{-4} (\(\Delta t = 5 \times 10^{-5}\)).
+
+### 12. Applications
+- Hadrons: Shell fits to proton.
+- Quantum info: Bell violations.
+- Cosmology: Large-scale sweeps.
+- Open: Spin quantization (Grassmann), gauges.
+
+### 13. Conclusion
+Relational emergence: No absolutes; all from node relations.
 
 ---
 
-## 7. Open Questions
+## Mathematical Foundations
+Rigorous Hamiltonian, flows, dynamics; params as in constants table.
 
-```yaml
-- id: dimensionality_emergence
-  type: open_question
-  value: "Mapping of δ ω / Δω* thresholds to emergent dimensionality (D=2,3,4)."
+### Preamble
+RG/MD calibration: Proton r=0.84±0.01 fm, CHSH=2.827, drift <4.3×10^{-4}.
 
-- id: black_hole_modeling
-  type: open_question
-  value: "How do RTG kernels behave near Planck wall / singularities?"
+### 2. Node Properties
+As in Glossary; gates consistent across conventions.
 
-- id: cosmology_growth
-  type: open_question
-  value: "Is universal frequency shift sufficient to explain observed expansion?"
+### 3. Resonance
+As in Glossary; max 3 at full resonance.
 
-- id: black_hole_resolution
-  type: open_question
-  value: "How RTG handles gravitational collapse: resonance saturation + curvature penalty halting collapse at Planck wall."
+### 4. Bond Hamiltonian
+As in Glossary; U(1)-like via cos term.
 
-- id: energy_framework
-  type: open_question
-  value: "RTG cosmology defines relational energy tensor; dark energy as resonance imbalance. Energy conservation only approximate."
+### 5. Two-Loop RG & Bandwidth
+Flows: \(\beta_{\tilde{J}} = -\tilde{J} + O(\tilde{J}^3)\), \(\beta_{\tilde{K}} = -\frac{1}{2} \tilde{K} \tilde{J} + O(\tilde{J}^3)\); g*=1.14.
 
-- id: four_d_corridors
-  type: open_question
-  value: "Transient 4-D corridors emerge under high resonance density; not yet gauged, unstable structures."
+### 6. Dimensionality
+As in table; error ±0.02.
 
-- id: rtg_to_eft
-  type: open_question
-  value: "Construction of minimal EFT from RTG by coarse-graining resonance kernels; testable predictions possible."
+### 7. Spin Flips & Curvature
+As in Core Principles; units MeV·fm.
 
-- id: dimensionality_thresholds
-  type: open_question
-  value: "Thresholds in Δω / Δω* mark transitions between effective dimensions; coherence can add relational axes."
+### 8. Emergent Energy/Mass
+As in Core Principles; OU decoherence S(σ_noise)=2√2 e^{-σ_noise^2}.
 
-- id: photon_journey
-  type: open_question
-  value: "How photons traverse dimensional ladders in RTG, shifting across effective dimensions depending on resonance thresholds."
+### 9. Stability Examples
+Proton: 3-node, ~48 MeV binding.
 
-- id: rtg_gravity_ii
-  type: open_question
-  value: "Quantum corrections to RTG gravity: loop effects modify metric; couplings run; anomalies tied to unstable bands."
+### 10. Consistency & Scales
+Params/flows as above; K'/J=3.70.
 
-- id: rtg_thermodynamics
-  type: open_question
-  value: "How to fully formalize thermodynamics of RTG systems and test against lab-scale entropy/heat data?"
-```
+### 11. Benchmarks
+CHSH/drifts/flips as above; κ_c=1 MeV·fm.
+
+### 12. Outlook
+Scale to 10^6 nodes; path-integral quantization.
+
+---
+
+**End of Core Notes**. For diffs, see Git log. Next: Tier 2 updates or derivations?

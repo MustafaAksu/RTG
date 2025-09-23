@@ -1,0 +1,75 @@
+# RTG Tier 2 Project Memory
+# File: findings.yaml
+# Purpose: structured archive of RTG knowledge (definitions, constants, findings, open questions)
+# Scope: Tier 2 (not injected every session; used for retrieval and updates)
+
+- id: node
+  type: definition
+  description: "Fundamental entity defined by (ω, φ, s) where ω = frequency, φ = phase, s = spin. Properties only meaningful relationally."
+  tags: [core, definition]
+
+- id: resonance_kernel
+  type: definition
+  description: "R_ij encodes coupling between nodes i and j; bounded, spin-gated function of Δω, Δφ."
+  tags: [core, kernel]
+
+- id: observer_distance
+  type: definition
+  description: "Relational distance r_ij = (2πc)/|ω_i − ω_j|; observer-relative, not absolute."
+  tags: [geometry]
+
+- id: intrinsic_time
+  type: definition
+  description: "Time is defined relationally via phase-locking; single node has no measurable time."
+  tags: [time]
+
+- id: delta_omega_star
+  type: constant
+  value: 1.45e23
+  unit: rad/s
+  uncertainty: 0.08e23
+  description: "Critical bandwidth threshold."
+  tags: [critical, bandwidth]
+
+- id: rg_fixed_point
+  type: constant
+  value: 1.14
+  uncertainty: 0.02
+  description: "Renormalization group fixed point g*."
+  tags: [renormalization, fixed_point]
+
+- id: proton_radius
+  type: constant
+  value: 0.84e-15
+  unit: m
+  description: "Proton radius (empirical reference)."
+  tags: [proton, reference]
+
+- id: proton_stability
+  type: finding
+  date: 2025-05-06
+  description: "Proton stable at ~3.0581e23 Hz with phase cycling; radius preserved, charge +1e."
+  tags: [proton, stability]
+  source: "simulation"
+
+- id: kaon_kplus
+  type: finding
+  date: 2025-05-05
+  description: "K+ meson modeled at 3.089e23 Hz, radius 5.6e-16 m; matched experimental mass."
+  tags: [kaon, meson, validation]
+  source: "simulation"
+
+- id: dimensionality_emergence
+  type: open_question
+  description: "Mapping of δω / Δω* thresholds to emergent dimensionality (D=2,3,4)."
+  tags: [geometry, open_question]
+
+- id: black_hole_modeling
+  type: open_question
+  description: "How do RTG kernels behave near Planck wall / singularities?"
+  tags: [black_hole, open_question]
+
+- id: cosmology_growth
+  type: open_question
+  description: "Is universal frequency shift sufficient to explain observed expansion?"
+  tags: [cosmology, open_question]

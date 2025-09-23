@@ -1,9 +1,9 @@
 # Relational Time Geometry (RTG) Core Notes
 
-**Version**: v1.10  
+**Version**: v1.11  
 **Last Revised**: 2025-09-23  
 **Author**: Mustafa Aksu (with Grok & ChatGPT contributions)  
-**Purpose**: Authoritative anchor for RTG principles, workflows, and key concepts. Overrides chat history; use as Tier 1 static core. For evolutions/experiments, consult Tier 2 (findings.yaml, rtg_articles_index.yaml). This version integrates Gravity I (tree-level EH) and Gravity II (quantum corrections, running, anomalies).
+**Purpose**: Authoritative anchor for RTG principles, workflows, and key concepts. Overrides chat history; use as Tier 1 static core. For evolutions/experiments, consult Tier 2 (findings.yaml, rtg_articles_index.yaml). This version integrates Gravity I (tree-level EH), Gravity II (quantum corrections, running, anomalies), and Forces & Fields (unified forces principle).
 
 ## 1. Introduction to RTG
 Relational Time Geometry (RTG) models the universe as a graph of oscillatory nodes, where space-time, mass, and interactions emerge from relational frequencies, phases, and spins. Core idea: Time is geometric, defined by beat-frequencies and phase-locking between primitives—no absolute background.
@@ -84,7 +84,8 @@ Hierarchical storage for evolvability.
 #### Gauge Symmetries
 - **U(1)**: B_ij = a A_ij; U_ij = e^{i(Δφ_ij - B_ij)}.  
 - **SU(2)**: ψ_i=[z_i, i s_i z_i]^T; rotations R(θ); Witten anomaly → even doublets.  
-- **U(1)^2**: φ_1, φ_2, φ_3 (2 indep.); ε cosmological ≈ SU(3).  
+- **U(1)^2 ≈ SU(3)**: Three-shell phases (θ1,θ2,θ3) with one constraint → two independent phases. Coupling ε produces SU(3)-like behavior. Validated by proton binding (~48 ± 3 MeV).  
+- **Forces as Unified Resonances**: Electromagnetic (U(1)), weak (SU(2)), strong (U(1)^2 ≈ SU(3)), and gravity (via S_{μν}) all emerge from the same resonance kernel ℛ_ij. No external gauge fields are required.  
 - Exchange: sin(Δφ - B_ij) or -cos equiv.  
 - Anomalies: U(1) charge/cubic sums=0; SU(2) Witten.
 
@@ -126,7 +127,15 @@ Hierarchical storage for evolvability.
 - Gauge: Δφ → Δφ - B_ij; SU(2) rotations; U(1)^2 ε≈SU(3).  
 - EFT: U_ij → Maxwell; scaling predictions.  
 - **Gravity (Tree-Level)**: Bonds → S_μν → g_μν; EH action; couples to φ/G/A_μ.  
-- **Quantum Gravity**: Loops run G, Λ, e; SU(2) Heisenberg exchange; U(1)^2 V_shell mixing; renorm condition [√-g G_μν]_{μℓ,k} = 8π G(μℓ,k) [√-g T_μν]_{μℓ,k} (μℓ,2/μℓ,1≈2).
+- **Quantum Gravity**: Loops run G, Λ, e; SU(2) Heisenberg exchange; U(1)^2 V_shell mixing; renorm condition [√-g G_μν]_{μℓ,k} = 8π G(μℓ,k) [√-g T_μν]_{μℓ,k} (μℓ,2/μℓ,1≈2).  
+
+**➕ Unified Forces Principle (new):**  
+All four fundamental forces emerge from the same resonance kernel ℛ_ij:  
+- Electromagnetic via U(1) gauge phases.  
+- Weak via SU(2) spin rotations and exchange.  
+- Strong via U(1)^2 phase shells approximating SU(3).  
+- Gravitational via the structure tensor S_μν, interpreted as residual elasticity.  
+No external gauge fields are required; forces are unified through pairwise node interactions (ω_i, φ_i, s_i).  
 
 ## 6. Key Equations
 - **Bond Energy E_ij**: K'|Δω|/Δω* + J ℛ_ij + J_ex sin(Δφ - B_ij) exp[-(Δω)²/σ_exch²]; sin/-cos equiv.; σ_exch ≠ σ_noise.  
@@ -167,4 +176,4 @@ Hierarchical storage for evolvability.
 - Live Diff Tracker; updates append-only.  
 - Notation guard: ω angular rad·s^-1; σ_exch ≠ σ_noise; U(1) global/gauged; sin/-cos equiv.; spins in gauges; EFT amp=none baseline; dual μ (s⁻¹ scalar vs fm⁻¹ gravity).
 
-**End of Core Notes (v1.10)**.
+**End of Core Notes (v1.11)**.

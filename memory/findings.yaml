@@ -1,15 +1,17 @@
 # RTG Findings Log
-# Version: v1.3
+# Version: v1.4
 # Last Modified: 2025-09-23
 # Purpose: Tier 2 dynamic repository for experimental insights, challenges, optimizations, and alignments. Hierarchical for diff tracking. Confidence: low/medium/high.
 
 metadata:
   project: RTG
-  total_entries: 83
-  last_update: 2025-09-23T13:00:00Z
+  total_entries: 90
+  last_update: 2025-09-23T14:00:00Z
   changelog:
     - date: 2025-09-23
-      changes: "Aligned with core_notes v1.4 (merged, non-redundant). Normalized references to new section numbers (§2, §4, §5, §6, §7). Added kb_updates entries (026–030)."
+      changes: "v1.4: Lattice→continuum workbook alignments added (+7 entries), normalized with core_notes v1.6; minor cross-refs."
+    - date: 2025-09-23
+      changes: "Aligned with core_notes v1.4 (merged, non-redundant). Normalized references to new sections (§2, §4, §5, §6, §7). Added kb_updates entries (026–030). (v1.3)"
     - date: 2025-09-23
       changes: "Integrated glossary, principles, math foundations alignments; migrated stability findings; added ~25 new entries. (v1.2)"
     - date: 2025-09-15
@@ -21,12 +23,12 @@ key_findings:
       description: "Temporal drift in multi-session chains exceeds 0.1% without re-anchoring; mitigated by periodic Tier 1 pulls."
       date: 2025-09-10
       confidence: high
-      ref: "core_notes v1.4 §2 (Memory Architecture)"
+      ref: "core_notes v1.6 §2 (Memory Architecture)"
     - id: 002
       description: "Phase-locking validity breaks at Δω > 0.5 Δω*; sims show decoherence S < 2.0."
       date: 2025-09-20
       confidence: medium
-      ref: "core_notes v1.4 §7 (CHSH/Decoherence)"
+      ref: "core_notes v1.6 §7 (CHSH/Decoherence)"
       updated: 2025-09-23  # Tied to new σ_crit=0.589
 
   resonance_dynamics:
@@ -34,24 +36,24 @@ key_findings:
       description: "Resonance kernel max reaches 3 only at exact anti-alignment + Δφ=0; otherwise caps at ~2.5 under moderate noise."
       date: 2025-09-18
       confidence: high
-      ref: "core_notes v1.4 §4 (Resonance & Interaction Metrics)"
+      ref: "core_notes v1.6 §4 (Resonance & Interaction Metrics)"
     - id: 004
       description: "Beat-frequency r_ij diverges for |Δω| < 10^{-2} Δω*; coarse-graining reduces error by ~15%."
       date: 2025-09-22
       confidence: medium
-      ref: "core_notes v1.4 §4 (Beat-frequency) & §6 (Key Equations)"
+      ref: "core_notes v1.6 §4 (Beat-frequency) & §6 (Key Equations)"
 
   emergent_properties:
     - id: 005
       description: "3-node proton sim yields binding 48±3 MeV; mass clamps (m_i ≥ 0) prevent negative artifacts."
       date: 2025-09-23
       confidence: high
-      ref: "core_notes v1.4 §5 (Equilibrium & Mass)"
+      ref: "core_notes v1.6 §5 (Equilibrium & Mass)"
     - id: 006
-      description: "Dimensionality jumps at δω/Δω* ≈ 0.28 produce shell structures; 4D regime unstable beyond ~1.55."
+      description: "Dimensionality jumps at δω/Δω* ≈ 0.28 produce shell structures; 4D corridor unstable beyond ~1.55."
       date: 2025-09-23
       confidence: medium
-      ref: "core_notes v1.4 §4 (Emergent Dimensionality table)"
+      ref: "core_notes v1.6 §4 (Emergent Dimensionality table)"
 
 challenges:
   query_overload:
@@ -60,19 +62,19 @@ challenges:
       date: 2025-09-15
       confidence: high
       status: mitigated  # Via Core Mechanics / Tooling Integration
-      ref: "core_notes v1.4 §3 (Tooling Integration)"
+      ref: "core_notes v1.6 §3 (Tooling Integration)"
     - id: 008
       description: "Spin flip rates >0.03 cause curvature spikes; thermostat cap at 0.30 resolves ~80% of cases."
       date: 2025-09-23
       confidence: medium
-      ref: "core_notes v1.4 §6 (Spin Flip Energy) & §7 (Benchmarks)"
+      ref: "core_notes v1.6 §6 (Spin Flip Energy) & §7 (Benchmarks)"
 
   scale_limits:
     - id: 009
       description: "MD sims stall at 10^4 nodes due to O(N^2) bonds; pruning edges with ℛ_ij < 0.5 yields ~2× speedup."
       date: 2025-09-21
       confidence: high
-      ref: "core_notes v1.4 §7 (Benchmarks/Notes)"
+      ref: "core_notes v1.6 §7 (Benchmarks/Notes)"
 
 optimizations:
   tooling:
@@ -80,13 +82,13 @@ optimizations:
       description: "YAML diffs via Git hooks reduce manual tracking by ~90%; inline response flags for sessions."
       date: 2025-09-16
       confidence: high
-      ref: "core_notes v1.4 §9 (Maintenance)"
+      ref: "core_notes v1.6 §9 (Maintenance)"
   simulation:
     - id: 011
       description: "Δt = 5×10^{-5} minimizes drift to <4.3×10^{-4}; OU noise σ=0.5 yields CHSH = 2.20 ± 0.02."
       date: 2025-09-23
       confidence: high
-      ref: "core_notes v1.4 §7 (Benchmarks)"
+      ref: "core_notes v1.6 §7 (Benchmarks)"
 
 glossary_alignments:
   - id: 012
@@ -94,22 +96,22 @@ glossary_alignments:
     status: "added_to_tier1"
     details: "Analytic: (+i,+i) closed (0); (+i,-i) open (2). Code: opposite spins open (1 - σ_i σ_j)."
     date: 2025-09-23
-    ref: "core_notes v1.4 §4 (Fundamental Building Blocks)"
+    ref: "core_notes v1.6 §4 (Fundamental Building Blocks)"
     confidence: high
   - id: 013
     term: "Exchange channel behavior"
     status: "provisional"
-    details: "Under high noise, exp[-(Δω)^2/σ_exch^2] decays faster than kernel; test U(1) modulation via cos(Δφ - 2π a A_ij)."
+    details: "Under high noise, exp[-(Δω)^2/σ_exch^2] decays faster than kernel; test U(1) modulation via cos→sin variants."
     date: 2025-09-23
     confidence: medium
-    ref: "core_notes v1.4 §6 (Bond Energy)"
+    ref: "core_notes v1.6 §6 (Bond/Exchange terms)"
   - id: 014
     term: "Manifold Projection"
     status: "gap_filled"
     details: "Cayley-Menger embedding aligns with 3D shells at δω/Δω* ~ 0.5."
     date: 2025-09-23
     confidence: low
-    ref: "core_notes v1.4 §4 (Emergent Dimensionality)"
+    ref: "core_notes v1.6 §4 (Emergent Dimensionality)"
 
 principles_alignments:
   - id: 015
@@ -117,7 +119,7 @@ principles_alignments:
     status: "added_to_tier1"
     details: "Massless spin-anti-pair; test propagation in vacuum sims (Δω = 0, weak φ-coupling)."
     date: 2025-09-23
-    ref: "core_notes v1.4 §5 (Emergent Space-Time)"
+    ref: "core_notes v1.6 §5 (Emergent Space-Time)"
     confidence: high
   - id: 016
     term: "RG fixed point g*"
@@ -125,29 +127,29 @@ principles_alignments:
     details: "Scheme-dependent ~1.14 ± 0.02; validate two-loop β_g in code with K'/J ≈ 3.70."
     date: 2025-09-23
     confidence: medium
-    ref: "core_notes v1.4 §6 (Key Equations / RG)"
+    ref: "core_notes v1.6 §6 (Key Equations / RG)"
   - id: 017
     term: "Simulation drift"
     status: "experimental"
     details: "< 4.3e-4 over 3000 ticks; log Δφ, Δω for repro; ties to phase-locking criteria."
     date: 2025-09-23
     confidence: high
-    ref: "core_notes v1.4 §7 (Benchmarks)"
+    ref: "core_notes v1.6 §7 (Benchmarks)"
   - id: 018
     term: "Curvature penalty U_curv"
     status: "added_to_tier1"
     details: "Helfrich form stable for κ_c = 1 MeV·fm; alt (1 - ℛ/3)^2 / a^2 for low-d."
     date: 2025-09-23
     confidence: medium
-    ref: "core_notes v1.4 §6 (Key Equations / Curvature)"
+    ref: "core_notes v1.6 §6 (Key Equations / Curvature)"
 
 math_alignments:
   - id: 019
     term: "Bond Hamiltonian refinement"
     status: "updated_tier1"
-    details: "Added -J_ex cos(Δφ - 2π a A_ij) (U(1)-like). Gauge a tunable; validate proton binding."
+    details: "Exchange term variants: -J_ex cos(Δφ - 2π a A_ij) vs J_ex sin(Δφ) e^{-(Δω)^2/σ_exch^2}; validate proton binding."
     date: 2025-09-23
-    ref: "core_notes v1.4 §6 (Bond Energy)"
+    ref: "core_notes v1.6 §6 (Bond/Exchange)"
     confidence: high
   - id: 020
     term: "Simulation benchmarks"
@@ -155,28 +157,72 @@ math_alignments:
     details: "CHSH 2.20 ± 0.02 at σ_noise = 0.5; repro with L = 32, T = 0; drift < 4.3e-4."
     date: 2025-09-23
     confidence: high
-    ref: "core_notes v1.4 §7 (Benchmarks)"
+    ref: "core_notes v1.6 §7 (Benchmarks)"
   - id: 021
     term: "Spin flip rates"
     status: "provisional"
     details: "0.02–0.03 per tick; thermostat ≤ 0.30; test π_φ conservation (ΔE = 0 post-flip)."
     date: 2025-09-23
     confidence: medium
-    ref: "core_notes v1.4 §6 (Spin Flip Energy)"
+    ref: "core_notes v1.6 §6 (Spin Flip Energy)"
   - id: 022
     term: "RG flows β(g)"
     status: "added_to_tier1"
     details: "Two-loop approx 0.72 g - 0.63 g^2 - 0.011 g^3; g* ≈ 1.14; scheme sensitivity ±0.02."
     date: 2025-09-23
     confidence: high
-    ref: "core_notes v1.4 §6 (Key Equations / RG)"
+    ref: "core_notes v1.6 §6 (Key Equations / RG)"
   - id: 023
     term: "Proton equilibrium"
     status: "experimental"
     details: "3-node: r = 0.84 ± 0.01 fm, E_binding = 48 ± 3 MeV; α = 938 MeV·fm² fits mass."
     date: 2025-09-23
     confidence: high
-    ref: "core_notes v1.4 §5 (Equilibrium & Mass)"
+    ref: "core_notes v1.6 §5 (Equilibrium & Mass)"
+
+lattice_continuum_alignments:
+  - id: 030
+    term: "Phase-stiffness ρ_s"
+    status: "added_to_tier1"
+    details: "≈15.9 MeV·fm^{-1} at a_lat=0.08 fm, J_lat=0.85 MeV, g≈0.405 at Λ; ρ_s=(3/2) J a_lat^{2-d}; test d=3 stability."
+    date: "2025-09-23"
+    ref: "lattice_workbook"
+    confidence: high
+  - id: 031
+    term: "Lattice → continuum bridge"
+    status: "experimental"
+    details: "∑_{⟨ij⟩} G_ij (Δφ_ij)^2 → a_lat^{2-d} ∫ d^d x G(x) |∇φ|^2; O(Δφ^2) small-angle; repro in MD long-wavelength modes (d=3)."
+    date: "2025-09-23"
+    ref: "lattice_workbook"
+    confidence: high
+  - id: 032
+    term: "Exchange sin(Δφ) default"
+    status: "provisional"
+    details: "J_ex sin(Δφ) exp[-(Δω)^2 / σ_exch^2] per workbook (vs prior cos variant); validate proton binding ~48 MeV."
+    date: "2025-09-23"
+    ref: "lattice_workbook; math_alignments id:019"
+    confidence: medium
+  - id: 033
+    term: "+8% J retune"
+    status: "experimental"
+    details: "Shift J_lat to recover r_p=0.84 fm; impacts ρ_s by ~7%; log runs for uncertainty propagation."
+    date: "2025-09-23"
+    ref: "lattice_workbook; emergent_properties id:005"
+    confidence: high
+  - id: 034
+    term: "Uncertainty sources"
+    status: "open"
+    details: "Δg from schemes (±0.02), ε=0.05 (±0.04), a_lat/J_lat error, truncation; total Δω* ±5.5%; breakdown table planned in next sim."
+    date: "2025-09-23"
+    ref: "lattice_workbook"
+    confidence: low
+  - id: 035
+    term: "Sim param a_lat"
+    status: "experimental"
+    details: "a_lat=0.08 fm consistent with ℓ*=2.07 fm; r*≈13 fm. For N>10^4, prune ℛ_ij < 0.5 to avoid O(N^2) bottlenecks."
+    date: "2025-09-23"
+    ref: "scale_limits id:009"
+    confidence: high
 
 kb_updates:
   - id: 026
@@ -193,29 +239,34 @@ kb_updates:
     description: "Benchmarks (run-specific numbers) moved out of Tier 1; retained only canonical formulas/thresholds; details logged here."
     date: 2025-09-23
     status: completed
-    ref: "core_notes v1.4 §7; findings.yaml (this file)"
+    ref: "core_notes v1.4 §7; findings.yaml"
   - id: 029
-    description: "Constants table cross-checked with RTG–EFT release; retain uncertainties; keep Δω* ±0.08×10^23 s^-1."
+    description: "Constants table cross-checked with RTG–EFT release; retain uncertainties; keep Δω* 1.45(8)×10^23 s^-1."
     date: 2025-09-23
     status: completed
-    ref: "core_notes v1.4 §1 (Constants)"
+    ref: "core_notes v1.6 §1"
   - id: 030
-    description: "Unified 'Δω*-observer' definition; ensure usage in observer-dependent measurements."
+    description: "Added lattice→continuum workbook alignments; reflected in Tier 1 v1.6 (ℓ*, r*, ρ_s, S)."
     date: 2025-09-23
     status: completed
-    ref: "core_notes v1.4 §4 (Observer Concepts)"
+    ref: "core_notes v1.6; lattice_continuum_alignments"
 
 open_questions:
   - id: 024
     description: "Spin quantization: Path-integral vs. Grassmann for full fermionic extension?"
     date: 2025-09-23
     priority: high
-    ref: "core_notes v1.4 §8 (Open Questions)"
+    ref: "core_notes v1.6 §8 (Open Questions)"
   - id: 025
-    description: "Gauge symmetries: Full U(1) embedding beyond cos term in E_ij?"
+    description: "Gauge symmetries: Full U(1) embedding beyond exchange term in E_ij / S?"
     date: 2025-09-23
     priority: medium
-    ref: "core_notes v1.4 §8 (Open Questions)"
+    ref: "core_notes v1.6 §8 (Open Questions)"
+  - id: 036
+    description: "L2 vs. L1 norm in S for non‑local effects? Optimal a_lat for U(1)^2 window stability?"
+    date: 2025-09-23
+    priority: medium
+    ref: "lattice_workbook"
 
 # End of findings.yaml
-# For diffs: git diff -- findings.yaml (v1.3 aligns to core_notes v1.4; adds kb_updates 026–030).
+# Commit hint: v1.4 — 'Lattice workbook alignments (+7), normalized with core_notes v1.6'

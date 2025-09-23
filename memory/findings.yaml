@@ -27,6 +27,27 @@
   tags: [time]
   status: confirmed
 
+- id: core_principles
+  type: definition
+  description: "RTG principles: no absolute observables, distance/time emerge via resonance, gauge invariance is emergent, stability from bounded kernels."
+  tags: [principles, foundation]
+  source: "Core Principles article"
+  status: confirmed
+
+- id: enriched_geometry
+  type: definition
+  description: "RTG geometry includes resonance-based curvature elasticity and torsional corrections; anisotropy leads to effective curvature bias."
+  tags: [geometry, enrichment]
+  source: "Enriched Geometry article"
+  status: tentative
+
+- id: forces_fields
+  type: definition
+  description: "In RTG, forces are resonance gradients in node space; electromagnetism from photon nodes; nuclear forces from higher-order resonance; gravity as residual curvature elasticity."
+  tags: [forces, fields]
+  source: "Forces & Fields article"
+  status: confirmed
+
 - id: delta_omega_star
   type: constant
   value: 1.45e23
@@ -36,7 +57,7 @@
   tags: [critical, bandwidth]
   status: tentative
   date: 2025-05-06
-  source: "RTG Canonical Handbook; simulation defaults"
+  source: "RTG Canonical Handbook; Two-Loop Derivation"
 
 - id: rg_fixed_point
   type: constant
@@ -74,16 +95,60 @@
   source: "simulation"
   status: confirmed
 
+- id: proton_model
+  type: finding
+  date: 2025-05-06
+  description: "Proton modeled as 3-node SU(2) bound state; stability via oscillatory resonance and phase cycling."
+  tags: [proton, SU2, stability]
+  source: "2D→3D Proton article"
+  status: confirmed
+
+- id: two_loop_derivation
+  type: finding
+  date: 2025-05-06
+  description: "Two-loop RG derivation of critical bandwidth Δω*, supporting 1.45e23 rad/s value."
+  tags: [RG, derivation, constants]
+  source: "Two-Loop Derivation article"
+  status: confirmed
+
 - id: dimensionality_emergence
   type: open_question
   description: "Mapping of δω / Δω* thresholds to emergent dimensionality (D=2,3,4)."
   tags: [geometry, open_question]
   status: tentative
 
+- id: dimensionality_thresholds
+  type: open_question
+  description: "Thresholds in Δω / Δω* mark transitions between effective dimensions; coherence can add relational axes."
+  tags: [geometry, dimensions]
+  source: "Dimensional Emergence article"
+  status: tentative
+
 - id: black_hole_modeling
   type: open_question
   description: "How do RTG kernels behave near Planck wall / singularities?"
   tags: [black_hole, open_question]
+  status: tentative
+
+- id: black_hole_resolution
+  type: open_question
+  description: "How RTG handles gravitational collapse: resonance saturation + curvature penalty halting collapse at Planck wall."
+  tags: [black_hole, cosmology]
+  source: "Black Hole Resolution article"
+  status: tentative
+
+- id: cosmology_expansion
+  type: finding
+  description: "Universal expansion modeled as frequency drift, not metric stretch."
+  tags: [cosmology, expansion]
+  source: "Cosmological Applications article"
+  status: tentative
+
+- id: energy_framework
+  type: open_question
+  description: "RTG cosmology defines relational energy tensor; dark energy as resonance imbalance. Energy conservation only approximate."
+  tags: [cosmology, energy]
+  source: "Cosmological Dynamics article"
   status: tentative
 
 - id: cosmology_growth
@@ -99,16 +164,16 @@
   source: "Advanced Topics article"
   status: tentative
 
-- id: black_hole_resolution
+- id: four_d_corridors
   type: open_question
-  description: "How RTG handles gravitational collapse: resonance saturation + curvature penalty halting collapse at Planck wall."
-  tags: [black_hole, cosmology]
-  source: "Black Hole Resolution article"
+  description: "Transient 4-D corridors emerge under high resonance density; not yet gauged, unstable structures."
+  tags: [geometry, dimension]
+  source: "4-D Corridors article"
   status: tentative
 
-- id: core_principles
-  type: definition
-  description: "RTG principles: no absolute observables, distance/time emerge via resonance, gauge invariance is emergent, stability from bounded kernels."
-  tags: [principles, foundation]
-  source: "Core Principles article"
-  status: confirmed
+- id: rtg_to_eft
+  type: open_question
+  description: "Construction of minimal EFT from RTG by coarse-graining resonance kernels; testable predictions possible."
+  tags: [EFT, coarse_grain, testable]
+  source: "RTG→EFT article"
+  status: tentative

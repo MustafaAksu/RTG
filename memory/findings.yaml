@@ -48,6 +48,34 @@
   source: "Forces & Fields article"
   status: confirmed
 
+- id: gauge_symmetries
+  type: definition
+  description: "In RTG, gauge symmetries (U(1), SU(2), etc.) emerge as resonance bands; anomalies = unstable resonance states."
+  tags: [gauge, symmetry]
+  source: "Gauge Symmetries article"
+  status: confirmed
+
+- id: gravity_residual
+  type: definition
+  description: "Gravity in RTG arises as residual elasticity of resonance-curvature field; a weak binding leftover after local resonance saturation."
+  tags: [gravity, elasticity]
+  source: "Gravity Residual article"
+  status: confirmed
+
+- id: observer_relativity
+  type: definition
+  description: "Observers emerge as coherent clusters of nodes; reference frames are relational, not absolute."
+  tags: [observer, relativity]
+  source: "Observer Relativity article"
+  status: confirmed
+
+- id: photon_dynamics
+  type: definition
+  description: "Photon modeled as paired nodes; EM field emerges from large-scale resonance of photon pairs."
+  tags: [photon, EM]
+  source: "Photon Dynamics article"
+  status: confirmed
+
 - id: delta_omega_star
   type: constant
   value: 1.45e23
@@ -110,6 +138,20 @@
   tags: [RG, derivation, constants]
   source: "Two-Loop Derivation article"
   status: confirmed
+
+- id: nuclear_modeling
+  type: finding
+  description: "Multi-node clusters in RTG simulate nuclear binding; proton-neutron interactions modeled via resonance layering."
+  tags: [nuclear, modeling]
+  source: "Particle & Nuclear Modeling article"
+  status: tentative
+
+- id: higgs_like
+  type: finding
+  description: "Higgs-like particle arises as collective oscillation of resonance kernels, producing scalar excitation and effective mass stabilization."
+  tags: [higgs, particle]
+  source: "Higgs-like Particle v2.0 article"
+  status: tentative
 
 - id: dimensionality_emergence
   type: open_question
@@ -176,4 +218,18 @@
   description: "Construction of minimal EFT from RTG by coarse-graining resonance kernels; testable predictions possible."
   tags: [EFT, coarse_grain, testable]
   source: "RTG→EFT article"
+  status: tentative
+
+- id: photon_mass_relation
+  type: open_question
+  description: "Photon effective mass arises in bounded resonance clusters; free-state photons remain effectively massless."
+  tags: [photon, mass]
+  source: "Photon Mass Relation article"
+  status: tentative
+
+- id: photon_journey
+  type: open_question
+  description: "How photons traverse dimensional ladders in RTG, shifting across effective dimensions depending on resonance thresholds."
+  tags: [photon, dimension]
+  source: "Photon’s Dimensional Journey article"
   status: tentative

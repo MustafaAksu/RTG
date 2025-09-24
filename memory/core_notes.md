@@ -1,9 +1,10 @@
 # Relational Time Geometry (RTG) Core Notes
 
-**Version**: v1.12  
+**Version**: v1.14  
 **Last Revised**: 2025-09-24  
 **Author**: Mustafa Aksu (with Grok & ChatGPT contributions)  
-**Purpose**: Authoritative anchor for RTG principles, workflows, and key concepts. Overrides chat history; use as Tier 1 static core. For evolutions/experiments, consult Tier 2 (findings.yaml, rtg_articles_index.yaml). This version integrates Gravity I (tree-level EH), Gravity II (quantum corrections, running, anomalies), **Forces & Fields** (unified forces principle), and **Thermodynamics & Rotational Dynamics** (Aug 2025).
+**Purpose**: Authoritative anchor for RTG principles, workflows, and key concepts. Overrides chat history; use as Tier 1 static core. For evolutions/experiments, consult Tier 2 (findings.yaml, rtg_articles_index.yaml).  
+**This version integrates**: Gravity I (tree-level EH), Gravity II (quantum corrections, running, anomalies), **Forces & Fields** (unified forces principle), **Thermodynamics & Rotational Dynamics** (Aug 2025), **Particle & Nuclear Modeling v2.4**, and **Cosmological Applications v2.8** (Aug 2025).
 
 ---
 
@@ -16,30 +17,38 @@ Relational Time Geometry (RTG) models the universe as a graph of oscillatory nod
   | \(\Delta \omega^*\) | 1.45(8) × 10^{23} | rad·s⁻¹ | Critical bandwidth; RG-fixed. |
   | \(c\) | 299792458 | m/s | Speed of light (fixed). |
   | \(\hbar\) | 1.0545718 × 10^{-34} | J·s | Reduced Planck constant. |
-  | Proton radius | 0.84 ±0.01 | fm | Calibration target. |
-  | \(g^*\) | ≈1.14 ±0.02 | – | RG fixed point (scalar β_g). |
-  | \(\sigma_{\rm crit}\) | ≈0.589 | – | CHSH decoherence threshold. |
+  | Proton radius | 0.84 ± 0.01 | fm | Calibration target. |
+  | \(g^*\) | ≈ 1.14 ± 0.02 | – | RG fixed point (scalar β_g). |
+  | \(\sigma_{\rm crit}\) | ≈ 0.589 | – | CHSH decoherence threshold. |
   | \(K'\) | 12.0 (±0.5%) | MeV | Frequency penalty scale. |
-  | \(J\) | 3.24 ±0.12 | MeV | Resonance coupling. |
-  | \(J_{\rm ex}\) | 2.20 ±0.08 | MeV | Exchange coupling. |
-  | \(\alpha\) | ≈938 | MeV·fm² | Mass form factor. |
+  | \(J\) | 3.24 ± 0.12 | MeV | Resonance coupling. |
+  | \(J_{\rm ex}\) | 2.20 ± 0.08 | MeV | Exchange coupling. |
+  | \(\alpha\) | ≈ 938 | MeV·fm² | Mass form factor. |
   | \(\kappa_c\) | 1 | MeV·fm | Curvature scale. |
-  | Proton binding | ≈48 ±3 | MeV | 3-node equilibrium. |
-  | ℓ* | 2.07 ±0.11 | fm | Spectral length (c/Δω*). |
-  | r* | 13.0 ±0.7 | fm | Beat length (2π ℓ*). |
-  | ρ_s | ≈15.9 | MeV·fm⁻¹ | Phase-stiffness (a_lat=0.08 fm). |
-  | κ_B | ~1 | MeV·fm | Gauge stiffness (curl B). |
-  | C_κ^∞ (SU(2)) | 0.009104 ±5.5e-7 | – | Wilson coeff (0.28–0.70). |
-  | C_κ^∞ (U(1)) | 0.009116 ±1.1e-7 | – | Wilson coeff (0–0.28). |
-  | C_κ^∞ (U(1)^2) | 0.009115 ±4.9e-9 | – | Wilson coeff (1.55–1.70). |
+  | Proton binding | ≈ 48 ± 3 | MeV | 3-node equilibrium. |
+  | ℓ* | 2.07 ± 0.11 | fm | Spectral length (c/Δω*). |
+  | r* | 13.0 ± 0.7 | fm | Beat length (2π ℓ*). |
+  | ρ_s | ≈ 15.9 | MeV·fm⁻¹ | Phase-stiffness (a_lat=0.08 fm). |
+  | κ_B | ~ 1 | MeV·fm | Gauge stiffness (curl B). |
+  | C_κ^∞ (SU(2)) | 0.009104 ± 5.5e-7 | – | Wilson coeff (0.28–0.70). |
+  | C_κ^∞ (U(1)) | 0.009116 ± 1.1e-7 | – | Wilson coeff (0–0.28). |
+  | C_κ^∞ (U(1)^2) | 0.009115 ± 4.9e-9 | – | Wilson coeff (1.55–1.70). |
   | κ_B (Maxwell) | C_κ J_ex² / K′ | MeV⁻¹ | EFT prefactor. |
-  | G_0 | ~ρ_s ℓ*² | m³·kg⁻¹·s⁻² | Newton const (provisional). |
+  | G_0 | ~ ρ_s ℓ*² | m³·kg⁻¹·s⁻² | Newton const (provisional). |
   | Λ_0 | TBD | m⁻² | Cosmological constant (coarse-grained). |
-  | B_1 | ~0.1–0.2 | – | Gravity β_{g_N} coeff (scheme-dep.). |
+  | B_1 | ~ 0.1–0.2 | – | Gravity β_{g_N} coeff (scheme-dep.). |
   | C_0/C_2/C_4 | TBD | – | Λ running coeffs. |
-  | e | ~1/137 | – | U(1) charge (provisional). |
+  | e | ~ 1/137 | – | U(1) charge (provisional). |
   | **σ_exch** | **O(Δω\*)** | rad·s⁻¹ | **Exchange UV regulator; independent of noise σ_noise.** |
   | **T_spec** | **ħ σ_ω / k_B** | K | **Spectral temperature (frame-invariant).** |
+  | **ω_q** | **2.51 × 10^{23}** | rad·s⁻¹ | **Quark-level frequency (particle modeling).** |
+  | **ω_q,sub** | **1.26 × 10^{20}** | rad·s⁻¹ | **Sub-node inner oscillator frequency.** |
+  | **r_sub** | **5 × 10⁻¹⁷** | fm | **Sub-node spacing (gluon-like layer).** |
+  | **β** | **≈ 10⁻³** | – | **RG-scaled sub-node flip factor.** |
+  | **H₀** | **≈ 68 ± 2** | km·s⁻¹·Mpc⁻¹ | **Calibrated expansion rate (ε-drift).** |
+  | **t₀** | **≈ 13.7** | Gyr | **Universe age (ε-integration / CMB freeze-out).** |
+  | **r** | **< 0.01** | – | **Tensor-to-scalar ratio (prediction).** |
+  | **σ_φ** | **≈ 1×10⁻⁴** | – | **CMB phase scatter from lattice sims.** |
 
 - **Guiding Principles**: Minimal decoherence; phase-locking for stability; RG-anchored scales (two-loop β_g for scalar sector, running β_{g_N}/β_Λ for gravity sector); emergent phenomena from relations only.
 
@@ -51,7 +60,7 @@ Hierarchical storage for evolvability.
 ---
 
 ## 3. Core Mechanics
-- **Geometry Nodes**: ω_i, φ_i, spin (analytic s_i=±i, code σ_i=±1); intrinsic time \(t_i=\tilde{\phi}/\omega_i\).  
+- **Geometry Nodes**: ω_i, φ_i, spin (analytic s_i = ±i, code σ_i = ±1); intrinsic time \(t_i = \tilde{\phi}/\omega_i\).  
 - **Relational Edges**: Weighted by resonance.  
 - **Tooling Integration**: Augment with external fetches.
 
@@ -66,7 +75,7 @@ Hierarchical storage for evolvability.
 - Resonance kernel ℛ_ij; beat-frequency r_ij.
 
 ### Continuum Mapping
-- \(ρ_s = (3/2) J\, a_{\rm lat}^{2-d}\).  
+- \(ρ_s = (3/2) J \, a_{\rm lat}^{2-d}\).  
 - Gate field \(G(x)\).  
 - TV penalty \(K'_{\rm TV}\,\|\nabla \omega\|_1 / \Delta\omega^*\).
 
@@ -127,7 +136,7 @@ Hierarchical storage for evolvability.
 - Anomalies: SU(2) none perturbative (d^{abc}=0), Witten global; U(1) sums=0 gauged.  
 - Windows (±0.02 edges): U(1) [0,0.28], SU(2) [0.28,0.70], U(1)^2 [1.55,1.70].
 
-#### **Thermodynamic Primitives** *(new)*
+#### **Thermodynamic Primitives**
 - **Internal Energy \(U\)**: \(U=\sum_i \hbar \omega_i + \tfrac12\!\sum_{i\ne j}\!\big[K'|\Delta\omega|/\Delta\omega^* + J\,\mathcal{R}_{ij} + J_{\rm ex}\sin\Delta\phi\, e^{-(\Delta\omega/\sigma_{\rm exch})^2}\big]\).  
 - **Force \(F_{ij}\)**: \(F_{ij} = (2\pi c / r^2)\,\big[\partial E_{ij}/\partial(\Delta\omega)\big]\) with \(r=2\pi c/|\Delta\omega|\).  
 - **Work \(W(\gamma)\)**: \(\int_\gamma \mathbf{F}\cdot d\mathbf{r}\).  
@@ -158,8 +167,14 @@ All four fundamental forces emerge from the same resonance kernel ℛ_ij:
 - Gravitational via the structure tensor \(S_{\mu\nu}\) (residual elasticity).  
 *No external gauge fields required; forces unify through pairwise node interactions (ω, φ, s).*
 
-**Emergent Thermodynamics & Rotational Dynamics** *(new)*  
+**Emergent Thermodynamics & Rotational Dynamics**  
 Thermodynamics arises from node relations. \(U\) includes intrinsic + ½ bond sum. \(F\) from beat-distance gradients. Temperatures: \(T_{\rm RTG}\) (frame-dependent, possibly negative) and \(T_{\rm spec}\) (spectral, ≥0). Heat transfer is gated by resonance. Emergent mass \(m_i = [\hbar \omega_i - \tfrac12 \sum J \mathcal{R}_{ij}]/c^2\) (clamped ≥0). Orbital demos show elastic-residual dynamics.
+
+**Particle & Nuclear Modeling (Multilayer Graphs)** *(new)*  
+Hadrons/nuclei as **multilayer resonance graphs**: primary nodes (quarks/nucleons) form **trions** at Δφ=2π/3; **sub-nodes** (gluon-like, spacing \(r_{\rm sub}\approx 5\times10^{-17}\) fm, flips set by β≈10⁻³); **buffer nodes** provide thermal stabilization (≈40 per proton, ≈200 per Ca-40). Exotic tetra/pentaquarks arise in HMC ensembles.
+
+**Cosmological Applications (ε-drift expansion)** *(new)*  
+No dark sectors: expansion from the mean frequency drift \(\langle\dot\omega\rangle=-\epsilon(t)\langle\omega\rangle\) with \(\epsilon\propto a^{-3\alpha}\) and \(\alpha=d_f/3\). Structure growth from resonance clustering (\(\delta\propto t^{2/3}\) in matter era). **Micro–macro unification**: proton scale (e.g., \(r_p\approx0.84\) fm) to CMB peaks (ℓ≈200) via dimensional freeze-out at \(z\sim 1100\). **BH corridors** (δω>0.70 Δω*) modulate Hawking spectra (+5% hardening >100 keV).
 
 ---
 
@@ -180,40 +195,62 @@ Thermodynamics arises from node relations. \(U\) includes intrinsic + ½ bond su
 - **β_e (U(1))**: \((e^3/12\pi^2)\sum q_f^2 + (e^3/48\pi^2)\sum q_s^2\).  
 - **\(V_{\rm shell}\) (U(1)^2)**: \(J_{\rm ex}\sum \cos(\theta_a-\theta_b) e^{-(\Delta\omega_{ab}/\sigma_{\rm exch})^2}\).  
 - **β_g refine**: \(0.72 g - 0.63 g^2 - 0.011 g^3\) (\(a_3=0.011, C_{\rm vtx}=3/2\)).  
-- **Internal Energy \(U\)** *(new)*: \(\sum \hbar\omega_i + \tfrac12 \sum \text{bond terms}\).  
-- **Force \(F_{ij}\)** *(new)*: \((2\pi c / r^2)\,\partial E/\partial(\Delta\omega)\).  
-- **Relational \(T_{\rm RTG}\)** *(new)*: \(\hbar(\langle\omega\rangle-\omega_{\rm obs})/k_B\).  
-- **Spectral \(T_{\rm spec}\)** *(new)*: \(\hbar\sigma_\omega/k_B\).  
-- **Heat \(\dot q, Q\)** *(new)*: \(\dot q=\hbar(\langle\omega\rangle_1-\langle\omega\rangle_2)\mathcal{R}_{12}\); \(Q=\int \dot q\,dt\).  
-- **Emergent Mass \(m_i\)** *(new)*: \([\hbar\omega_i - \tfrac12 \sum J\mathcal{R}_{ij}]/c^2\) (≥0).
+- **Internal Energy \(U\)**: \(\sum \hbar\omega_i + \tfrac12 \sum \text{bond terms}\).  
+- **Force \(F_{ij}\)**: \((2\pi c / r^2)\,\partial E/\partial(\Delta\omega)\).  
+- **Relational \(T_{\rm RTG}\)**: \(\hbar(\langle\omega\rangle-\omega_{\rm obs})/k_B\).  
+- **Spectral \(T_{\rm spec}\)**: \(\hbar\sigma_\omega/k_B\).  
+- **Heat \(\dot q, Q\)**: \(\dot q=\hbar(\langle\omega\rangle_1-\langle\omega\rangle_2)\mathcal{R}_{12}\); \(Q=\int \dot q\,dt\).  
+- **Emergent Mass \(m_i\)**: \([\hbar\omega_i - \tfrac12 \sum J\mathcal{R}_{ij}]/c^2\) (≥0).
+
+**Particle–lattice action (RTG ↔ LQCD bridge)** *(new)*  
+\(S=\sum_{⟨ij⟩}\!\Big[\frac{\sigma}{2}\,\lvert 1-\mathcal U_{ij}\rvert^2 + \kappa(1-G_{ij}) + \frac{K'}{\Delta\omega^*}\,\lvert\omega_i-\omega_j\rvert\Big] + \sum_i \frac{m_i^2 a^3}{2},\)  
+with \(\mathcal U_{ij}=G_{ij}\,e^{i\Delta\phi_{ij}}\); continuum potential \(V(r)\propto \sigma r - \kappa/r\).  
+**Mapping**: \(U_{ij}\leftrightarrow U_\mu\) (link), \(G_{ij}\leftrightarrow\) color projector, \(\sigma\leftrightarrow\) string tension, buffers ↔ sea quarks, \(\Delta\omega^*\leftrightarrow \Lambda_{\rm QCD}\).
+
+**Cosmology (ε-drift, CMB, BH corridor)** *(new)*  
+\(\dot{\omega}_i=-(K'/\Delta\omega^*)\sum_j(\omega_i-\omega_j)\mathcal R_{ij};\ \ \epsilon(t)=K' N_{\rm eff}\sigma_\omega^2/\Delta\omega^*\propto a^{-3\alpha},\ \alpha=d_f/3.\)  
+CMB freeze-out: \(\Delta T/T=\Delta\omega/\langle\omega\rangle,\ \Delta\omega=0.28\,\Delta\omega^*(1+z)^{-1};\)  
+\(C_\ell = A_s\,(0.28 \Delta\omega^*)^2/[\ell(\ell+1)]\,\exp[-\ell(\ell+1)\sigma_\phi^2].\)  
+BH Hawking modulation (corridor at δω>0.70 Δω*): \(\Gamma_H\propto \exp[-(\delta\omega/\Delta\omega^*)^2],\ \ T_H^{\rm RTG}\approx T_H^{\rm GR}\,\Gamma_H.\)
 
 ---
 
 ## 7. Simulation Benchmarks
-- CHSH U(1): 2.827±0.002.  
+- CHSH U(1): 2.827 ± 0.002.  
 - U(1)^2: coherence decay.  
-- Ward residuals: (0.10±0.97)×10⁻³.  
+- Ward residuals: (0.10 ± 0.97) × 10⁻³.  
 - Exchange fraction: 1.083–1.514%.  
-- C_κ SU(2): ±5.5e-7.  
-- Drift < 4.3×10⁻⁴.  
+- C_κ SU(2): ± 5.5e-7.  
+- Drift < 4.3 × 10⁻⁴.  
 - Flip rates 0.02–0.03.  
-- β_g MC: ±0.02 g* (scheme).  
+- β_g MC: ± 0.02 g* (scheme).  
 - Witten anomaly: even SU(2) doublets/cell.  
-- U(1) sums=0 gauged.  
+- U(1) sums = 0 gauged.  
 - Renorm condition: \(\mu_{\ell,2}/\mu_{\ell,1}\approx 2\).  
-- **Carnot efficiency** *(new)*: \(\eta \approx 1 - T_c/T_h\) (within 3% error for small Δφ, Δω).  
-- **Anomaly bound** *(new)*: \(\langle \nabla_\mu J_\mu\rangle \lesssim 10^{-3}\).  
-- **Orbital demo** *(new)*: \(v(r)\) with \(m_0 \approx 1.7\times 10^{-28}\) kg.  
-- **Heat-flow with Δω noise** *(new)*: cumulative \(Q\) consistent with EFT anomaly constraints.
+- **Carnot efficiency**: \(\eta \approx 1 - T_c/T_h\) (within 3% error for small Δφ, Δω).  
+- **Anomaly bound**: \(\langle \nabla_\mu J_\mu\rangle \lesssim 10^{-3}\).  
+- **Orbital demo**: \(v(r)\) with \(m_0 \approx 1.7\times 10^{-28}\) kg.  
+- **Heat-flow with Δω noise**: cumulative \(Q\) consistent with EFT anomaly constraints.  
+- **Particle/Nuclear (new)**:  
+  - Proton: \(m_p = 938.3 \pm 6.4\) MeV; \(r_p = 0.84 \pm 0.009\) fm.  
+  - \(^{40}\)Ca: \(R = 4.80 \pm 0.05\) fm; binding \(= 340 \pm 4\) MeV.  
+  - Exotics: tetraquark mass \(2573 \pm 17\) MeV; pentaquark width ~ 33 MeV.  
+  - HMC: 64³ (12k trajectories), autocorr \(38 \pm 9\) with cluster flips; anomaly < 10⁻³; OSS ensemble planned.  
+- **Cosmology (new)**:  
+  - \(H(z=1)\approx 68 \pm 2\) km·s⁻¹·Mpc⁻¹ (ε-calibration).  
+  - CMB peaks: ℓ ≈ 200–1000 with \(\sigma_\phi \approx 10^{-4}\).  
+  - BH corridor: Hawking tail hardening **+5%** above 100 keV; PBH lifetime shift ~ **5%**.  
+  - Fractal dimension \(d_f \approx 2.0 \pm 0.1\).
 
 ---
 
 ## 8. Applications & Open Questions
-- Apps: Hadrons, Bell violations, cosmology. QED (U(1)), weak SU(2), strong SU(3) ε. EFT \(\Pi_{\rm ex}\) scattering. Running \(G(\mu)\), \(\Lambda(\mu)\), \(\alpha(\mu)\).  
-- Open: Spin quantization (±i → Dirac/SU2); domain boundaries; \(B_{ij}\) gradient experiments; ε cosmological; dim-6 > 1.70; SU(3) embed; μ_ℓ probes; loop-level corrections; anomaly tests.  
-- **New**: Negative \(T_{\rm RTG}\) (population inversion states).  
-- **New**: Heat-flow anomalies in gauge windows.  
-- **New**: Rotational anomalies in high-D regimes.
+- **Applications**: Hadrons, Bell violations, cosmology. QED (U(1)), weak SU(2), strong SU(3) ε. EFT \(\Pi_{\rm ex}\) scattering. Running \(G(\mu)\), \(\Lambda(\mu)\), \(\alpha(\mu)\).  
+  - *Particle/Nuclear (new)*: Proton, Ca-40, exotics (HMC); RTG↔QCD mapping (links, projectors, sea/buffers, Δω*↔Λ_QCD).  
+  - *Cosmology (new)*: Parameter-minimal expansion; CMB \(C_\ell\), H(z), BH spectra, PBH constraints.
+- **Open**: Spin quantization (±i → Dirac/SU2); domain boundaries; \(B_{ij}\) gradient experiments; ε cosmological; dim-6 > 1.70; SU(3) embed; μ_ℓ probes; loop-level corrections; anomaly tests.  
+  - *Particle/Nuclear (new)*: Entangled sub-nodes; e–p form factors; 256³ cluster sims (<2% mass error).  
+  - *Cosmology (new)*: Lorentz covariance of φ/ω; halo statistics vs ΛCDM; BH corridor bounds & 5D anomalies (≥1.70); TeV–PeV PBH excess searches (CTA/LHAASO).
 
 ---
 
@@ -221,4 +258,4 @@ Thermodynamics arises from node relations. \(U\) includes intrinsic + ½ bond su
 - Live Diff Tracker; updates append-only.  
 - **Notation guard**: ω angular rad·s⁻¹; \(\sigma_{\rm exch} \ne \sigma_{\rm noise}\); U(1) global/gauged; sin/−cos equiv.; spins in gauges; EFT amp=none baseline; dual μ (s⁻¹ scalar vs fm⁻¹ gravity).
 
-**End of Core Notes (v1.12)**
+**End of Core Notes (v1.14)**

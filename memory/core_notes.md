@@ -1,8 +1,8 @@
 # Relational Time Geometry (RTG) — Core Notes (Concise)
 
-**Version**: v1.15 (concise reorg)  
-**Last Revised**: 2025-09-24  
-**Authors**: Mustafa Aksu, Grok, ChatGPT  
+**Version**: v1.16 (ESM integration)  
+**Last Revised**: 2026-01-08  
+**Authors**: Mustafa Aksu, Claude, Grok, ChatGPT, Gemini
 **Purpose**: Tier‑1 **authoritative** reference for RTG principles, constants, and equations. Stable anchors for RAG; Tier‑2 dynamics live in `findings.yaml`.
 
 ---
@@ -16,6 +16,7 @@
 - §5 **Core Principles** (unification, observer, thermodynamics, particle & cosmology summaries)  
 - §6 **Key Equations** (microscopic, continuum/EFT, RG, thermo, particle, cosmology)  
 - §7 **Benchmarks** (CHSH, proton/Ca‑40, CMB, BH tail)  
+- §7.5 **ESM Benchmarks** (vacuum growth, Hodge decomposition, quantum foam)  
 - §8 **Applications & Open Questions**  
 - §9 **Maintenance & Conventions**
 
@@ -34,6 +35,9 @@
 | \( \sigma_{\rm crit} \) | \( \approx 0.589 \) | – | CHSH decoherence threshold (σ_noise/Δω*). |
 | \( \ell^* \) | \(2.07\pm0.11\) | fm | Spectral length \(c/\Delta\omega^*\). |
 | \( r^* \) | \(13.0\pm0.7\) | fm | Beat length \(2\pi\ell^*\). |
+| \( f_{\mathrm{irr}} \) | 0.752 | – | Hodge‑irreducible fraction of \(\mathrm{Var}(z)\) (coexact + harmonic) in ESM. |
+| \( \eta_Q \) | 0.977 | – | Boundary‑charge screening efficiency in ESM (example: \(Q: -1.60 \to -0.04\)). |
+| \( \lvert z \rvert_{\mathrm{floor}} \) | ~0.46 | – | Median \(\lvert z \rvert\) after IRLS fitting (ESM “geometric floor”). |
 
 ### 1.2 Couplings / elasticities
 | Symbol | Value | Units | Notes |
@@ -91,6 +95,30 @@
 - **Observers**: Δω*‑observer frames for comparisons; **superposition is relational** (unresolved phases until interaction).  
 - **Tooling**: lattice MD/HMC; continuum/EFT post‑processing.
 
+
+### 3.5 ESM (Emergent Simplicial Manifold)
+
+ESM is a constructive “emergent geometry” module built on top of an underlying oscillator graph. A **cluster** is a set of triangular faces (“triads”) glued along edges.
+
+- **Edge curvature field**: each graph edge \(e=(i,j)\) carries a residual \(z_e\) computed from frequency‑derived and embedding‑derived distances.
+- **Boundary definition**: the boundary \(\partial\mathcal{M}\) is the set of edges incident to exactly one triad in the cluster.
+- **Dual boundary observables** (independent):
+  - **Boundary charge** \(Q_{\partial}\):
+    \[
+      Q_{\partial} = \sum_{e \in \partial\mathcal{M}} z_e
+    \]
+  - **Boundary roughness** \(C_{\partial}\):
+    \[
+      C_{\partial} = \sqrt{\left\langle z_e^2 \right\rangle_{e \in \partial\mathcal{M}}}
+    \]
+- **Vacuum seed (dipole)**: a 4‑node “butterfly” of two triads chosen via Pareto filtering (low holonomy variance, Hessian stability, shared‑edge orientation compatibility, and collective 6‑node stability).
+- **Flux‑balanced growth (Stokes analog)**: attaching a triad on a boundary edge removes one boundary edge and creates two new ones, updating charge by
+  \[
+    \Delta Q_{\partial} = -z_{\rm old} + z_{\rm new,1} + z_{\rm new,2}.
+  \]
+- **Breathing mechanism**: strict monotone minimization of \(\lvert Q_{\partial} \rvert\) can stall (“vacuum prison”). Growth succeeds when we allow controlled temporary increases in \(\lvert Q_{\partial} \rvert\) (inhale) with a requirement that later steps re‑neutralize (exhale).
+- **Refinement trade‑off**: swap and \(k\)-exchange surgery can lower \(C_{\partial}\), but over‑polishing can fragment connectivity (connected components \(\beta_0 \uparrow\)). Fragmentation control is therefore a primary constraint for any refinement CLI.
+
 ---
 
 ## 4. Glossary
@@ -144,6 +172,20 @@
 - **Temperatures**: \( T_{\rm RTG}=\hbar(\langle\omega\rangle-\omega_{\rm obs})/k_B \) (can be negative); \( T_{\rm spec}=\hbar\sigma_\omega/k_B\ge 0 \).  
 - **Heat** \( \dot q=\hbar(\langle\omega\rangle_1-\langle\omega\rangle_2)\mathcal R_{12} \), \( Q=\int \dot q\,dt \).
 
+
+### 4.8 Emergent Geometry (ESM)
+
+- **Triad**: a triangular face (2-simplex) used as the elementary “surface atom” in ESM clusters.
+- **Boundary edge**: an edge incident to exactly one triad in the cluster; the set of all boundary edges is \(\partial\mathcal{M}\).
+- **z-residual (edge curvature)**: \(z_{ij} = \ln(r_{\rm em,ij}) - \ln(s\,r_{\rm geo,ij})\).
+- **Boundary charge**: \(Q_{\partial} = \sum_{e \in \partial\mathcal{M}} z_e\) (Stokes-theorem analog; do not sum triad fluxes).
+- **Boundary roughness**: \(C_{\partial} = \sqrt{\langle z_e^2 \rangle_{e\in\partial\mathcal{M}}}\).
+- **Hodge decomposition (discrete 1-form)**: \(z = d f + \delta g + h\), where \(d f\) is exact, \(\delta g\) coexact, and \(h\) harmonic.
+- **Geometric floor**: the coexact+harmonic fraction of \(\mathrm{Var}(z)\) (empirically \(\approx 75.2\%\)) which cannot be removed by local smoothing.
+- **Quantum foam**: boundary-neutral yet internally rough regime: \(Q_{\partial} \approx 0\) while \(C_{\partial} > 0\).
+- **Breathing growth**: controlled temporary increases in \(\lvert Q_{\partial} \rvert\) that enable growth through geometric bottlenecks.
+- **Fragmentation**: loss of global connectivity under aggressive refinement (connected components \(\beta_0 > 1\)).
+
 ---
 
 ## 5. Core Principles
@@ -154,6 +196,9 @@ U(1) (gauge phases) · SU(2) (spin rotations, exchange) · U(1)²≈SU(3) (phase
 **Observer‑relational quantum** — Entanglement (CHSH 2.827±0.002 in U(1)), superposition (unresolved phases relative to observer), decoherence at \( \sigma_{\rm crit}\approx0.589 \).
 
 **Emergent space‑time** — \( \Delta\tau \approx \Delta\phi/\Delta\omega \); photon propagation through gated bonds.
+
+**Machian Vacuum (ESM)** — Spacetime is not a pre‑existing container but a curvature‑screening field generated by defects. In ESM, the correct macroscopic flux is the boundary integral \(Q_{\partial} = \sum_{e\in\partial\mathcal{M}} z_e\) (Stokes analog), not a volume sum over triads. A near‑vacuum is boundary‑neutral (\(Q_{\partial}\approx 0\)) while boundary roughness \(C_{\partial} = \sqrt{\langle z_e^2\rangle_{e\in\partial\mathcal{M}}}\) remains non‑zero due to a Hodge‑irreducible coexact+harmonic component (empirically \(\approx 75.2\%\) of \(\mathrm{Var}(z)\)). *(Note: “no‑seed nucleation failure” has been observed informally; systematic random‑seed benchmarks remain future work.)*
+
 
 **Lattice→continuum** — \( \sum G_{ij}(\Delta\phi)^2 \to a^{2-d}\int G|\nabla\phi|^2 \); \( \rho_s=(3/2)J a^{2-d} \).
 
@@ -206,6 +251,36 @@ U(1) (gauge phases) · SU(2) (spin rotations, exchange) · U(1)²≈SU(3) (phase
   \( C_\ell = A_s (0.28\Delta\omega^*)^2/[\ell(\ell+1)]\,e^{-\ell(\ell+1)\sigma_\phi^2} \).  
 - BH: corridor for δω>0.70Δω* → \( \Gamma_H\propto e^{-(\delta\omega/\Delta\omega^*)^2} \), \( T_H^{\rm RTG}\approx T_H^{\rm GR}\Gamma_H \).
 
+
+### 6.7 ESM (Emergent Geometry)
+
+- **Edge residual / curvature field**:
+  \[
+    z_{ij} = \ln(r_{\rm em,ij}) - \ln(s\,r_{\rm geo,ij}), \qquad
+    r_{\rm em,ij} = \frac{\kappa}{\lvert \Delta\omega_{ij} \rvert}.
+  \]
+- **Boundary charge (Stokes analog)**:
+  \[
+    Q_{\partial} = \sum_{e\in\partial\mathcal{M}} z_e
+  \]
+- **Boundary roughness**:
+  \[
+    C_{\partial} = \sqrt{\left\langle z_e^2 \right\rangle_{e\in\partial\mathcal{M}}}
+  \]
+- **Triad attachment update** (when one boundary edge becomes internal and two new boundary edges are created):
+  \[
+    \Delta Q_{\partial} = -z_{e_{\rm old}} + z_{e_{\rm new,1}} + z_{e_{\rm new,2}}.
+  \]
+- **Hodge decomposition** (discrete 1‑form):
+  \[
+    z = d f + \delta g + h.
+  \]
+  Empirically, the exact fraction is \(\approx 24.8\%\) and the coexact+harmonic fraction is \(\approx 75.2\%\) (the “geometric floor”).
+- **Dipole shell “magic numbers”** *(hypothesis to be tested)*:
+  \[
+    D_n = 2\,\binom{n+3}{4} \in \{70,\,140,\,252,\,\dots\}.
+  \]
+
 ---
 
 ## 7. Simulation Benchmarks
@@ -224,14 +299,26 @@ U(1) (gauge phases) · SU(2) (spin rotations, exchange) · U(1)²≈SU(3) (phase
 - **Cosmology**: \( H(z\!=\!1)\approx68\pm2 \) km·s⁻¹·Mpc⁻¹; CMB peaks ℓ≈200–1000 with \( \sigma_\phi\approx10^{-4} \);  
   BH tail hardening **+5%** (>100 keV), PBH lifetime ~ **−5%**; fractal \( d_f\approx2.0\pm0.1 \).
 
+
+### 7.5 ESM Benchmarks (Emergent Geometry)
+
+- **Vacuum growth (demonstration)**: dipole seed (4 nodes, 2 triads) \(\to\) 16 triads (14 nodes); boundary charge \(Q: -1.60 \to -0.04\) (**97.7% screened**).
+- **Dual metrics**: boundary roughness \(C_{\partial}\approx 0.68\) (bounded); near‑vacuum requires \(Q_{\partial}\approx 0\) without forcing \(C_{\partial}\to 0\).
+- **Geometric floor / Hodge limit**: IRLS embedding fits stall at median \(\lvert z \rvert\approx 0.46\); Hodge decomposition shows coexact+harmonic \(\approx 75.2\%\) of \(\mathrm{Var}(z)\) (irreducible).
+- **Refinement trade‑off**: aggressive smoothing can fragment connectivity (\(\beta_0>1\)). Practical workflows either penalize fragmentation during surgery or prune to the largest component and re‑grow.
+
 ---
 
 ## 8. Applications & Open Questions
 
 **Applications**:  
-Hadrons/nuclei (proton, Ca‑40, exotics); Bell violations/quantum tests; QED/weak/strong analogs; EFT \( \Pi_{\rm ex} \) scattering; running \( G(\mu), \Lambda(\mu), \alpha(\mu) \); parameter‑minimal cosmology (H(z), CMB \( C_\ell \), BH spectra, PBH constraints).
+Hadrons/nuclei (proton, Ca‑40, exotics); Bell violations/quantum measurement; **emergent geometry (ESM)**: vacuum growth via boundary‑charge screening (quantum foam); cosmology (H(z), CMB \( C_\ell \), BH spectra, PBH constraints).
 
 **Open** (selection; see Tier‑2 for full list & priorities):  
+- ESM scaling: test dipole shell‑closure targets \(\{70,140,252,\dots\}\) ("magic numbers") and probe continuum trends.
+- ESM defect dynamics: inject a charged simplex ("monopole") into a neutral foam and measure screening response (proto‑gravity target).
+- Refinement under connectivity constraints: surgery with fragmentation penalties; largest‑component pruning + re‑growth; track \(\beta_0\) and boundary components.
+- Dynamic extension: couple ESM clusters to phase flow (\(\phi,\omega\)) and explore 4D/Lorentzian formulations.
 - Spin quantization beyond \( \pm i \) (Dirac/SU(2)); domain boundaries.  
 - Lab probes of \( B_{ij} \) gradients; mapping internal \( B \) to observed EM.  
 - Dim‑6 operators above ≥1.70 window; U(1)²→SU(3) embedding and long‑run stability.  
@@ -244,4 +331,4 @@ Hadrons/nuclei (proton, Ca‑40, exotics); Bell violations/quantum tests; QED/we
 - **Append‑only** for numerical values; deprecations noted in Tier‑2.  
 - **Units/notation**: ω in rad·s⁻¹; \( \sigma_{\rm exch}\neq\sigma_{\rm noise} \); U(1) can be global or gauged; sin/−cos exchange equivalence; spins within gauge choices; EFT amplitudes off by default; dual μ conventions (s⁻¹ vs fm⁻¹).
 
-**End of Core Notes (v1.15)**  
+**End of Core Notes (v1.16)**  

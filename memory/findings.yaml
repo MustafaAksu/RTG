@@ -1,7 +1,6 @@
-```yaml
 # RTG Findings Log
-# Version: v1.13 (ESM integration)
-# Last Modified: 2026-01-08
+# Version: v1.13 (ESM integration + Lattice Geometry Synthesis)
+# Last Modified: 2026-01-09
 # Purpose: Tier‑2 dynamic repository of findings for RAG. Concise, tag‑rich entries with stable IDs.
 # Notes:
 # - Entries add tags + refs for better retrieval.
@@ -9,620 +8,652 @@
 # - No content dropped; only wording/structure simplified.
 
 metadata:
-  project: RTG
-  total_entries: 82   # counts items below (excludes changelog)
-  last_update: 2026-01-08T12:00:00Z
-  changelog:
-    - date: 2026-01-08
-      changes: "v1.13: Integrated ESM findings (boundary-charge/Stokes, Hodge floor, breathing growth, fragmentation trade-off); added ESM open questions; aligned refs with core_notes v1.16."
-
-    - date: 2025-09-24
-      changes: "v1.12: Concise reorg; merged related sections; added tags/refs; removed kb_updates section for brevity; ids unchanged."
-    - date: 2025-09-24
-      changes: "v1.11: Added particle_nuclear & cosmology findings; plus challenges/optimizations/doc_alignments."
-    - date: 2025-09-24
-      changes: "v1.10: Added thermodynamics (ids 085–087); synced with core_notes v1.12."
-    - date: 2025-09-23
-      changes: "v1.9: Added quantum_behaviours (id 076); refined temporal_issues id 002."
-    - date: 2025-09-23
-      changes: "v1.8: Added quantum_correlations (ids 071–072); unification (id 074)."
-    - date: 2025-09-23
-      changes: "v1.7: Gravity I/II integrations; gravity alignments added."
+  project: RTG
+  total_entries: 86   # counts items below (excludes changelog)
+  last_update: 2026-01-09T14:30:00Z
+  changelog:
+    - date: 2026-01-09
+      changes: "v1.13 (Lattice Geometry): Added findings 150-155 (Lattice calibration, geometric deficit, trace gap diagnostic). Refined finding 113 (Geometric Floor)."
+    - date: 2026-01-08
+      changes: "v1.13: Integrated ESM findings (boundary-charge/Stokes, Hodge floor, breathing growth, fragmentation trade-off); added ESM open questions; aligned refs with core_notes v1.16."
+    - date: 2025-09-24
+      changes: "v1.12: Concise reorg; merged related sections; added tags/refs; removed kb_updates section for brevity; ids unchanged."
 
 # ────────────────────────────────────────────────────────────────────────────────
 key_findings:
 
-  temporal_issues:
-    - id: 001
-      description: "Multi‑session drift >0.1% without Tier‑1 re‑anchor."
-      date: 2025-09-10
-      confidence: high
-      tags: [process, stability]
-      refs: ["core_notes v1.16 §2"]
-
-    - id: 002
-      description: "Phase‑locking breaks near σ_noise/Δω* ≳ 0.5 (refined σ_crit≈0.589); CHSH < 2."
-      date: 2025-09-20
-      updated: 2025-09-23
-      confidence: medium
-      tags: [quantum, decoherence, thresholds]
-      refs: ["core_notes v1.16 §7", "rtg:rtg-chsh-vs-decoherence-noise-amplitude"]
-
-  resonance_dynamics:
-    - id: 003
-      description: "ℛ_ij reaches 3 only at anti‑aligned spins & Δφ=0; ~2.5 typical under noise."
-      date: 2025-09-18
-      confidence: high
-      tags: [resonance, limits]
-      refs: ["core_notes v1.16 §4"]
-
-    - id: 004
-      description: "Beat‑distance r_ij unstable for |Δω|<10^{-2}Δω*; coarse‑graining cuts error ~15%."
-      date: 2025-09-22
-      confidence: medium
-      tags: [resonance, numerics]
-      refs: ["core_notes v1.16 §4, §6"]
-
-  emergent_properties:
-    - id: 005
-      description: "3‑node proton binding 48±3 MeV; mass clamp m_i≥0 avoids negatives."
-      date: 2025-09-23
-      confidence: high
-      tags: [hadron, binding, benchmark]
-      refs: ["core_notes v1.16 §5"]
-
-    - id: 006
-      description: "Dimensionality jump near δω/Δω*≈0.28; 4D corridor unstable beyond ~1.55."
-      date: 2025-09-23
-      confidence: medium
-      tags: [emergence, phases]
-      refs: ["core_notes v1.16 §4"]
-
-  quantum:
-    - id: 071
-      description: "CHSH vs σ_noise: 2.821→~0.725 across 0→0.34Δω*; early threshold ~0.5, refined 0.589."
-      date: 2025-06-25
-      confidence: high
-      tags: [quantum, CHSH, decoherence]
-      refs: ["rtg:rtg-chsh-vs-decoherence-noise-amplitude", "core_notes v1.16 §7"]
-
-    - id: 072
-      description: "Near threshold: ℛ clamping changes CHSH <±0.03; Δω*±5% shifts CHSH ±0.02."
-      date: 2025-06-25
-      confidence: high
-      tags: [robustness, sensitivity]
-      refs: ["rtg:rtg-chsh-vs-decoherence-noise-amplitude"]
-
-    - id: 076
-      description: "Entanglement (CHSH 2.827±0.002), observer‑relative superposition, σ_crit≈0.589."
-      date: 2025-08-03
-      confidence: high
-      tags: [quantum, observer, superposition]
-      refs: ["rtg:quantum-behaviours-in-relational-time-geometry-rtg", "core_notes v1.16 §4–§5"]
-
-  particle_nuclear:
-    - id: 093
-      description: "Proton: 3 quarks (ω_q≈2.51e23), 6 sub‑nodes (ω_sub≈1.26e20, r_sub≈5e−17 fm, β≈1e−3), ~40 buffers; Δφ=2π/3 trion; m_p=938.3±6.4 MeV, r_p=0.84±0.009 fm."
-      date: 2025-08-13
-      confidence: high
-      tags: [hadron, substructure, buffers]
-      refs: ["rtg:particle-and-nuclear-modeling-in-relational-time-geometry-rtg", "core_notes v1.16 §1, §5, §7"]
-
-    - id: 094
-      description: "40Ca: 80 trions + 20 e⁻ + ~200 buffers; R=4.80±0.05 fm; binding 340±4 MeV (~8.5/A)."
-      date: 2025-08-13
-      confidence: high
-      tags: [nuclear, benchmarks]
-      refs: ["rtg:particle-and-nuclear-modeling-in-relational-time-geometry-rtg", "core_notes v1.16 §5, §7"]
-
-    - id: 095
-      description: "Exotics (64³ HMC): udcc 2573±17 MeV; uudcc width ~33 MeV (preliminary)."
-      date: 2025-08-13
-      confidence: low
-      tags: [exotic, HMC]
-      refs: ["rtg:particle-and-nuclear-modeling-in-relational-time-geometry-rtg"]
-
-  cosmology:
-    - id: 096
-      description: "Expansion from ε(t)=K' N_eff σ_ω²/Δω* ∝ a^{-3α}, α=d_f/3; H₀≈68±2, t₀≈13.7 Gyr."
-      date: 2025-08-13
-      confidence: medium
-      tags: [cosmology, expansion]
-      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §5–§6"]
-
-    - id: 097
-      description: "Clustering: δ=(1/N²)Σ ℛ_ij cos[(ω_i−ω_j)t+Δφ_ij]; δ∝t^{2/3} in matter era."
-      date: 2025-08-13
-      confidence: medium
-      tags: [cosmology, structure]
-      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §5"]
-
-    - id: 098
-      description: "CMB: ΔT/T=Δω/⟨ω⟩; C_ℓ≈A_s(0.28Δω*)²/[ℓ(ℓ+1)]·e^{−ℓ(ℓ+1)σ_φ²}, σ_φ≈1e−4; peaks ℓ≈200–1000; r<0.01."
-      date: 2025-08-13
-      confidence: medium
-      tags: [CMB, predictions]
-      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §6–§7"]
-
-    - id: 099
-      description: "BH corridor: δω>0.70Δω* near r≲5R_S → Γ_H∝e^{−(δω/Δω*)²}; +5% hard tail (>100 keV); PBH lifetime ~−5%."
-      date: 2025-08-13
-      confidence: low
-      tags: [black_holes, quantum_gravity]
-      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §6–§7"]
-
-    - id: 100
-      description: "Falsifiables: H(z=1)=68±2, r<0.01, d_f≈2.0±0.1, BH tail +5% (>100 keV)."
-      date: 2025-08-13
-      confidence: medium
-      tags: [predictions, surveys]
-      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §7–§8"]
-
-  lattice_continuum:
-    - id: 030
-      description: "ρ_s≈15.9 MeV·fm⁻1 at a_lat=0.08 fm; ρ_s=(3/2)J a_lat^{2−d}."
-      date: 2025-09-23
-      confidence: high
-      tags: [continuum, stiffness]
-      refs: ["core_notes v1.16 §4"]
-
-    - id: 031
-      description: "∑ G_ij(Δφ_ij)² → a_lat^{2−d}∫G|∇φ|² (small‑angle)."
-      date: 2025-09-23
-      confidence: high
-      tags: [continuum, mapping]
-      refs: ["core_notes v1.16 §5"]
-
-    - id: 032
-      description: "Default exchange: J_ex sin(Δφ−B_ij) e^{−(Δω/σ_exch)²} (cos variant equivalent)."
-      date: 2025-09-23
-      confidence: medium
-      tags: [exchange, convention]
-      refs: ["core_notes v1.16 §6"]
-
-    - id: 033
-      description: "+8% J retune restores r_p=0.84 fm; ρ_s shift ~7%."
-      date: 2025-09-23
-      confidence: high
-      tags: [calibration]
-      refs: ["core_notes v1.16 §5"]
-
-    - id: 034
-      description: "Uncertainties: scheme Δg±0.02, ε≈0.05±0.04, a_lat/J_lat, truncation → Δω*±5.5%."
-      date: 2025-09-23
-      confidence: low
-      tags: [uncertainty]
-      refs: ["core_notes v1.16 §7"]
-
-    - id: 035
-      description: "Scale: a_lat=0.08 fm; r*≈13 fm; prune ℛ_ij<0.5 for N>10⁴."
-      date: 2025-09-23
-      confidence: high
-      tags: [scaling, performance]
-      refs: ["core_notes v1.16 §7"]
-
-  gauge_eft:
-    - id: 037
-      description: "Gauge link U_ij = exp[i(Δφ_ij−B_ij)] (local gauge)."
-      date: 2025-09-23
-      confidence: high
-      tags: [gauge, U1]
-      refs: ["core_notes v1.16 §4"]
-
-    - id: 038
-      description: "SU(2) doublet ψ_i=[z_i, i s_i z_i]^T; R(θ) action."
-      date: 2025-09-23
-      confidence: medium
-      tags: [gauge, SU2]
-      refs: ["core_notes v1.16 §4"]
-
-    - id: 039
-      description: "sin(Δφ−B) ≡ −cos(Δφ−B−π/2) in exchange energy."
-      date: 2025-09-23
-      confidence: high
-      tags: [exchange, equivalence]
-      refs: ["core_notes v1.16 §6"]
-
-    - id: 040
-      description: "Curl action S_B=(κ_B/2)∑□(curl B)²; κ_B ~ O(1) MeV·fm."
-      date: 2025-09-23
-      confidence: medium
-      tags: [EFT, gauge]
-      refs: ["core_notes v1.16 §6"]
-
-    - id: 041
-      description: "U(1)^2 mixing ≈ SU(3) via ε; validated by ~48±3 MeV proton binding."
-      date: 2025-09-23
-      confidence: low
-      tags: [SU3, approximation]
-      refs: ["core_notes v1.16 §4–§5", "rtg:forces-fields-in-relational-time-geometry-rtg"]
-
-    - id: 043
-      description: "C_κ^∞ (MC): SU(2) 0.009104±5.5e−7; U(1) 0.009116±1.1e−7; U(1)^2 0.009115±4.9e−9."
-      date: 2025-09-23
-      confidence: high
-      tags: [EFT, constants]
-      refs: ["core_notes v1.16 §1"]
-
-    - id: 044
-      description: "κ_B = C_κ J_ex²/K′; example ≈3.68e−3 MeV."
-      date: 2025-09-23
-      confidence: high
-      tags: [EFT, coupling]
-      refs: ["core_notes v1.16 §1, §6"]
-
-    - id: 045
-      description: "Ward residual a₀ ≈ (0.10±0.97)×10⁻³ (scheme‑invariant within error)."
-      date: 2025-09-23
-      confidence: high
-      tags: [anomaly, sanity]
-      refs: ["core_notes v1.16 §7"]
-
-    - id: 046
-      description: "Exchange fraction 1.083–1.514% across μ/Δω* window."
-      date: 2025-09-23
-      confidence: medium
-      tags: [exchange, measurement]
-      refs: ["core_notes v1.16 §7"]
-
-    - id: 047
-      description: "Π_ex(0)=(1/6π²)(J_ex²/K′)μ³; Π_ex(ω)≈Π_ex(0)[1+½(ω/μ)²]."
-      date: 2025-09-23
-      confidence: high
-      tags: [EFT, polarization]
-      refs: ["core_notes v1.16 §6"]
-
-    - id: 048
-      description: "Finite‑size: L=32/64/96 → C_κ spread <0.13%."
-      date: 2025-09-23
-      confidence: high
-      tags: [scaling, EFT]
-      refs: ["core_notes v1.16 §7"]
-
-    - id: 049
-      description: "When does internal B_ij map to observed EM? propose phase‑gradient lab analogs."
-      date: 2025-09-23
-      confidence: medium
-      tags: [mapping, experiment]
-      refs: ["core_notes v1.16 §6–§7"]
-
-  gravity:
-    - id: 053
-      description: "Structure tensor S_μν from weighted bond geometry → metric seed."
-      date: 2025-09-23
-      confidence: high
-      tags: [gravity, metric]
-      refs: ["core_notes v1.16 §4"]
-
-    - id: 054
-      description: "Tetrad from S eigenvectors; conformal Ω by phase‑velocity match; enforce −+++."
-      date: 2025-09-23
-      confidence: medium
-      tags: [gravity, tetrad]
-      refs: ["core_notes v1.16 §4–§5"]
-
-    - id: 055
-      description: "EH action S=(1/16πG₀)∫√−g(R−2Λ₀) at tree level."
-      date: 2025-09-23
-      confidence: high
-      tags: [gravity, EH]
-      refs: ["core_notes v1.16 §6"]
-
-    - id: 056
-      description: "Matter: S_{φ,G}=∫√−g[(ρ_s/2)G g^{μν}∂φ∂φ + κ(1−G)]."
-      date: 2025-09-23
-      confidence: high
-      tags: [gravity, matter]
-      refs: ["core_notes v1.16 §4, §6"]
-
-    - id: 057
-      description: "U(1) minimal coupling: B_ij→A_μ; S_B curl→F_μν; Maxwell term."
-      date: 2025-09-23
-      confidence: high
-      tags: [gauge, gravity]
-      refs: ["core_notes v1.16 §4, §6"]
-
-    - id: 058
-      description: "Metric checks: flat limit; rephasing independence; Laplace–Beltrami fit."
-      date: 2025-09-23
-      confidence: high
-      tags: [validation, metric]
-      refs: ["core_notes v1.16 §7"]
-
-    - id: 061
-      description: "β_{g_N}=2 g_N + B₁ g_N² + O(g_N³), g_N=μ_ℓ²G."
-      date: 2025-09-23
-      confidence: high
-      tags: [RG, gravity]
-      refs: ["core_notes v1.16 §4, §6"]
-
-    - id: 062
-      description: "β_Λ≈C₀μ_ℓ⁴ + C₂μ_ℓ²Λ + C₄Λ² (coeffs TBD)."
-      date: 2025-09-23
-      confidence: medium
-      tags: [RG, cosmology]
-      refs: ["core_notes v1.16 §4, §6"]
-
-    - id: 063
-      description: "β_e=(e³/12π²)Σq_f² + (e³/48π²)Σq_s² + O(e⁵)."
-      date: 2025-09-23
-      confidence: high
-      tags: [RG, gauge]
-      refs: ["core_notes v1.16 §4, §6"]
-
-    - id: 064
-      description: "SU(2) weak‑sector as Heisenberg‑like exchange (beyond Ising)."
-      date: 2025-09-23
-      confidence: medium
-      tags: [SU2, exchange]
-      refs: ["core_notes v1.16 §4"]
-
-    - id: 065
-      description: "U(1)^2 shell‑mixing V_shell with σ_exch≈Δω*; ε≈SU(3)."
-      date: 2025-09-23
-      confidence: high
-      tags: [SU3, mixing]
-      refs: ["core_notes v1.16 §4, §6"]
-
-    - id: 066
-      description: "Renorm condition: [√−g G_{μν}]_k = 8πG_k[√−g T_{μν}]_k (two μ_ℓ scales, ratio≈2)."
-      date: 2025-09-23
-      confidence: high
-      tags: [RG, calibration]
-      refs: ["core_notes v1.16 §5–§7"]
-
-    - id: 067
-      description: "Anomalies: SU(2) none perturbative (d^{abc}=0), Witten global; U(1) sums=0; Ward ~1e−3."
-      date: 2025-09-23
-      confidence: medium
-      tags: [anomaly, consistency]
-      refs: ["core_notes v1.16 §4, §7"]
-
-    - id: 068
-      description: "β_g≈0.72g−0.63g²−0.011g³; IR fixed point g*≈1.14."
-      date: 2025-09-23
-      confidence: high
-      tags: [RG, scalar]
-      refs: ["core_notes v1.16 §6"]
-
-    - id: 069
-      description: "Dual μ conventions: s⁻¹ (scalar) vs fm⁻¹ (gravity); unify in EFT."
-      date: 2025-09-23
-      confidence: low
-      tags: [units, RG]
-      refs: ["core_notes v1.16 §4"]
-
-    - id: 070
-      description: "Loop gravity beyond tree‑level: open; track b_grav/η and anomaly flow."
-      date: 2025-09-23
-      confidence: low
-      tags: [open, quantum_gravity]
-      refs: ["core_notes v1.16 §8"]
-
-  thermodynamics:
-    - id: 085
-      description: "U=∑ħω_i + ½∑E_ij; F_ij=(2πc/r²)∂E/∂Δω; T_RTG=ħ(⟨ω⟩−ω_obs)/k_B; T_spec=ħσ_ω/k_B; q̇=ħ(⟨ω⟩₁−⟨ω⟩₂)ℛ₁₂."
-      date: 2025-08-12
-      confidence: high
-      tags: [thermo, definitions]
-      refs: ["rtg:thermodynamics-and-rotational-dynamics-in-relational-time-geometry-rtg", "core_notes v1.16 §4–§6"]
-
-    - id: 086
-      description: "m_i=[ħω_i − ½∑Jℛ_ij]/c² (≥0); orbital v≈√(Fr/m₀); σ_exch ⟂ σ_noise."
-      date: 2025-08-12
-      confidence: high
-      tags: [thermo, rotation, mass]
-      refs: ["rtg:thermodynamics-and-rotational-dynamics-in-relational-time-geometry-rtg", "core_notes v1.16 §5–§6"]
-
-    - id: 087
-      description: "Benchmarks: Carnot η≈1−T_c/T_h (≤3% error small Δφ,Δω); ⟨∇·J⟩≲1e−3; Earth–Sun T_RTG≈300 K (illustrative)."
-      date: 2025-08-12
-      confidence: medium
-      tags: [thermo, benchmarks]
-      refs: ["core_notes v1.16 §7", "rtg:thermodynamics-and-rotational-dynamics-in-relational-time-geometry-rtg"]
-
-  optimizations:
-    - id: 010
-      description: "Git hooks for YAML diffs; inline session flags → ~90% manual reduction."
-      date: 2025-09-16
-      confidence: high
-      tags: [workflow, tooling]
-      refs: ["core_notes v1.16 §9"]
-
-    - id: 011
-      description: "Δt=5e−5 minimizes drift to <4.3e−4; OU σ=0.5 → CHSH 2.20±0.02."
-      date: 2025-09-23
-      confidence: high
-      tags: [simulation, stability]
-      refs: ["core_notes v1.16 §7"]
-
-    - id: 103
-      description: "HMC cluster‑flips: autocorr 38±9 on 64³; OSS ensemble planned."
-      date: 2025-08-13
-      confidence: high
-      tags: [HMC, performance]
-      refs: ["rtg:particle-and-nuclear-modeling-in-relational-time-geometry-rtg", "core_notes v1.16 §7"]
-
-  challenges:
-    - id: 007
-      description: "Tier‑3 RAG overload; cap pulls ≤5 via relational edges."
-      date: 2025-09-15
-      confidence: high
-      tags: [process, RAG]
-      refs: ["core_notes v1.16 §3"]
-
-    - id: 008
-      description: "Spin flip rate >0.03 → curvature spikes; thermostat cap 0.30 mitigates ~80%."
-      date: 2025-09-23
-      confidence: medium
-      tags: [simulation, control]
-      refs: ["core_notes v1.16 §6–§7"]
-
-    - id: 009
-      description: "O(N²) bonds stall at N≈1e4; prune ℛ_ij<0.5 → ~2× speedup."
-      date: 2025-09-21
-      confidence: high
-      tags: [scaling, performance]
-      refs: ["core_notes v1.16 §7"]
-
-    - id: 102
-      description: "Cosmo sims: Lorentz covariance of φ/ω, ΛCDM halo parity, BH corridor bounds."
-      date: 2025-08-13
-      confidence: low
-      tags: [cosmology, open]
-      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §8"]
-
-  spacetime_emergence:
-    - id: 110
-      description: "Machian origin (ESM): coherent geometry nucleates around a structured dipole seed; random/noise seeding often fails to grow a stable near-vacuum (systematic benchmarks pending)."
-      date: 2026-01-08
-      confidence: medium
-      tags: [ESM, mach_principle, vacuum]
-      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §5"]
-
-    - id: 111
-      description: "Stokes correction: total flux is a boundary charge, not a volume sum. Use Q = Σ z_e over boundary edges (internal edges cancel); summing triad fluxes double-counts internal edges."
-      date: 2026-01-08
-      confidence: high
-      tags: [ESM, stokes, boundary_charge]
-      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §3.5", "core_notes v1.16 §6.7"]
-
-    - id: 112
-      description: "Quantum foam signature: clusters can achieve boundary neutrality (Q≈0) while retaining nonzero roughness (C>0). Q (signed sum) and C (RMS) are independent objectives."
-      date: 2026-01-08
-      confidence: high
-      tags: [ESM, quantum_foam, metrics]
-      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §3.5"]
-
-    - id: 113
-      description: "Hodge limit: Hodge decomposition of the z-field shows exact ≈24.8% removable vs coexact+harmonic ≈75.2% irreducible, explaining the geometric floor as a cohomological obstruction."
-      date: 2026-01-08
-      confidence: high
-      tags: [ESM, hodge, topology]
-      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §6.7"]
-
-    - id: 114
-      description: "Breathing growth: monotone |Q|-minimization stalls in local 'vacuum prisons'. Allowing controlled temporary increases in |Q| (inhale) with later re-neutralization (exhale) enables robust growth."
-      date: 2026-01-08
-      confidence: high
-      tags: [ESM, algorithm, growth]
-      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §3.5"]
-
-    - id: 115
-      description: "Refinement trade-off & scaling: aggressive surgery/polish can fragment connectivity (β0↑, boundary components↑). Hypothesis: stability peaks at dipole shell closures ('magic numbers') D_n=2·Pentatope(n)→{70,140,252,…}."
-      date: 2026-01-08
-      confidence: medium
-      tags: [ESM, stability, scaling]
-      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics"]
-
-  unification:
-    - id: 074
-      description: "All forces from ℛ_ij: U(1), SU(2), U(1)^2≈SU(3), gravity via S_μν (residual elasticity)."
-      date: 2025-08-03
-      confidence: high
-      tags: [unification, forces]
-      refs: ["rtg:forces-fields-in-relational-time-geometry-rtg", "core_notes v1.16 §4–§5"]
+  temporal_issues:
+    - id: 001
+      description: "Multi‑session drift >0.1% without Tier‑1 re‑anchor."
+      date: 2025-09-10
+      confidence: high
+      tags: [process, stability]
+      refs: ["core_notes v1.16 §2"]
+
+    - id: 002
+      description: "Phase‑locking breaks near σ_noise/Δω* ≳ 0.5 (refined σ_crit≈0.589); CHSH < 2."
+      date: 2025-09-20
+      updated: 2025-09-23
+      confidence: medium
+      tags: [quantum, decoherence, thresholds]
+      refs: ["core_notes v1.16 §7", "rtg:rtg-chsh-vs-decoherence-noise-amplitude"]
+
+  resonance_dynamics:
+    - id: 003
+      description: "ℛ_ij reaches 3 only at anti‑aligned spins & Δφ=0; ~2.5 typical under noise."
+      date: 2025-09-18
+      confidence: high
+      tags: [resonance, limits]
+      refs: ["core_notes v1.16 §4"]
+
+    - id: 004
+      description: "Beat‑distance r_ij unstable for |Δω|<10^{-2}Δω*; coarse‑graining cuts error ~15%."
+      date: 2025-09-22
+      confidence: medium
+      tags: [resonance, numerics]
+      refs: ["core_notes v1.16 §4, §6"]
+
+  emergent_properties:
+    - id: 005
+      description: "3‑node proton binding 48±3 MeV; mass clamp m_i≥0 avoids negatives."
+      date: 2025-09-23
+      confidence: high
+      tags: [hadron, binding, benchmark]
+      refs: ["core_notes v1.16 §5"]
+
+    - id: 006
+      description: "Dimensionality jump near δω/Δω*≈0.28; 4D corridor unstable beyond ~1.55."
+      date: 2025-09-23
+      confidence: medium
+      tags: [emergence, phases]
+      refs: ["core_notes v1.16 §4"]
+
+  quantum:
+    - id: 071
+      description: "CHSH vs σ_noise: 2.821→~0.725 across 0→0.34Δω*; early threshold ~0.5, refined 0.589."
+      date: 2025-06-25
+      confidence: high
+      tags: [quantum, CHSH, decoherence]
+      refs: ["rtg:rtg-chsh-vs-decoherence-noise-amplitude", "core_notes v1.16 §7"]
+
+    - id: 072
+      description: "Near threshold: ℛ clamping changes CHSH <±0.03; Δω*±5% shifts CHSH ±0.02."
+      date: 2025-06-25
+      confidence: high
+      tags: [robustness, sensitivity]
+      refs: ["rtg:rtg-chsh-vs-decoherence-noise-amplitude"]
+
+    - id: 076
+      description: "Entanglement (CHSH 2.827±0.002), observer‑relative superposition, σ_crit≈0.589."
+      date: 2025-08-03
+      confidence: high
+      tags: [quantum, observer, superposition]
+      refs: ["rtg:quantum-behaviours-in-relational-time-geometry-rtg", "core_notes v1.16 §4–§5"]
+
+  particle_nuclear:
+    - id: 093
+      description: "Proton: 3 quarks (ω_q≈2.51e23), 6 sub‑nodes (ω_sub≈1.26e20, r_sub≈5e−17 fm, β≈1e−3), ~40 buffers; Δφ=2π/3 trion; m_p=938.3±6.4 MeV, r_p=0.84±0.009 fm."
+      date: 2025-08-13
+      confidence: high
+      tags: [hadron, substructure, buffers]
+      refs: ["rtg:particle-and-nuclear-modeling-in-relational-time-geometry-rtg", "core_notes v1.16 §1, §5, §7"]
+
+    - id: 094
+      description: "40Ca: 80 trions + 20 e⁻ + ~200 buffers; R=4.80±0.05 fm; binding 340±4 MeV (~8.5/A)."
+      date: 2025-08-13
+      confidence: high
+      tags: [nuclear, benchmarks]
+      refs: ["rtg:particle-and-nuclear-modeling-in-relational-time-geometry-rtg", "core_notes v1.16 §5, §7"]
+
+    - id: 095
+      description: "Exotics (64³ HMC): udcc 2573±17 MeV; uudcc width ~33 MeV (preliminary)."
+      date: 2025-08-13
+      confidence: low
+      tags: [exotic, HMC]
+      refs: ["rtg:particle-and-nuclear-modeling-in-relational-time-geometry-rtg"]
+
+  cosmology:
+    - id: 096
+      description: "Expansion from ε(t)=K' N_eff σ_ω²/Δω* ∝ a^{-3α}, α=d_f/3; H₀≈68±2, t₀≈13.7 Gyr."
+      date: 2025-08-13
+      confidence: medium
+      tags: [cosmology, expansion]
+      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §5–§6"]
+
+    - id: 097
+      description: "Clustering: δ=(1/N²)Σ ℛ_ij cos[(ω_i−ω_j)t+Δφ_ij]; δ∝t^{2/3} in matter era."
+      date: 2025-08-13
+      confidence: medium
+      tags: [cosmology, structure]
+      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §5"]
+
+    - id: 098
+      description: "CMB: ΔT/T=Δω/⟨ω⟩; C_ℓ≈A_s(0.28Δω*)²/[ℓ(ℓ+1)]·e^{−ℓ(ℓ+1)σ_φ²}, σ_φ≈1e−4; peaks ℓ≈200–1000; r<0.01."
+      date: 2025-08-13
+      confidence: medium
+      tags: [CMB, predictions]
+      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §6–§7"]
+
+    - id: 099
+      description: "BH corridor: δω>0.70Δω* near r≲5R_S → Γ_H∝e^{−(δω/Δω*)²}; +5% hard tail (>100 keV); PBH lifetime ~−5%."
+      date: 2025-08-13
+      confidence: low
+      tags: [black_holes, quantum_gravity]
+      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §6–§7"]
+
+    - id: 100
+      description: "Falsifiables: H(z=1)=68±2, r<0.01, d_f≈2.0±0.1, BH tail +5% (>100 keV)."
+      date: 2025-08-13
+      confidence: medium
+      tags: [predictions, surveys]
+      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §7–§8"]
+
+  lattice_continuum:
+    - id: 030
+      description: "ρ_s≈15.9 MeV·fm⁻1 at a_lat=0.08 fm; ρ_s=(3/2)J a_lat^{2−d}."
+      date: 2025-09-23
+      confidence: high
+      tags: [continuum, stiffness]
+      refs: ["core_notes v1.16 §4"]
+
+    - id: 031
+      description: "∑ G_ij(Δφ_ij)² → a_lat^{2−d}∫G|∇φ|² (small‑angle)."
+      date: 2025-09-23
+      confidence: high
+      tags: [continuum, mapping]
+      refs: ["core_notes v1.16 §5"]
+
+    - id: 032
+      description: "Default exchange: J_ex sin(Δφ−B_ij) e^{−(Δω/σ_exch)²} (cos variant equivalent)."
+      date: 2025-09-23
+      confidence: medium
+      tags: [exchange, convention]
+      refs: ["core_notes v1.16 §6"]
+
+    - id: 033
+      description: "+8% J retune restores r_p=0.84 fm; ρ_s shift ~7%."
+      date: 2025-09-23
+      confidence: high
+      tags: [calibration]
+      refs: ["core_notes v1.16 §5"]
+
+    - id: 034
+      description: "Uncertainties: scheme Δg±0.02, ε≈0.05±0.04, a_lat/J_lat, truncation → Δω*±5.5%."
+      date: 2025-09-23
+      confidence: low
+      tags: [uncertainty]
+      refs: ["core_notes v1.16 §7"]
+
+    - id: 035
+      description: "Scale: a_lat=0.08 fm; r*≈13 fm; prune ℛ_ij<0.5 for N>10⁴."
+      date: 2025-09-23
+      confidence: high
+      tags: [scaling, performance]
+      refs: ["core_notes v1.16 §7"]
+
+    - id: 140
+      description: "Mapping Sanity Check: Lattice sum Σ|Δω| matches continuum ∫||∇ω||_1 exactly for linear fields ω(x) = k·x iff K'_{TV} = K_lat * a^(1-d)."
+      date: 2026-01-09
+      confidence: high
+      tags: [validation, math, mapping]
+      refs: ["rtg:from-lattice-hamiltonian-to-continuum-action-in-rtg-two-loop-derivation-workbook"]
+
+    - id: 141
+      description: "Coupling Distinction: J_lat (0.85 MeV) is the raw lattice parameter; continuum J (3.24 MeV) is a renormalized effective coupling after mapping."
+      date: 2026-01-09
+      confidence: high
+      tags: [parameters, definitions]
+      refs: ["rtg:from-lattice-hamiltonian-to-continuum-action-in-rtg-two-loop-derivation-workbook"]
+
+    - id: 142
+      description: "Phase Approximation Error: Small-angle expansion |1-U|^2 ≈ (Δφ)^2 is accurate to ≤ 2% for |Δφ| ≤ π/4."
+      date: 2026-01-09
+      confidence: high
+      tags: [numerics, error_budget]
+      refs: ["rtg:from-lattice-hamiltonian-to-continuum-action-in-rtg-two-loop-derivation-workbook"]
+
+    - id: 150
+      description: "Calibration Protocol: ESM graphs are irregular and frustrated (unlike ideal FCC). Measure effective parameters (ρ_s, K'_TV) directly using linear test fields (φ=k·x) to determine the true RG coupling g. Rejects 'magic number' geometric multipliers."
+      date: 2026-01-09
+      confidence: high
+      tags: [calibration, protocol, rigorous]
+      refs: ["core_notes v1.16 §4.8"]
+
+    - id: 154
+      description: "Geometric Deficit: 3D regular tetrahedra have a 7.36° angular deficit per edge. This frustration prevents flat tiling and drives emergent curvature. 2D triad meshes inherit analogous frustration from embedding mismatches."
+      date: 2026-01-09
+      confidence: high
+      tags: [geometry, constants, stress]
+      refs: ["core_notes v1.16 §10"]
+
+  gauge_eft:
+    - id: 037
+      description: "Gauge link U_ij = exp[i(Δφ_ij−B_ij)] (local gauge)."
+      date: 2025-09-23
+      confidence: high
+      tags: [gauge, U1]
+      refs: ["core_notes v1.16 §4"]
+
+    - id: 038
+      description: "SU(2) doublet ψ_i=[z_i, i s_i z_i]^T; R(θ) action."
+      date: 2025-09-23
+      confidence: medium
+      tags: [gauge, SU2]
+      refs: ["core_notes v1.16 §4"]
+
+    - id: 039
+      description: "sin(Δφ−B) ≡ −cos(Δφ−B−π/2) in exchange energy."
+      date: 2025-09-23
+      confidence: high
+      tags: [exchange, equivalence]
+      refs: ["core_notes v1.16 §6"]
+
+    - id: 040
+      description: "Curl action S_B=(κ_B/2)∑□(curl B)²; κ_B ~ O(1) MeV·fm."
+      date: 2025-09-23
+      confidence: medium
+      tags: [EFT, gauge]
+      refs: ["core_notes v1.16 §6"]
+
+    - id: 041
+      description: "U(1)^2 mixing ≈ SU(3) via ε; validated by ~48±3 MeV proton binding."
+      date: 2025-09-23
+      confidence: low
+      tags: [SU3, approximation]
+      refs: ["core_notes v1.16 §4–§5", "rtg:forces-fields-in-relational-time-geometry-rtg"]
+
+    - id: 043
+      description: "C_κ^∞ (MC): SU(2) 0.009104±5.5e−7; U(1) 0.009116±1.1e−7; U(1)^2 0.009115±4.9e−9."
+      date: 2025-09-23
+      confidence: high
+      tags: [EFT, constants]
+      refs: ["core_notes v1.16 §1"]
+
+    - id: 044
+      description: "κ_B = C_κ J_ex²/K′; example ≈3.68e−3 MeV."
+      date: 2025-09-23
+      confidence: high
+      tags: [EFT, coupling]
+      refs: ["core_notes v1.16 §1, §6"]
+
+    - id: 045
+      description: "Ward residual a₀ ≈ (0.10±0.97)×10⁻³ (scheme‑invariant within error)."
+      date: 2025-09-23
+      confidence: high
+      tags: [anomaly, sanity]
+      refs: ["core_notes v1.16 §7"]
+
+    - id: 046
+      description: "Exchange fraction 1.083–1.514% across μ/Δω* window."
+      date: 2025-09-23
+      confidence: medium
+      tags: [exchange, measurement]
+      refs: ["core_notes v1.16 §7"]
+
+    - id: 047
+      description: "Π_ex(0)=(1/6π²)(J_ex²/K′)μ³; Π_ex(ω)≈Π_ex(0)[1+½(ω/μ)²]."
+      date: 2025-09-23
+      confidence: high
+      tags: [EFT, polarization]
+      refs: ["core_notes v1.16 §6"]
+
+    - id: 048
+      description: "Finite‑size: L=32/64/96 → C_κ spread <0.13%."
+      date: 2025-09-23
+      confidence: high
+      tags: [scaling, EFT]
+      refs: ["core_notes v1.16 §7"]
+
+    - id: 049
+      description: "When does internal B_ij map to observed EM? propose phase‑gradient lab analogs."
+      date: 2025-09-23
+      confidence: medium
+      tags: [mapping, experiment]
+      refs: ["core_notes v1.16 §6–§7"]
+
+  gravity:
+    - id: 053
+      description: "Structure tensor S_μν from weighted bond geometry → metric seed."
+      date: 2025-09-23
+      confidence: high
+      tags: [gravity, metric]
+      refs: ["core_notes v1.16 §4"]
+
+    - id: 054
+      description: "Tetrad from S eigenvectors; conformal Ω by phase‑velocity match; enforce −+++."
+      date: 2025-09-23
+      confidence: medium
+      tags: [gravity, tetrad]
+      refs: ["core_notes v1.16 §4–§5"]
+
+    - id: 055
+      description: "EH action S=(1/16πG₀)∫√−g(R−2Λ₀) at tree level."
+      date: 2025-09-23
+      confidence: high
+      tags: [gravity, EH]
+      refs: ["core_notes v1.16 §6"]
+
+    - id: 056
+      description: "Matter: S_{φ,G}=∫√−g[(ρ_s/2)G g^{μν}∂φ∂φ + κ(1−G)]."
+      date: 2025-09-23
+      confidence: high
+      tags: [gravity, matter]
+      refs: ["core_notes v1.16 §4, §6"]
+
+    - id: 057
+      description: "U(1) minimal coupling: B_ij→A_μ; S_B curl→F_μν; Maxwell term."
+      date: 2025-09-23
+      confidence: high
+      tags: [gauge, gravity]
+      refs: ["core_notes v1.16 §4, §6"]
+
+    - id: 058
+      description: "Metric checks: flat limit; rephasing independence; Laplace–Beltrami fit."
+      date: 2025-09-23
+      confidence: high
+      tags: [validation, metric]
+      refs: ["core_notes v1.16 §7"]
+
+    - id: 061
+      description: "β_{g_N}=2 g_N + B₁ g_N² + O(g_N³), g_N=μ_ℓ²G."
+      date: 2025-09-23
+      confidence: high
+      tags: [RG, gravity]
+      refs: ["core_notes v1.16 §4, §6"]
+
+    - id: 062
+      description: "β_Λ≈C₀μ_ℓ⁴ + C₂μ_ℓ²Λ + C₄Λ² (coeffs TBD)."
+      date: 2025-09-23
+      confidence: medium
+      tags: [RG, cosmology]
+      refs: ["core_notes v1.16 §4, §6"]
+
+    - id: 063
+      description: "β_e=(e³/12π²)Σq_f² + (e³/48π²)Σq_s² + O(e⁵)."
+      date: 2025-09-23
+      confidence: high
+      tags: [RG, gauge]
+      refs: ["core_notes v1.16 §4, §6"]
+
+    - id: 064
+      description: "SU(2) weak‑sector as Heisenberg‑like exchange (beyond Ising)."
+      date: 2025-09-23
+      confidence: medium
+      tags: [SU2, exchange]
+      refs: ["core_notes v1.16 §4"]
+
+    - id: 065
+      description: "U(1)^2 shell‑mixing V_shell with σ_exch≈Δω*; ε≈SU(3)."
+      date: 2025-09-23
+      confidence: high
+      tags: [SU3, mixing]
+      refs: ["core_notes v1.16 §4, §6"]
+
+    - id: 066
+      description: "Renorm condition: [√−g G_{μν}]_k = 8πG_k[√−g T_{μν}]_k (two μ_ℓ scales, ratio≈2)."
+      date: 2025-09-23
+      confidence: high
+      tags: [RG, calibration]
+      refs: ["core_notes v1.16 §5–§7"]
+
+    - id: 067
+      description: "Anomalies: SU(2) none perturbative (d^{abc}=0), Witten global; U(1) sums=0; Ward ~1e−3."
+      date: 2025-09-23
+      confidence: medium
+      tags: [anomaly, consistency]
+      refs: ["core_notes v1.16 §4, §7"]
+
+    - id: 068
+      description: "β_g≈0.72g−0.63g²−0.011g³; IR fixed point g*≈1.14."
+      date: 2025-09-23
+      confidence: high
+      tags: [RG, scalar]
+      refs: ["core_notes v1.16 §6"]
+
+    - id: 069
+      description: "Dual μ conventions: s⁻¹ (scalar) vs fm⁻¹ (gravity); unify in EFT."
+      date: 2025-09-23
+      confidence: low
+      tags: [units, RG]
+      refs: ["core_notes v1.16 §4"]
+
+    - id: 070
+      description: "Loop gravity beyond tree‑level: open; track b_grav/η and anomaly flow."
+      date: 2025-09-23
+      confidence: low
+      tags: [open, quantum_gravity]
+      refs: ["core_notes v1.16 §8"]
+
+  thermodynamics:
+    - id: 085
+      description: "U=∑ħω_i + ½∑E_ij; F_ij=(2πc/r²)∂E/∂Δω; T_RTG=ħ(⟨ω⟩−ω_obs)/k_B; T_spec=ħσ_ω/k_B; q̇=ħ(⟨ω⟩₁−⟨ω⟩₂)ℛ₁₂."
+      date: 2025-08-12
+      confidence: high
+      tags: [thermo, definitions]
+      refs: ["rtg:thermodynamics-and-rotational-dynamics-in-relational-time-geometry-rtg", "core_notes v1.16 §4–§6"]
+
+    - id: 086
+      description: "m_i=[ħω_i − ½∑Jℛ_ij]/c² (≥0); orbital v≈√(Fr/m₀); σ_exch ⟂ σ_noise."
+      date: 2025-08-12
+      confidence: high
+      tags: [thermo, rotation, mass]
+      refs: ["rtg:thermodynamics-and-rotational-dynamics-in-relational-time-geometry-rtg", "core_notes v1.16 §5–§6"]
+
+    - id: 087
+      description: "Benchmarks: Carnot η≈1−T_c/T_h (≤3% error small Δφ,Δω); ⟨∇·J⟩≲1e−3; Earth–Sun T_RTG≈300 K (illustrative)."
+      date: 2025-08-12
+      confidence: medium
+      tags: [thermo, benchmarks]
+      refs: ["core_notes v1.16 §7", "rtg:thermodynamics-and-rotational-dynamics-in-relational-time-geometry-rtg"]
+
+  optimizations:
+    - id: 010
+      description: "Git hooks for YAML diffs; inline session flags → ~90% manual reduction."
+      date: 2025-09-16
+      confidence: high
+      tags: [workflow, tooling]
+      refs: ["core_notes v1.16 §9"]
+
+    - id: 011
+      description: "Δt=5e−5 minimizes drift to <4.3e−4; OU σ=0.5 → CHSH 2.20±0.02."
+      date: 2025-09-23
+      confidence: high
+      tags: [simulation, stability]
+      refs: ["core_notes v1.16 §7"]
+
+    - id: 103
+      description: "HMC cluster‑flips: autocorr 38±9 on 64³; OSS ensemble planned."
+      date: 2025-08-13
+      confidence: high
+      tags: [HMC, performance]
+      refs: ["rtg:particle-and-nuclear-modeling-in-relational-time-geometry-rtg", "core_notes v1.16 §7"]
+
+  challenges:
+    - id: 007
+      description: "Tier‑3 RAG overload; cap pulls ≤5 via relational edges."
+      date: 2025-09-15
+      confidence: high
+      tags: [process, RAG]
+      refs: ["core_notes v1.16 §3"]
+
+    - id: 008
+      description: "Spin flip rate >0.03 → curvature spikes; thermostat cap 0.30 mitigates ~80%."
+      date: 2025-09-23
+      confidence: medium
+      tags: [simulation, control]
+      refs: ["core_notes v1.16 §6–§7"]
+
+    - id: 009
+      description: "O(N²) bonds stall at N≈1e4; prune ℛ_ij<0.5 → ~2× speedup."
+      date: 2025-09-21
+      confidence: high
+      tags: [scaling, performance]
+      refs: ["core_notes v1.16 §7"]
+
+    - id: 102
+      description: "Cosmo sims: Lorentz covariance of φ/ω, ΛCDM halo parity, BH corridor bounds."
+      date: 2025-08-13
+      confidence: low
+      tags: [cosmology, open]
+      refs: ["rtg:cosmological-applications-of-relational-time-geometry-rtg", "core_notes v1.16 §8"]
+
+  spacetime_emergence:
+    - id: 110
+      description: "Machian origin (ESM): coherent geometry nucleates around a structured dipole seed; random/noise seeding often fails to grow a stable near-vacuum (systematic benchmarks pending)."
+      date: 2026-01-08
+      confidence: medium
+      tags: [ESM, mach_principle, vacuum]
+      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §5"]
+
+    - id: 111
+      description: "Stokes correction: total flux is a boundary charge, not a volume sum. Use Q = Σ z_e over boundary edges (internal edges cancel); summing triad fluxes double-counts internal edges."
+      date: 2026-01-08
+      confidence: high
+      tags: [ESM, stokes, boundary_charge]
+      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §3.5", "core_notes v1.16 §6.7"]
+
+    - id: 112
+      description: "Quantum foam signature: clusters can achieve boundary neutrality (Q≈0) while retaining nonzero roughness (C>0). Q (signed sum) and C (RMS) are independent objectives."
+      date: 2026-01-08
+      confidence: high
+      tags: [ESM, quantum_foam, metrics]
+      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §3.5"]
+
+    - id: 113
+      description: "Hodge limit: Irreducible curvature ~75.2%. Hypothesis: This ratio represents the 'variance tax' corresponding to the thermodynamic floor E0 ≈ 1/12. Test: Check if 0.752 * Var(z) ≈ E0."
+      date: 2026-01-09
+      confidence: medium
+      tags: [ESM, hodge, theory, falsifiable]
+      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §6.7"]
+
+    - id: 114
+      description: "Breathing growth: monotone |Q|-minimization stalls in local 'vacuum prisons'. Allowing controlled temporary increases in |Q| (inhale) with later re-neutralization (exhale) enables robust growth."
+      date: 2026-01-08
+      confidence: high
+      tags: [ESM, algorithm, growth]
+      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics", "core_notes v1.16 §3.5"]
+
+    - id: 115
+      description: "Refinement trade-off & scaling: aggressive surgery/polish can fragment connectivity (β0↑, boundary components↑). Hypothesis: stability peaks at dipole shell closures ('magic numbers') D_n=2·Pentatope(n)→{70,140,252,…}."
+      date: 2026-01-08
+      confidence: medium
+      tags: [ESM, stability, scaling]
+      refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics"]
+
+  unification:
+    - id: 074
+      description: "All forces from ℛ_ij: U(1), SU(2), U(1)^2≈SU(3), gravity via S_μν (residual elasticity)."
+      date: 2025-08-03
+      confidence: high
+      tags: [unification, forces]
+      refs: ["rtg:forces-fields-in-relational-time-geometry-rtg", "core_notes v1.16 §4–§5"]
 
 open_questions:
-  - id: 024
-    description: "Spin quantization path: path‑integral vs Grassmann (full fermions)."
-    date: 2025-09-23
-    priority: high
-    tags: [fermions, theory]
-    refs: ["core_notes v1.16 §8"]
+  - id: 024
+    description: "Spin quantization path: path‑integral vs Grassmann (full fermions)."
+    date: 2025-09-23
+    priority: high
+    tags: [fermions, theory]
+    refs: ["core_notes v1.16 §8"]
 
-  - id: 025
-    description: "Full U(1) embedding beyond exchange term in E_ij/S."
-    date: 2025-09-23
-    priority: medium
-    tags: [gauge, theory]
-    refs: ["core_notes v1.16 §8"]
+  - id: 025
+    description: "Full U(1) embedding beyond exchange term in E_ij/S."
+    date: 2025-09-23
+    priority: medium
+    tags: [gauge, theory]
+    refs: ["core_notes v1.16 §8"]
 
-  - id: 036
-    description: "L2 vs L1 in S for non‑local effects; optimal a_lat for U(1)^2 stability."
-    date: 2025-09-23
-    priority: medium
-    tags: [numerics, stability]
-    refs: ["core_notes v1.16 §6"]
+  - id: 036
+    description: "L2 vs L1 in S for non‑local effects; optimal a_lat for U(1)^2 stability."
+    date: 2025-09-23
+    priority: medium
+    tags: [numerics, stability]
+    refs: ["core_notes v1.16 §6"]
 
-  - id: 050
-    description: "Lab probes of B_ij gradients; expected signals; link to Π_ex predictions."
-    date: 2025-09-23
-    priority: medium
-    tags: [experiment, EFT]
-    refs: ["core_notes v1.16 §6–§7"]
+  - id: 050
+    description: "Lab probes of B_ij gradients; expected signals; link to Π_ex predictions."
+    date: 2025-09-23
+    priority: medium
+    tags: [experiment, EFT]
+    refs: ["core_notes v1.16 §6–§7"]
 
-  - id: 051
-    description: "First dim‑6 operators above ≥1.70 window; impact on coherence."
-    date: 2025-09-23
-    priority: medium
-    tags: [EFT, high_dim]
-    refs: ["core_notes v1.16 §4, §6, §8"]
+  - id: 051
+    description: "First dim‑6 operators above ≥1.70 window; impact on coherence."
+    date: 2025-09-23
+    priority: medium
+    tags: [EFT, high_dim]
+    refs: ["core_notes v1.16 §4, §6, §8"]
 
-  - id: 052
-    description: "Full SU(3) embedding from U(1)^2+ε; long‑run stability."
-    date: 2025-09-23
-    priority: high
-    tags: [SU3, embedding]
-    refs: ["core_notes v1.16 §4"]
+  - id: 052
+    description: "Full SU(3) embedding from U(1)^2+ε; long‑run stability."
+    date: 2025-09-23
+    priority: high
+    tags: [SU3, embedding]
+    refs: ["core_notes v1.16 §4"]
 
-  - id: 075
-    description: "Validate U(1)^2→SU(3) stability; dim‑6 >1.70; B_ij lab analogs."
-    date: 2025-09-23
-    priority: high
-    tags: [SU3, experiment]
-    refs: ["core_notes v1.16 §8", "rtg:forces-fields-in-relational-time-geometry-rtg"]
+  - id: 075
+    description: "Validate U(1)^2→SU(3) stability; dim‑6 >1.70; B_ij lab analogs."
+    date: 2025-09-23
+    priority: high
+    tags: [SU3, experiment]
+    refs: ["core_notes v1.16 §8", "rtg:forces-fields-in-relational-time-geometry-rtg"]
 
-  - id: 077
-    description: "Multipartite tests (Mermin), spin beyond ±i (Dirac‑like), optics/cavity QED analogs."
-    date: 2025-09-23
-    priority: high
-    tags: [quantum, experiments]
-    refs: ["core_notes v1.16 §8", "rtg:quantum-behaviours-in-relational-time-geometry-rtg"]
+  - id: 077
+    description: "Multipartite tests (Mermin), spin beyond ±i (Dirac‑like), optics/cavity QED analogs."
+    date: 2025-09-23
+    priority: high
+    tags: [quantum, experiments]
+    refs: ["core_notes v1.16 §8", "rtg:quantum-behaviours-in-relational-time-geometry-rtg"]
 
-  - id: 086
-    description: "Negative T_RTG (population inversion); heat‑flow anomalies; rotation in U(1)^2."
-    date: 2025-09-24
-    priority: medium
-    tags: [thermo, anomalies]
-    refs: ["core_notes v1.16 §8", "rtg:thermodynamics-and-rotational-dynamics-in-relational-time-geometry-rtg"]
+  - id: 086
+    description: "Negative T_RTG (population inversion); heat‑flow anomalies; rotation in U(1)^2."
+    date: 2025-09-24
+    priority: medium
+    tags: [thermo, anomalies]
+    refs: ["core_notes v1.16 §8", "rtg:thermodynamics-and-rotational-dynamics-in-relational-time-geometry-rtg"]
 
-  - id: 103
-    description: "Entangled sub‑nodes; e–p form factors; 256³ target for <2% mass error; RTG–QCD map."
-    date: 2025-09-24
-    priority: high
-    tags: [hadron, scaling]
-    refs: ["particle:§9", "core_notes v1.16 §8"]
+  - id: 103
+    description: "Entangled sub‑nodes; e–p form factors; 256³ target for <2% mass error; RTG–QCD map."
+    date: 2025-09-24
+    priority: high
+    tags: [hadron, scaling]
+    refs: ["particle:§9", "core_notes v1.16 §8"]
 
-  - id: 104
-    description: "Lorentz covariance of φ/ω clocks; halo stats vs ΛCDM; BH corridor & ≥1.70 anomalies; PBH TeV–PeV tests."
-    date: 2025-09-24
-    priority: high
-    tags: [cosmology, tests]
-    refs: ["cosmology:§9", "core_notes v1.16 §8"]
+  - id: 104
+    description: "Lorentz covariance of φ/ω clocks; halo stats vs ΛCDM; BH corridor & ≥1.70 anomalies; PBH TeV–PeV tests."
+    date: 2025-09-24
+    priority: high
+    tags: [cosmology, tests]
+    refs: ["cosmology:§9", "core_notes v1.16 §8"]
 
-  - id: 105
-    description: "ESM scaling: test dipole shell-closure targets {70, 140, 252, …} ('magic numbers') and measure stability/continuum trends."
-    date: 2026-01-08
-    priority: high
-    tags: [ESM, scaling]
-    refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics"]
+  - id: 105
+    description: "ESM scaling: test dipole shell-closure targets {70, 140, 252, …} ('magic numbers') and measure stability/continuum trends."
+    date: 2026-01-08
+    priority: high
+    tags: [ESM, scaling]
+    refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics"]
 
-  - id: 106
-    description: "ESM defect dynamics: inject an unscreened charged simplex ('monopole') into a neutral foam; measure screening response and search for proto-gravity (effective attraction)."
-    date: 2026-01-08
-    priority: high
-    tags: [ESM, gravity, defects]
-    refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics"]
+  - id: 106
+    description: "ESM defect dynamics: inject an unscreened charged simplex ('monopole') into a neutral foam; measure screening response and search for proto-gravity (effective attraction)."
+    date: 2026-01-08
+    priority: high
+    tags: [ESM, gravity, defects]
+    refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics"]
 
-  - id: 107
-    description: "Connectivity-preserving refinement: design surgery/swap objectives that explicitly penalize fragmentation (β0>1) or prune to the largest component and re-grow."
-    date: 2026-01-08
-    priority: medium
-    tags: [ESM, algorithm, topology]
-    refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics"]
+  - id: 107
+    description: "Connectivity-preserving refinement: design surgery/swap objectives that explicitly penalize fragmentation (β0>1) or prune to the largest component and re-grow."
+    date: 2026-01-08
+    priority: medium
+    tags: [ESM, algorithm, topology]
+    refs: ["rtg:emergent-spacetime-from-frustrated-frequency-dynamics"]
+
+  - id: 155
+    description: "Trace Gap Diagnostic: Proposed metric for topological defects. Δ_Tr = |Tr(U_loop) - 2cos(θ_SU2)|. Non-zero values indicate frustration that cannot be gauged away (monopoles/voids)."
+    date: 2026-01-09
+    priority: medium
+    tags: [proposal, diagnostics, topology]
+    refs: ["core_notes v1.16 §10"]
 
 # Link key:
 # - "rtg:<slug>" denotes an RTG site article (e.g., rtg:cosmological-applications-of-relational-time-geometry-rtg).
 # - "core_notes v1.16 §X" refers to Tier‑1 sections.
-```
